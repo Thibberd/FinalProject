@@ -42,12 +42,16 @@
             this.button8 = new System.Windows.Forms.Button();
             this.button9 = new System.Windows.Forms.Button();
             this.button10 = new System.Windows.Forms.Button();
+            this.button11 = new System.Windows.Forms.Button();
+            this.button12 = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.panel1.Controls.Add(this.button12);
+            this.panel1.Controls.Add(this.button11);
             this.panel1.Controls.Add(this.button10);
             this.panel1.Controls.Add(this.button9);
             this.panel1.Controls.Add(this.button8);
@@ -211,6 +215,28 @@
             this.button10.Text = "0";
             this.button10.UseVisualStyleBackColor = false;
             // 
+            // button11
+            // 
+            this.button11.BackColor = System.Drawing.Color.GreenYellow;
+            this.button11.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button11.Location = new System.Drawing.Point(212, 308);
+            this.button11.Name = "button11";
+            this.button11.Size = new System.Drawing.Size(87, 35);
+            this.button11.TabIndex = 12;
+            this.button11.Text = "Enter >>";
+            this.button11.UseVisualStyleBackColor = false;
+            // 
+            // button12
+            // 
+            this.button12.BackColor = System.Drawing.Color.DeepPink;
+            this.button12.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button12.Location = new System.Drawing.Point(49, 308);
+            this.button12.Name = "button12";
+            this.button12.Size = new System.Drawing.Size(87, 35);
+            this.button12.TabIndex = 13;
+            this.button12.Text = "Cancel";
+            this.button12.UseVisualStyleBackColor = false;
+            // 
             // UserLogInWindow
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -244,5 +270,7 @@
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Button button12;
+        private System.Windows.Forms.Button button11;
     }
 }
