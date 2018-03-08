@@ -228,7 +228,7 @@
             // 
             // button1
             // 
-            this.button1.BackColor = System.Drawing.Color.MediumPurple;
+            this.button1.BackColor = System.Drawing.Color.Orange;
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.Location = new System.Drawing.Point(353, 76);
             this.button1.Name = "button1";
@@ -239,7 +239,7 @@
             // 
             // button2
             // 
-            this.button2.BackColor = System.Drawing.Color.MediumPurple;
+            this.button2.BackColor = System.Drawing.Color.Orange;
             this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button2.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.button2.Location = new System.Drawing.Point(218, 76);
@@ -251,7 +251,7 @@
             // 
             // button3
             // 
-            this.button3.BackColor = System.Drawing.Color.MediumPurple;
+            this.button3.BackColor = System.Drawing.Color.Orange;
             this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button3.Location = new System.Drawing.Point(488, 76);
             this.button3.Name = "button3";
@@ -262,7 +262,7 @@
             // 
             // button4
             // 
-            this.button4.BackColor = System.Drawing.Color.MediumPurple;
+            this.button4.BackColor = System.Drawing.Color.Orange;
             this.button4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button4.Location = new System.Drawing.Point(218, 154);
             this.button4.Name = "button4";
@@ -273,7 +273,7 @@
             // 
             // button5
             // 
-            this.button5.BackColor = System.Drawing.Color.MediumPurple;
+            this.button5.BackColor = System.Drawing.Color.Orange;
             this.button5.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button5.Location = new System.Drawing.Point(353, 154);
             this.button5.Name = "button5";
@@ -284,7 +284,7 @@
             // 
             // button6
             // 
-            this.button6.BackColor = System.Drawing.Color.MediumPurple;
+            this.button6.BackColor = System.Drawing.Color.Orange;
             this.button6.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button6.Location = new System.Drawing.Point(488, 153);
             this.button6.Name = "button6";
@@ -295,7 +295,7 @@
             // 
             // button7
             // 
-            this.button7.BackColor = System.Drawing.Color.MediumPurple;
+            this.button7.BackColor = System.Drawing.Color.Orange;
             this.button7.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button7.Location = new System.Drawing.Point(291, 235);
             this.button7.Name = "button7";
@@ -306,7 +306,7 @@
             // 
             // button8
             // 
-            this.button8.BackColor = System.Drawing.Color.MediumPurple;
+            this.button8.BackColor = System.Drawing.Color.Orange;
             this.button8.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button8.Location = new System.Drawing.Point(438, 235);
             this.button8.Name = "button8";
@@ -315,7 +315,7 @@
             this.button8.Text = "Smirnoff V";
             this.button8.UseVisualStyleBackColor = false;
             // 
-            // BottlesForm
+            // SpiritsWindow
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -345,7 +345,7 @@
             this.Controls.Add(this.button13);
             this.Controls.Add(this.button14);
             this.Controls.Add(this.listBox1);
-            this.Name = "BottlesForm";
+            this.Name = "SpiritsWindow";
             this.Text = "BottlesForm";
             this.ResumeLayout(false);
             this.PerformLayout();
