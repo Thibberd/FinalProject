@@ -63,6 +63,18 @@
     <Compile Include="LiquersWindow.Designer.cs">
       <DependentUpon>LiquersWindow.cs</DependentUpon>
     </Compile>
+    <Compile Include="MixersWindow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MixersWindow.Designer.cs">
+      <DependentUpon>MixersWindow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SoftdrinksWindow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SoftdrinksWindow.Designer.cs">
+      <DependentUpon>SoftdrinksWindow.cs</DependentUpon>
+    </Compile>
     <Compile Include="SparklingWindow.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -103,6 +115,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="LiquersWindow.resx">
       <DependentUpon>LiquersWindow.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MixersWindow.resx">
+      <DependentUpon>MixersWindow.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SoftdrinksWindow.resx">
+      <DependentUpon>SoftdrinksWindow.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="SparklingWindow.resx">
       <DependentUpon>SparklingWindow.cs</DependentUpon>
