@@ -45,6 +45,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="SpiritsWindow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SpiritsWindow.Designer.cs">
+      <DependentUpon>SpiritsWindow.cs</DependentUpon>
+    </Compile>
     <Compile Include="DraughtWindow.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -59,6 +65,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="SpiritsWindow.resx">
+      <DependentUpon>SpiritsWindow.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="DraughtWindow.resx">
       <DependentUpon>DraughtWindow.cs</DependentUpon>
     </EmbeddedResource>
