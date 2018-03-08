@@ -51,6 +51,18 @@
     <Compile Include="BottlesWindow.Designer.cs">
       <DependentUpon>BottlesWindow.cs</DependentUpon>
     </Compile>
+    <Compile Include="CocktailsWindow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CocktailsWindow.Designer.cs">
+      <DependentUpon>CocktailsWindow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LiquersWindow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LiquersWindow.Designer.cs">
+      <DependentUpon>LiquersWindow.cs</DependentUpon>
+    </Compile>
     <Compile Include="SpiritsWindow.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -79,6 +91,12 @@
     </Compile>
     <EmbeddedResource Include="BottlesWindow.resx">
       <DependentUpon>BottlesWindow.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CocktailsWindow.resx">
+      <DependentUpon>CocktailsWindow.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LiquersWindow.resx">
+      <DependentUpon>LiquersWindow.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="SpiritsWindow.resx">
       <DependentUpon>SpiritsWindow.cs</DependentUpon>

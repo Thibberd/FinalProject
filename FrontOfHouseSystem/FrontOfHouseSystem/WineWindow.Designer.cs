@@ -68,7 +68,7 @@
             // 
             // button5
             // 
-            this.button5.BackColor = System.Drawing.Color.LightCoral;
+            this.button5.BackColor = System.Drawing.Color.Pink;
             this.button5.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button5.Location = new System.Drawing.Point(450, 208);
             this.button5.Name = "button5";
@@ -90,7 +90,7 @@
             // 
             // Desperadosbtn
             // 
-            this.Desperadosbtn.BackColor = System.Drawing.Color.LightCoral;
+            this.Desperadosbtn.BackColor = System.Drawing.Color.Pink;
             this.Desperadosbtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Desperadosbtn.Location = new System.Drawing.Point(259, 208);
             this.Desperadosbtn.Name = "Desperadosbtn";
