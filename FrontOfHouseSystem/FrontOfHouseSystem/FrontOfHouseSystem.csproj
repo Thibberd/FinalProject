@@ -63,6 +63,12 @@
     <Compile Include="LiquersWindow.Designer.cs">
       <DependentUpon>LiquersWindow.cs</DependentUpon>
     </Compile>
+    <Compile Include="SparklingWindow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SparklingWindow.Designer.cs">
+      <DependentUpon>SparklingWindow.cs</DependentUpon>
+    </Compile>
     <Compile Include="SpiritsWindow.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -97,6 +103,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="LiquersWindow.resx">
       <DependentUpon>LiquersWindow.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SparklingWindow.resx">
+      <DependentUpon>SparklingWindow.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="SpiritsWindow.resx">
       <DependentUpon>SpiritsWindow.cs</DependentUpon>
