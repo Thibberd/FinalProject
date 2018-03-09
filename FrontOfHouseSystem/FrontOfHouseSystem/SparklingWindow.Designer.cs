@@ -165,6 +165,7 @@
             this.Liquersbtn.TabIndex = 134;
             this.Liquersbtn.Text = "Liquers / Bombs";
             this.Liquersbtn.UseVisualStyleBackColor = false;
+            this.Liquersbtn.Click += new System.EventHandler(this.Liquersbtn_Click);
             // 
             // Winebtn
             // 

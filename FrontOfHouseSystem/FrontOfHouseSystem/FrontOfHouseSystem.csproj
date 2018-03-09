@@ -75,6 +75,12 @@
     <Compile Include="MixersWindow.Designer.cs">
       <DependentUpon>MixersWindow.cs</DependentUpon>
     </Compile>
+    <Compile Include="PaymentSucessfulwindow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PaymentSucessfulwindow.Designer.cs">
+      <DependentUpon>PaymentSucessfulwindow.cs</DependentUpon>
+    </Compile>
     <Compile Include="SoftdrinksWindow.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -133,6 +139,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="MixersWindow.resx">
       <DependentUpon>MixersWindow.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PaymentSucessfulwindow.resx">
+      <DependentUpon>PaymentSucessfulwindow.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="SoftdrinksWindow.resx">
       <DependentUpon>SoftdrinksWindow.cs</DependentUpon>

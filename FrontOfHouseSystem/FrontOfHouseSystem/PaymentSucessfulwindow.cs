@@ -10,16 +10,11 @@ using System.Windows.Forms;
 
 namespace FrontOfHouseSystem
 {
-    public partial class SparklingWindow : Form
+    public partial class PaymentSucessfulwindow : Form
     {
-        public SparklingWindow()
+        public PaymentSucessfulwindow()
         {
             InitializeComponent();
-        }
-
-        private void Liquersbtn_Click(object sender, EventArgs e)
-        {
-            
         }
     }
 }
