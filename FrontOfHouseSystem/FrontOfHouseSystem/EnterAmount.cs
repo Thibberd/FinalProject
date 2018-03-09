@@ -10,16 +10,11 @@ using System.Windows.Forms;
 
 namespace FrontOfHouseSystem
 {
-    public partial class CocktailsWindow : Form
+    public partial class EnterAmount : Form
     {
-        public CocktailsWindow()
+        public EnterAmount()
         {
             InitializeComponent();
-        }
-
-        private void CocktailsWindow_Load(object sender, EventArgs e)
-        {
-
         }
     }
 }

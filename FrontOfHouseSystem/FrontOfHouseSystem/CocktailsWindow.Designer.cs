@@ -219,7 +219,7 @@
             this.Cocktailslbl.AutoSize = true;
             this.Cocktailslbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Cocktailslbl.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.Cocktailslbl.Location = new System.Drawing.Point(359, 30);
+            this.Cocktailslbl.Location = new System.Drawing.Point(364, 30);
             this.Cocktailslbl.Name = "Cocktailslbl";
             this.Cocktailslbl.Size = new System.Drawing.Size(144, 33);
             this.Cocktailslbl.TabIndex = 130;
@@ -334,6 +334,7 @@
             this.Controls.Add(this.listBox1);
             this.Name = "CocktailsWindow";
             this.Text = "CocktailsWindow";
+            this.Load += new System.EventHandler(this.CocktailsWindow_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

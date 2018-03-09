@@ -226,7 +226,7 @@
             // 
             this.Mummbrutbtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
             this.Mummbrutbtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Mummbrutbtn.Location = new System.Drawing.Point(287, 210);
+            this.Mummbrutbtn.Location = new System.Drawing.Point(275, 210);
             this.Mummbrutbtn.Name = "Mummbrutbtn";
             this.Mummbrutbtn.Size = new System.Drawing.Size(110, 41);
             this.Mummbrutbtn.TabIndex = 143;
@@ -237,7 +237,7 @@
             // 
             this.Proseccobtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
             this.Proseccobtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Proseccobtn.Location = new System.Drawing.Point(489, 210);
+            this.Proseccobtn.Location = new System.Drawing.Point(477, 210);
             this.Proseccobtn.Name = "Proseccobtn";
             this.Proseccobtn.Size = new System.Drawing.Size(108, 41);
             this.Proseccobtn.TabIndex = 141;
@@ -249,7 +249,7 @@
             this.Domperingonbtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
             this.Domperingonbtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Domperingonbtn.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.Domperingonbtn.Location = new System.Drawing.Point(286, 130);
+            this.Domperingonbtn.Location = new System.Drawing.Point(274, 130);
             this.Domperingonbtn.Name = "Domperingonbtn";
             this.Domperingonbtn.Size = new System.Drawing.Size(111, 41);
             this.Domperingonbtn.TabIndex = 140;
@@ -260,7 +260,7 @@
             // 
             this.Laurentpbtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
             this.Laurentpbtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Laurentpbtn.Location = new System.Drawing.Point(487, 130);
+            this.Laurentpbtn.Location = new System.Drawing.Point(475, 130);
             this.Laurentpbtn.Name = "Laurentpbtn";
             this.Laurentpbtn.Size = new System.Drawing.Size(110, 41);
             this.Laurentpbtn.TabIndex = 139;
