@@ -21,5 +21,13 @@ namespace FrontOfHouseSystem
         {
 
         }
+
+        private void Homebtn_Click(object sender, EventArgs e)
+        {
+            this.Close();
+            FOHDashboard mainMenu = new FOHDashboard();
+            mainMenu.Show();
+            
+        }
     }
 }
