@@ -50,6 +50,7 @@
             this.button13 = new System.Windows.Forms.Button();
             this.button14 = new System.Windows.Forms.Button();
             this.listBox1 = new System.Windows.Forms.ListBox();
+            this.Homebtn = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // button6
@@ -134,90 +135,98 @@
             // 
             this.Softsbtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.Softsbtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Softsbtn.Location = new System.Drawing.Point(641, 347);
+            this.Softsbtn.Location = new System.Drawing.Point(641, 395);
             this.Softsbtn.Name = "Softsbtn";
             this.Softsbtn.Size = new System.Drawing.Size(120, 44);
             this.Softsbtn.TabIndex = 74;
             this.Softsbtn.Text = "Soft Drinks";
             this.Softsbtn.UseVisualStyleBackColor = false;
+            this.Softsbtn.Click += new System.EventHandler(this.Softsbtn_Click);
             // 
             // Sparklingbtn
             // 
             this.Sparklingbtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.Sparklingbtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Sparklingbtn.Location = new System.Drawing.Point(641, 297);
+            this.Sparklingbtn.Location = new System.Drawing.Point(641, 345);
             this.Sparklingbtn.Name = "Sparklingbtn";
             this.Sparklingbtn.Size = new System.Drawing.Size(120, 44);
             this.Sparklingbtn.TabIndex = 73;
             this.Sparklingbtn.Text = "Sparkling";
             this.Sparklingbtn.UseVisualStyleBackColor = false;
+            this.Sparklingbtn.Click += new System.EventHandler(this.Sparklingbtn_Click);
             // 
             // Cocktailsbtn
             // 
             this.Cocktailsbtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.Cocktailsbtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Cocktailsbtn.Location = new System.Drawing.Point(641, 247);
+            this.Cocktailsbtn.Location = new System.Drawing.Point(641, 295);
             this.Cocktailsbtn.Name = "Cocktailsbtn";
             this.Cocktailsbtn.Size = new System.Drawing.Size(120, 44);
             this.Cocktailsbtn.TabIndex = 72;
             this.Cocktailsbtn.Text = "Cocktails";
             this.Cocktailsbtn.UseVisualStyleBackColor = false;
+            this.Cocktailsbtn.Click += new System.EventHandler(this.Cocktailsbtn_Click);
             // 
             // Liquersbtn
             // 
             this.Liquersbtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.Liquersbtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Liquersbtn.Location = new System.Drawing.Point(641, 197);
+            this.Liquersbtn.Location = new System.Drawing.Point(641, 245);
             this.Liquersbtn.Name = "Liquersbtn";
             this.Liquersbtn.Size = new System.Drawing.Size(120, 44);
             this.Liquersbtn.TabIndex = 71;
             this.Liquersbtn.Text = "Liquers / Bombs";
             this.Liquersbtn.UseVisualStyleBackColor = false;
+            this.Liquersbtn.Click += new System.EventHandler(this.Liquersbtn_Click);
             // 
             // Winebtn
             // 
             this.Winebtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.Winebtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Winebtn.Location = new System.Drawing.Point(641, 147);
+            this.Winebtn.Location = new System.Drawing.Point(641, 195);
             this.Winebtn.Name = "Winebtn";
             this.Winebtn.Size = new System.Drawing.Size(120, 44);
             this.Winebtn.TabIndex = 70;
             this.Winebtn.Text = "Wine";
             this.Winebtn.UseVisualStyleBackColor = false;
+            this.Winebtn.Click += new System.EventHandler(this.Winebtn_Click);
             // 
             // Spiritsbtn
             // 
             this.Spiritsbtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.Spiritsbtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Spiritsbtn.Location = new System.Drawing.Point(641, 96);
+            this.Spiritsbtn.Location = new System.Drawing.Point(641, 144);
             this.Spiritsbtn.Name = "Spiritsbtn";
             this.Spiritsbtn.Size = new System.Drawing.Size(120, 44);
             this.Spiritsbtn.TabIndex = 69;
             this.Spiritsbtn.Text = "Spirits";
             this.Spiritsbtn.UseVisualStyleBackColor = false;
+            this.Spiritsbtn.Click += new System.EventHandler(this.Spiritsbtn_Click);
             // 
             // Bottlesbtn
             // 
             this.Bottlesbtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.Bottlesbtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Bottlesbtn.Location = new System.Drawing.Point(641, 47);
+            this.Bottlesbtn.Location = new System.Drawing.Point(641, 95);
             this.Bottlesbtn.Name = "Bottlesbtn";
             this.Bottlesbtn.Size = new System.Drawing.Size(120, 44);
             this.Bottlesbtn.TabIndex = 68;
             this.Bottlesbtn.Text = "Bottles";
             this.Bottlesbtn.UseVisualStyleBackColor = false;
+            this.Bottlesbtn.Click += new System.EventHandler(this.Bottlesbtn_Click);
             // 
             // Draughtbtn
             // 
             this.Draughtbtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.Draughtbtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Draughtbtn.ImageAlign = System.Drawing.ContentAlignment.BottomRight;
-            this.Draughtbtn.Location = new System.Drawing.Point(641, 2);
+            this.Draughtbtn.Location = new System.Drawing.Point(641, 50);
             this.Draughtbtn.Name = "Draughtbtn";
             this.Draughtbtn.Size = new System.Drawing.Size(120, 44);
             this.Draughtbtn.TabIndex = 67;
             this.Draughtbtn.Text = "Draught";
             this.Draughtbtn.UseVisualStyleBackColor = false;
+            this.Draughtbtn.Click += new System.EventHandler(this.Draughtbtn_Click);
             // 
             // button27
             // 
@@ -291,12 +300,26 @@
             this.listBox1.Size = new System.Drawing.Size(191, 277);
             this.listBox1.TabIndex = 60;
             // 
+            // Homebtn
+            // 
+            this.Homebtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.Homebtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Homebtn.ImageAlign = System.Drawing.ContentAlignment.BottomRight;
+            this.Homebtn.Location = new System.Drawing.Point(641, 3);
+            this.Homebtn.Name = "Homebtn";
+            this.Homebtn.Size = new System.Drawing.Size(120, 44);
+            this.Homebtn.TabIndex = 82;
+            this.Homebtn.Text = "Home";
+            this.Homebtn.UseVisualStyleBackColor = false;
+            this.Homebtn.Click += new System.EventHandler(this.Homebtn_Click);
+            // 
             // BottlesWindow
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.ClientSize = new System.Drawing.Size(763, 392);
+            this.ClientSize = new System.Drawing.Size(763, 446);
+            this.Controls.Add(this.Homebtn);
             this.Controls.Add(this.button6);
             this.Controls.Add(this.button5);
             this.Controls.Add(this.button4);
@@ -350,5 +373,6 @@
         private System.Windows.Forms.Button button13;
         private System.Windows.Forms.Button button14;
         private System.Windows.Forms.ListBox listBox1;
+        private System.Windows.Forms.Button Homebtn;
     }
 }
