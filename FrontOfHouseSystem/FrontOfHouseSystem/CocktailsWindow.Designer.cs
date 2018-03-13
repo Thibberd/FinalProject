@@ -226,7 +226,7 @@
             this.Homebtn.TabIndex = 146;
             this.Homebtn.Text = "Home";
             this.Homebtn.UseVisualStyleBackColor = false;
-            
+            this.Homebtn.Click += new System.EventHandler(this.Homebtn_Click);
             // 
             // Softsbtn
             // 
@@ -271,6 +271,7 @@
             this.Liquersbtn.TabIndex = 142;
             this.Liquersbtn.Text = "Liquers / Bombs";
             this.Liquersbtn.UseVisualStyleBackColor = false;
+            this.Liquersbtn.Click += new System.EventHandler(this.Liquersbtn_Click);
             // 
             // Winebtn
             // 
