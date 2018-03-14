@@ -30,7 +30,7 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FOHDashboard));
             this.Draught = new System.Windows.Forms.Button();
-            this.Orderlist = new System.Windows.Forms.ListBox();
+            this.OrderList = new System.Windows.Forms.ListBox();
             this.button2 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
@@ -41,7 +41,7 @@
             this.Liquersbtn = new System.Windows.Forms.Button();
             this.Cocktailsbtn = new System.Windows.Forms.Button();
             this.Sparklingbtn = new System.Windows.Forms.Button();
-            this.button12 = new System.Windows.Forms.Button();
+            this.Carlingbtn = new System.Windows.Forms.Button();
             this.button13 = new System.Windows.Forms.Button();
             this.button14 = new System.Windows.Forms.Button();
             this.button15 = new System.Windows.Forms.Button();
@@ -57,9 +57,11 @@
             this.button24 = new System.Windows.Forms.Button();
             this.button25 = new System.Windows.Forms.Button();
             this.button26 = new System.Windows.Forms.Button();
-            this.button27 = new System.Windows.Forms.Button();
+            this.Voidbtn = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.Homebtn = new System.Windows.Forms.Button();
+            this.TotalLbl = new System.Windows.Forms.Label();
+            this.AmountLabel = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // Draught
@@ -75,19 +77,19 @@
             this.Draught.UseVisualStyleBackColor = false;
             this.Draught.Click += new System.EventHandler(this.Draught_Click);
             // 
-            // Orderlist
+            // OrderList
             // 
-            this.Orderlist.FormattingEnabled = true;
-            this.Orderlist.Location = new System.Drawing.Point(1, 32);
-            this.Orderlist.Name = "Orderlist";
-            this.Orderlist.Size = new System.Drawing.Size(195, 264);
-            this.Orderlist.TabIndex = 1;
+            this.OrderList.FormattingEnabled = true;
+            this.OrderList.Location = new System.Drawing.Point(1, 32);
+            this.OrderList.Name = "OrderList";
+            this.OrderList.Size = new System.Drawing.Size(195, 264);
+            this.OrderList.TabIndex = 1;
             // 
             // button2
             // 
             this.button2.BackColor = System.Drawing.Color.Yellow;
             this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.Location = new System.Drawing.Point(1, 299);
+            this.button2.Location = new System.Drawing.Point(3, 345);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(45, 34);
             this.button2.TabIndex = 2;
@@ -98,7 +100,7 @@
             // 
             this.button3.BackColor = System.Drawing.Color.Yellow;
             this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button3.Location = new System.Drawing.Point(45, 299);
+            this.button3.Location = new System.Drawing.Point(47, 345);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(45, 34);
             this.button3.TabIndex = 3;
@@ -109,7 +111,7 @@
             // 
             this.button4.BackColor = System.Drawing.Color.Yellow;
             this.button4.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button4.Location = new System.Drawing.Point(88, 299);
+            this.button4.Location = new System.Drawing.Point(90, 345);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(45, 34);
             this.button4.TabIndex = 4;
@@ -122,7 +124,7 @@
             this.button5.FlatAppearance.BorderColor = System.Drawing.Color.Yellow;
             this.button5.FlatAppearance.BorderSize = 0;
             this.button5.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button5.Location = new System.Drawing.Point(130, 299);
+            this.button5.Location = new System.Drawing.Point(132, 345);
             this.button5.Name = "button5";
             this.button5.Size = new System.Drawing.Size(45, 34);
             this.button5.TabIndex = 5;
@@ -201,16 +203,17 @@
             this.Sparklingbtn.UseVisualStyleBackColor = false;
             this.Sparklingbtn.Click += new System.EventHandler(this.Sparklingbtn_Click);
             // 
-            // button12
+            // Carlingbtn
             // 
-            this.button12.BackColor = System.Drawing.Color.BlueViolet;
-            this.button12.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button12.Location = new System.Drawing.Point(202, 32);
-            this.button12.Name = "button12";
-            this.button12.Size = new System.Drawing.Size(106, 52);
-            this.button12.TabIndex = 12;
-            this.button12.Text = "Carling";
-            this.button12.UseVisualStyleBackColor = false;
+            this.Carlingbtn.BackColor = System.Drawing.Color.BlueViolet;
+            this.Carlingbtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Carlingbtn.Location = new System.Drawing.Point(202, 32);
+            this.Carlingbtn.Name = "Carlingbtn";
+            this.Carlingbtn.Size = new System.Drawing.Size(106, 52);
+            this.Carlingbtn.TabIndex = 12;
+            this.Carlingbtn.Text = "Carling";
+            this.Carlingbtn.UseVisualStyleBackColor = false;
+            this.Carlingbtn.Click += new System.EventHandler(this.Carlingbtn_Click);
             // 
             // button13
             // 
@@ -370,21 +373,22 @@
             // 
             // button26
             // 
-            this.button26.Location = new System.Drawing.Point(1, 336);
+            this.button26.Location = new System.Drawing.Point(3, 382);
             this.button26.Name = "button26";
             this.button26.Size = new System.Drawing.Size(89, 33);
             this.button26.TabIndex = 27;
             this.button26.Text = "EFT";
             this.button26.UseVisualStyleBackColor = true;
             // 
-            // button27
+            // Voidbtn
             // 
-            this.button27.Location = new System.Drawing.Point(88, 336);
-            this.button27.Name = "button27";
-            this.button27.Size = new System.Drawing.Size(87, 33);
-            this.button27.TabIndex = 28;
-            this.button27.Text = "Void";
-            this.button27.UseVisualStyleBackColor = true;
+            this.Voidbtn.Location = new System.Drawing.Point(90, 382);
+            this.Voidbtn.Name = "Voidbtn";
+            this.Voidbtn.Size = new System.Drawing.Size(87, 33);
+            this.Voidbtn.TabIndex = 28;
+            this.Voidbtn.Text = "Void";
+            this.Voidbtn.UseVisualStyleBackColor = true;
+            this.Voidbtn.Click += new System.EventHandler(this.Voidbtn_Click);
             // 
             // label1
             // 
@@ -409,15 +413,39 @@
             this.Homebtn.Text = "Home";
             this.Homebtn.UseVisualStyleBackColor = false;
             // 
+            // TotalLbl
+            // 
+            this.TotalLbl.AutoSize = true;
+            this.TotalLbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TotalLbl.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.TotalLbl.Location = new System.Drawing.Point(-3, 315);
+            this.TotalLbl.Name = "TotalLbl";
+            this.TotalLbl.Size = new System.Drawing.Size(68, 24);
+            this.TotalLbl.TabIndex = 31;
+            this.TotalLbl.Text = "Total: ";
+            // 
+            // AmountLabel
+            // 
+            this.AmountLabel.AutoSize = true;
+            this.AmountLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.AmountLabel.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.AmountLabel.Location = new System.Drawing.Point(62, 315);
+            this.AmountLabel.Name = "AmountLabel";
+            this.AmountLabel.Size = new System.Drawing.Size(60, 24);
+            this.AmountLabel.TabIndex = 33;
+            this.AmountLabel.Text = "00.00";
+            // 
             // FOHDashboard
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.ClientSize = new System.Drawing.Size(770, 449);
+            this.Controls.Add(this.AmountLabel);
+            this.Controls.Add(this.TotalLbl);
             this.Controls.Add(this.Homebtn);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.button27);
+            this.Controls.Add(this.Voidbtn);
             this.Controls.Add(this.button26);
             this.Controls.Add(this.button25);
             this.Controls.Add(this.button24);
@@ -433,7 +461,7 @@
             this.Controls.Add(this.button15);
             this.Controls.Add(this.button14);
             this.Controls.Add(this.button13);
-            this.Controls.Add(this.button12);
+            this.Controls.Add(this.Carlingbtn);
             this.Controls.Add(this.Sparklingbtn);
             this.Controls.Add(this.Cocktailsbtn);
             this.Controls.Add(this.Liquersbtn);
@@ -444,7 +472,7 @@
             this.Controls.Add(this.button4);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.button2);
-            this.Controls.Add(this.Orderlist);
+            this.Controls.Add(this.OrderList);
             this.Controls.Add(this.Draught);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "FOHDashboard";
@@ -458,7 +486,7 @@
         #endregion
 
         private System.Windows.Forms.Button Draught;
-        private System.Windows.Forms.ListBox Orderlist;
+        private System.Windows.Forms.ListBox OrderList;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Button button4;
@@ -469,7 +497,7 @@
         private System.Windows.Forms.Button Liquersbtn;
         private System.Windows.Forms.Button Cocktailsbtn;
         private System.Windows.Forms.Button Sparklingbtn;
-        private System.Windows.Forms.Button button12;
+        private System.Windows.Forms.Button Carlingbtn;
         private System.Windows.Forms.Button button13;
         private System.Windows.Forms.Button button14;
         private System.Windows.Forms.Button button15;
@@ -485,9 +513,11 @@
         private System.Windows.Forms.Button button24;
         private System.Windows.Forms.Button button25;
         private System.Windows.Forms.Button button26;
-        private System.Windows.Forms.Button button27;
+        private System.Windows.Forms.Button Voidbtn;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button Homebtn;
+        private System.Windows.Forms.Label TotalLbl;
+        private System.Windows.Forms.Label AmountLabel;
     }
 }
 
