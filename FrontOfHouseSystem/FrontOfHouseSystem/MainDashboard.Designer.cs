@@ -28,8 +28,9 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FOHDashboard));
             this.Draught = new System.Windows.Forms.Button();
-            this.listBox1 = new System.Windows.Forms.ListBox();
+            this.Orderlist = new System.Windows.Forms.ListBox();
             this.button2 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
@@ -74,13 +75,13 @@
             this.Draught.UseVisualStyleBackColor = false;
             this.Draught.Click += new System.EventHandler(this.Draught_Click);
             // 
-            // listBox1
+            // Orderlist
             // 
-            this.listBox1.FormattingEnabled = true;
-            this.listBox1.Location = new System.Drawing.Point(1, 32);
-            this.listBox1.Name = "listBox1";
-            this.listBox1.Size = new System.Drawing.Size(195, 264);
-            this.listBox1.TabIndex = 1;
+            this.Orderlist.FormattingEnabled = true;
+            this.Orderlist.Location = new System.Drawing.Point(1, 32);
+            this.Orderlist.Name = "Orderlist";
+            this.Orderlist.Size = new System.Drawing.Size(195, 264);
+            this.Orderlist.TabIndex = 1;
             // 
             // button2
             // 
@@ -371,16 +372,16 @@
             // 
             this.button26.Location = new System.Drawing.Point(1, 336);
             this.button26.Name = "button26";
-            this.button26.Size = new System.Drawing.Size(75, 23);
+            this.button26.Size = new System.Drawing.Size(89, 33);
             this.button26.TabIndex = 27;
             this.button26.Text = "EFT";
             this.button26.UseVisualStyleBackColor = true;
             // 
             // button27
             // 
-            this.button27.Location = new System.Drawing.Point(100, 336);
+            this.button27.Location = new System.Drawing.Point(88, 336);
             this.button27.Name = "button27";
-            this.button27.Size = new System.Drawing.Size(75, 23);
+            this.button27.Size = new System.Drawing.Size(87, 33);
             this.button27.TabIndex = 28;
             this.button27.Text = "Void";
             this.button27.UseVisualStyleBackColor = true;
@@ -413,7 +414,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.ClientSize = new System.Drawing.Size(770, 436);
+            this.ClientSize = new System.Drawing.Size(770, 449);
             this.Controls.Add(this.Homebtn);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.button27);
@@ -443,8 +444,9 @@
             this.Controls.Add(this.button4);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.button2);
-            this.Controls.Add(this.listBox1);
+            this.Controls.Add(this.Orderlist);
             this.Controls.Add(this.Draught);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "FOHDashboard";
             this.Text = "Dashboard";
             this.Load += new System.EventHandler(this.Form1_Load);
@@ -456,7 +458,7 @@
         #endregion
 
         private System.Windows.Forms.Button Draught;
-        private System.Windows.Forms.ListBox listBox1;
+        private System.Windows.Forms.ListBox Orderlist;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Button button4;
