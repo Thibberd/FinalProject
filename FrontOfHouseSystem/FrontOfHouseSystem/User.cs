@@ -14,6 +14,12 @@ namespace FrontOfHouseSystem
         public String secondname { get; set; }
         public int PIN { get; set; }
 
-
+        public String  Username
+        {
+            get // creates user name to be displayed
+            {
+                return $"{firstname} {secondname} ";
+            }
+        }
     }
 }

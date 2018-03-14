@@ -76,6 +76,7 @@
       <DependentUpon>MixersWindow.cs</DependentUpon>
     </Compile>
     <Compile Include="Order.cs" />
+    <Compile Include="Orderlines.cs" />
     <Compile Include="PaymentSucessfulwindow.cs">
       <SubType>Form</SubType>
     </Compile>
