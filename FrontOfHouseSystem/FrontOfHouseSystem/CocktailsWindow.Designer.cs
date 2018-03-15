@@ -34,7 +34,7 @@
             this.button12 = new System.Windows.Forms.Button();
             this.button13 = new System.Windows.Forms.Button();
             this.button14 = new System.Windows.Forms.Button();
-            this.listBox1 = new System.Windows.Forms.ListBox();
+            this.OrderList = new System.Windows.Forms.ListBox();
             this.Cocktailslbl = new System.Windows.Forms.Label();
             this.Purplerainbtn = new System.Windows.Forms.Button();
             this.Pawnstarbtn = new System.Windows.Forms.Button();
@@ -118,13 +118,13 @@
             this.button14.Text = "Cash";
             this.button14.UseVisualStyleBackColor = false;
             // 
-            // listBox1
+            // OrderList
             // 
-            this.listBox1.FormattingEnabled = true;
-            this.listBox1.Location = new System.Drawing.Point(12, 21);
-            this.listBox1.Name = "listBox1";
-            this.listBox1.Size = new System.Drawing.Size(191, 277);
-            this.listBox1.TabIndex = 114;
+            this.OrderList.FormattingEnabled = true;
+            this.OrderList.Location = new System.Drawing.Point(12, 21);
+            this.OrderList.Name = "OrderList";
+            this.OrderList.Size = new System.Drawing.Size(191, 277);
+            this.OrderList.TabIndex = 114;
             // 
             // Cocktailslbl
             // 
@@ -347,7 +347,7 @@
             this.Controls.Add(this.button12);
             this.Controls.Add(this.button13);
             this.Controls.Add(this.button14);
-            this.Controls.Add(this.listBox1);
+            this.Controls.Add(this.OrderList);
             this.Name = "CocktailsWindow";
             this.Text = "CocktailsWindow";
             this.Load += new System.EventHandler(this.CocktailsWindow_Load);
@@ -364,7 +364,7 @@
         private System.Windows.Forms.Button button12;
         private System.Windows.Forms.Button button13;
         private System.Windows.Forms.Button button14;
-        private System.Windows.Forms.ListBox listBox1;
+        private System.Windows.Forms.ListBox OrderList;
         private System.Windows.Forms.Label Cocktailslbl;
         private System.Windows.Forms.Button Purplerainbtn;
         private System.Windows.Forms.Button Pawnstarbtn;

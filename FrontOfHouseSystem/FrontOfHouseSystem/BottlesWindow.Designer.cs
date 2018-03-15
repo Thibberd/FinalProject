@@ -49,7 +49,7 @@
             this.button12 = new System.Windows.Forms.Button();
             this.button13 = new System.Windows.Forms.Button();
             this.button14 = new System.Windows.Forms.Button();
-            this.listBox1 = new System.Windows.Forms.ListBox();
+            this.OrderList = new System.Windows.Forms.ListBox();
             this.Homebtn = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
@@ -292,13 +292,13 @@
             this.button14.Text = "Cash";
             this.button14.UseVisualStyleBackColor = false;
             // 
-            // listBox1
+            // OrderList
             // 
-            this.listBox1.FormattingEnabled = true;
-            this.listBox1.Location = new System.Drawing.Point(-4, 14);
-            this.listBox1.Name = "listBox1";
-            this.listBox1.Size = new System.Drawing.Size(191, 277);
-            this.listBox1.TabIndex = 60;
+            this.OrderList.FormattingEnabled = true;
+            this.OrderList.Location = new System.Drawing.Point(-4, 14);
+            this.OrderList.Name = "OrderList";
+            this.OrderList.Size = new System.Drawing.Size(191, 277);
+            this.OrderList.TabIndex = 60;
             // 
             // Homebtn
             // 
@@ -341,7 +341,7 @@
             this.Controls.Add(this.button12);
             this.Controls.Add(this.button13);
             this.Controls.Add(this.button14);
-            this.Controls.Add(this.listBox1);
+            this.Controls.Add(this.OrderList);
             this.Name = "BottlesWindow";
             this.Text = "BottlesWindow";
             this.ResumeLayout(false);
@@ -372,7 +372,7 @@
         private System.Windows.Forms.Button button12;
         private System.Windows.Forms.Button button13;
         private System.Windows.Forms.Button button14;
-        private System.Windows.Forms.ListBox listBox1;
+        private System.Windows.Forms.ListBox OrderList;
         private System.Windows.Forms.Button Homebtn;
     }
 }

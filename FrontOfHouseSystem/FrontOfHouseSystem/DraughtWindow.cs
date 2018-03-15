@@ -12,9 +12,11 @@ namespace FrontOfHouseSystem
 {
     public partial class DraughtWindow : Form
     {
-        public DraughtWindow()
+        public DraughtWindow(ListBox.ObjectCollection orderItems)
         {
             InitializeComponent();
+
+            OrderList.Items.AddRange(orderItems);
         }
 
         private void button1_Click(object sender, EventArgs e)

@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             this.label1 = new System.Windows.Forms.Label();
-            this.listBox1 = new System.Windows.Forms.ListBox();
+            this.OrderList = new System.Windows.Forms.ListBox();
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
@@ -68,13 +68,13 @@
             this.label1.TabIndex = 0;
             this.label1.Text = "Draught";
             // 
-            // listBox1
+            // OrderList
             // 
-            this.listBox1.FormattingEnabled = true;
-            this.listBox1.Location = new System.Drawing.Point(1, 12);
-            this.listBox1.Name = "listBox1";
-            this.listBox1.Size = new System.Drawing.Size(191, 277);
-            this.listBox1.TabIndex = 1;
+            this.OrderList.FormattingEnabled = true;
+            this.OrderList.Location = new System.Drawing.Point(1, 12);
+            this.OrderList.Name = "OrderList";
+            this.OrderList.Size = new System.Drawing.Size(191, 277);
+            this.OrderList.TabIndex = 1;
             // 
             // button1
             // 
@@ -401,7 +401,7 @@
             this.Controls.Add(this.button3);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
-            this.Controls.Add(this.listBox1);
+            this.Controls.Add(this.OrderList);
             this.Controls.Add(this.label1);
             this.Name = "DraughtWindow";
             this.Text = "DraughtWindow";
@@ -413,7 +413,7 @@
         #endregion
 
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.ListBox listBox1;
+        private System.Windows.Forms.ListBox OrderList;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button3;
