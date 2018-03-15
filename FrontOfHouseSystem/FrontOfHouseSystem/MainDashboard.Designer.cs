@@ -31,7 +31,7 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FOHDashboard));
             this.Draught = new System.Windows.Forms.Button();
             this.OrderList = new System.Windows.Forms.ListBox();
-            this.button2 = new System.Windows.Forms.Button();
+            this.Cashbtn = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
             this.button5 = new System.Windows.Forms.Button();
@@ -85,16 +85,17 @@
             this.OrderList.Size = new System.Drawing.Size(195, 264);
             this.OrderList.TabIndex = 1;
             // 
-            // button2
+            // Cashbtn
             // 
-            this.button2.BackColor = System.Drawing.Color.Yellow;
-            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.Location = new System.Drawing.Point(3, 345);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(45, 34);
-            this.button2.TabIndex = 2;
-            this.button2.Text = "Cash";
-            this.button2.UseVisualStyleBackColor = false;
+            this.Cashbtn.BackColor = System.Drawing.Color.Yellow;
+            this.Cashbtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Cashbtn.Location = new System.Drawing.Point(3, 345);
+            this.Cashbtn.Name = "Cashbtn";
+            this.Cashbtn.Size = new System.Drawing.Size(45, 34);
+            this.Cashbtn.TabIndex = 2;
+            this.Cashbtn.Text = "Cash";
+            this.Cashbtn.UseVisualStyleBackColor = false;
+            this.Cashbtn.Click += new System.EventHandler(this.Cashbtn_Click);
             // 
             // button3
             // 
@@ -483,7 +484,7 @@
             this.Controls.Add(this.button5);
             this.Controls.Add(this.button4);
             this.Controls.Add(this.button3);
-            this.Controls.Add(this.button2);
+            this.Controls.Add(this.Cashbtn);
             this.Controls.Add(this.OrderList);
             this.Controls.Add(this.Draught);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
@@ -499,7 +500,7 @@
 
         private System.Windows.Forms.Button Draught;
         public System.Windows.Forms.ListBox OrderList;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button Cashbtn;
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Button button4;
         private System.Windows.Forms.Button button5;

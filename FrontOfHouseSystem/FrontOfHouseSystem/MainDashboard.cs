@@ -758,6 +758,14 @@ namespace FrontOfHouseSystem
             }
 
         }
+
+        private void Cashbtn_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            EnterAmount enterAmount = new EnterAmount();
+            enterAmount.Show();
+            //need to pass through total label so user is aware of order total and can then check if correct amount is present
+        }
     }
 }
 
