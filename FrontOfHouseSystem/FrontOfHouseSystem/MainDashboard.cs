@@ -23,6 +23,8 @@ namespace FrontOfHouseSystem
         public FOHDashboard()
         {
             InitializeComponent();
+
+            //OrderList.Items.AddRange(orderItems);
         }
 
         private void Form1_Load(object sender, EventArgs e)
@@ -33,14 +35,14 @@ namespace FrontOfHouseSystem
         private void Sparklingbtn_Click(object sender, EventArgs e)
         {
             this.Hide();
-            SparklingWindow sparklingWindow = new SparklingWindow();
+            SparklingWindow sparklingWindow = new SparklingWindow(OrderList.Items);
             sparklingWindow.Show();
         }
 
         private void Softbtn_Click(object sender, EventArgs e)
         {
             this.Hide();
-            SoftdrinksWindow softdrinksWindow = new SoftdrinksWindow();
+            SoftdrinksWindow softdrinksWindow = new SoftdrinksWindow(OrderList.Items);
             softdrinksWindow.Show();
         }
 
@@ -57,35 +59,35 @@ namespace FrontOfHouseSystem
         private void Bottlesbtn_Click(object sender, EventArgs e)
         {
             this.Hide();
-            BottlesWindow bottlesWindow = new BottlesWindow();
+            BottlesWindow bottlesWindow = new BottlesWindow(OrderList.Items);
             bottlesWindow.Show();
         }
 
         private void Spiritsbtn_Click(object sender, EventArgs e)
         {
             this.Hide();
-            SpiritsWindow spiritsWindow = new SpiritsWindow();
+            SpiritsWindow spiritsWindow = new SpiritsWindow(OrderList.Items);
             spiritsWindow.Show();
         }
 
         private void Winebtn_Click(object sender, EventArgs e)
         {
             this.Hide();
-            WineWindow wineWindow = new WineWindow();
+            WineWindow wineWindow = new WineWindow(OrderList.Items);
             wineWindow.Show();
         }
 
         private void Liquersbtn_Click(object sender, EventArgs e)
         {
             this.Hide();
-            LiquersWindow liquersWindow  = new LiquersWindow();
+            LiquersWindow liquersWindow  = new LiquersWindow(OrderList.Items);
             liquersWindow.Show();
         }
 
         private void Cocktailsbtn_Click(object sender, EventArgs e)
         {
             this.Hide();
-            CocktailsWindow cocktailsWindow = new CocktailsWindow();
+            CocktailsWindow cocktailsWindow = new CocktailsWindow(OrderList.Items);
             cocktailsWindow.Show();
         }
 

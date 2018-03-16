@@ -282,6 +282,7 @@
             this.Draughtbtn.TabIndex = 147;
             this.Draughtbtn.Text = "Draught";
             this.Draughtbtn.UseVisualStyleBackColor = false;
+            this.Draughtbtn.Click += new System.EventHandler(this.Draughtbtn_Click_1);
             // 
             // SparklingWindow
             // 
