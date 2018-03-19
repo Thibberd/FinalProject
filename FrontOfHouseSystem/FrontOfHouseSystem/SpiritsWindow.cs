@@ -75,5 +75,20 @@ namespace FrontOfHouseSystem
             SoftdrinksWindow softdrinksWindow = new SoftdrinksWindow(OrderList.Items);
             softdrinksWindow.Show();
         }
+
+        private void Draughtbtn_Click_1(object sender, EventArgs e)
+        {
+            this.Hide();
+            DraughtWindow draughtWindow = new DraughtWindow(OrderList.Items);
+            draughtWindow.Show();
+        }
+
+        private void Bottlesbtn_Click_1(object sender, EventArgs e)
+        {
+            this.Hide();
+            BottlesWindow bottlesWindow = new BottlesWindow(OrderList.Items);
+            bottlesWindow.Show();
+
+        }
     }
 }

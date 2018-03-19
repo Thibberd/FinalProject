@@ -281,6 +281,7 @@
             this.Bottlesbtn.TabIndex = 129;
             this.Bottlesbtn.Text = "Bottles";
             this.Bottlesbtn.UseVisualStyleBackColor = false;
+            this.Bottlesbtn.Click += new System.EventHandler(this.Bottlesbtn_Click_1);
             // 
             // Draughtbtn
             // 
@@ -293,6 +294,7 @@
             this.Draughtbtn.TabIndex = 128;
             this.Draughtbtn.Text = "Draught";
             this.Draughtbtn.UseVisualStyleBackColor = false;
+            this.Draughtbtn.Click += new System.EventHandler(this.Draughtbtn_Click_1);
             // 
             // LiquersWindow
             // 

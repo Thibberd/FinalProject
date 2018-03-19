@@ -284,6 +284,7 @@
             this.Cocktailsbtn.TabIndex = 112;
             this.Cocktailsbtn.Text = "Cocktails";
             this.Cocktailsbtn.UseVisualStyleBackColor = false;
+            
             // 
             // Liquersbtn
             // 
@@ -341,6 +342,7 @@
             this.Draughtbtn.TabIndex = 107;
             this.Draughtbtn.Text = "Draught";
             this.Draughtbtn.UseVisualStyleBackColor = false;
+            this.Draughtbtn.Click += new System.EventHandler(this.Draughtbtn_Click_1);
             // 
             // WineWindow
             // 

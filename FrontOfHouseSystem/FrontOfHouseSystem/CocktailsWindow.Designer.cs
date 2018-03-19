@@ -317,6 +317,7 @@
             this.Draughtbtn.TabIndex = 138;
             this.Draughtbtn.Text = "Draught";
             this.Draughtbtn.UseVisualStyleBackColor = false;
+            
             // 
             // CocktailsWindow
             // 

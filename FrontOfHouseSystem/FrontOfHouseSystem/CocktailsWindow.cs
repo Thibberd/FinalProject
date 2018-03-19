@@ -80,5 +80,7 @@ namespace FrontOfHouseSystem
             LiquersWindow liquersWindow = new LiquersWindow(OrderList.Items);
             liquersWindow.Show();
         }
+
+        
     }
 }

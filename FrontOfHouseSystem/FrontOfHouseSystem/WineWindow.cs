@@ -76,5 +76,14 @@ namespace FrontOfHouseSystem
             SpiritsWindow spiritsWindow = new SpiritsWindow(OrderList.Items);
             spiritsWindow.Show();
         }
+
+        private void Draughtbtn_Click_1(object sender, EventArgs e)
+        {
+            this.Hide();
+            DraughtWindow draughtWindow = new DraughtWindow(OrderList.Items);
+            draughtWindow.Show();
+        }
+
+        
     }
 }
