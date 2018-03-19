@@ -51,6 +51,7 @@
             this.button14 = new System.Windows.Forms.Button();
             this.OrderList = new System.Windows.Forms.ListBox();
             this.Homebtn = new System.Windows.Forms.Button();
+            this.Usernamelbl = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // button6
@@ -230,7 +231,7 @@
             // 
             // button27
             // 
-            this.button27.Location = new System.Drawing.Point(79, 339);
+            this.button27.Location = new System.Drawing.Point(85, 387);
             this.button27.Name = "button27";
             this.button27.Size = new System.Drawing.Size(75, 23);
             this.button27.TabIndex = 66;
@@ -239,7 +240,7 @@
             // 
             // button26
             // 
-            this.button26.Location = new System.Drawing.Point(-2, 339);
+            this.button26.Location = new System.Drawing.Point(4, 387);
             this.button26.Name = "button26";
             this.button26.Size = new System.Drawing.Size(75, 23);
             this.button26.TabIndex = 65;
@@ -252,7 +253,7 @@
             this.button11.FlatAppearance.BorderColor = System.Drawing.Color.Yellow;
             this.button11.FlatAppearance.BorderSize = 0;
             this.button11.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button11.Location = new System.Drawing.Point(127, 297);
+            this.button11.Location = new System.Drawing.Point(133, 345);
             this.button11.Name = "button11";
             this.button11.Size = new System.Drawing.Size(45, 34);
             this.button11.TabIndex = 64;
@@ -263,7 +264,7 @@
             // 
             this.button12.BackColor = System.Drawing.Color.Yellow;
             this.button12.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button12.Location = new System.Drawing.Point(85, 297);
+            this.button12.Location = new System.Drawing.Point(91, 345);
             this.button12.Name = "button12";
             this.button12.Size = new System.Drawing.Size(45, 34);
             this.button12.TabIndex = 63;
@@ -274,7 +275,7 @@
             // 
             this.button13.BackColor = System.Drawing.Color.Yellow;
             this.button13.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button13.Location = new System.Drawing.Point(42, 297);
+            this.button13.Location = new System.Drawing.Point(48, 345);
             this.button13.Name = "button13";
             this.button13.Size = new System.Drawing.Size(45, 34);
             this.button13.TabIndex = 62;
@@ -285,7 +286,7 @@
             // 
             this.button14.BackColor = System.Drawing.Color.Yellow;
             this.button14.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button14.Location = new System.Drawing.Point(-2, 297);
+            this.button14.Location = new System.Drawing.Point(4, 345);
             this.button14.Name = "button14";
             this.button14.Size = new System.Drawing.Size(45, 34);
             this.button14.TabIndex = 61;
@@ -295,7 +296,7 @@
             // OrderList
             // 
             this.OrderList.FormattingEnabled = true;
-            this.OrderList.Location = new System.Drawing.Point(-4, 14);
+            this.OrderList.Location = new System.Drawing.Point(4, 50);
             this.OrderList.Name = "OrderList";
             this.OrderList.Size = new System.Drawing.Size(191, 277);
             this.OrderList.TabIndex = 60;
@@ -313,12 +314,24 @@
             this.Homebtn.UseVisualStyleBackColor = false;
             this.Homebtn.Click += new System.EventHandler(this.Homebtn_Click);
             // 
+            // Usernamelbl
+            // 
+            this.Usernamelbl.AutoSize = true;
+            this.Usernamelbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Usernamelbl.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.Usernamelbl.Location = new System.Drawing.Point(0, 14);
+            this.Usernamelbl.Name = "Usernamelbl";
+            this.Usernamelbl.Size = new System.Drawing.Size(60, 20);
+            this.Usernamelbl.TabIndex = 83;
+            this.Usernamelbl.Text = "Name:";
+            // 
             // BottlesWindow
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.ClientSize = new System.Drawing.Size(763, 446);
+            this.Controls.Add(this.Usernamelbl);
             this.Controls.Add(this.Homebtn);
             this.Controls.Add(this.button6);
             this.Controls.Add(this.button5);
@@ -374,5 +387,6 @@
         private System.Windows.Forms.Button button14;
         private System.Windows.Forms.ListBox OrderList;
         private System.Windows.Forms.Button Homebtn;
+        private System.Windows.Forms.Label Usernamelbl;
     }
 }

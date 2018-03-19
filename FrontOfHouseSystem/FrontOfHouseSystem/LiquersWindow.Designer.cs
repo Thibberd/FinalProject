@@ -50,6 +50,7 @@
             this.Spiritsbtn = new System.Windows.Forms.Button();
             this.Bottlesbtn = new System.Windows.Forms.Button();
             this.Draughtbtn = new System.Windows.Forms.Button();
+            this.Usernamelbl = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // Sambuccabtn
@@ -121,7 +122,7 @@
             // 
             // button27
             // 
-            this.button27.Location = new System.Drawing.Point(94, 346);
+            this.button27.Location = new System.Drawing.Point(84, 382);
             this.button27.Name = "button27";
             this.button27.Size = new System.Drawing.Size(75, 23);
             this.button27.TabIndex = 113;
@@ -130,7 +131,7 @@
             // 
             // button26
             // 
-            this.button26.Location = new System.Drawing.Point(13, 346);
+            this.button26.Location = new System.Drawing.Point(3, 382);
             this.button26.Name = "button26";
             this.button26.Size = new System.Drawing.Size(75, 23);
             this.button26.TabIndex = 112;
@@ -143,7 +144,7 @@
             this.button11.FlatAppearance.BorderColor = System.Drawing.Color.Yellow;
             this.button11.FlatAppearance.BorderSize = 0;
             this.button11.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button11.Location = new System.Drawing.Point(142, 304);
+            this.button11.Location = new System.Drawing.Point(132, 340);
             this.button11.Name = "button11";
             this.button11.Size = new System.Drawing.Size(45, 34);
             this.button11.TabIndex = 111;
@@ -154,7 +155,7 @@
             // 
             this.button12.BackColor = System.Drawing.Color.Yellow;
             this.button12.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button12.Location = new System.Drawing.Point(100, 304);
+            this.button12.Location = new System.Drawing.Point(90, 340);
             this.button12.Name = "button12";
             this.button12.Size = new System.Drawing.Size(45, 34);
             this.button12.TabIndex = 110;
@@ -165,7 +166,7 @@
             // 
             this.button13.BackColor = System.Drawing.Color.Yellow;
             this.button13.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button13.Location = new System.Drawing.Point(57, 304);
+            this.button13.Location = new System.Drawing.Point(47, 340);
             this.button13.Name = "button13";
             this.button13.Size = new System.Drawing.Size(45, 34);
             this.button13.TabIndex = 109;
@@ -176,7 +177,7 @@
             // 
             this.button14.BackColor = System.Drawing.Color.Yellow;
             this.button14.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button14.Location = new System.Drawing.Point(13, 304);
+            this.button14.Location = new System.Drawing.Point(3, 340);
             this.button14.Name = "button14";
             this.button14.Size = new System.Drawing.Size(45, 34);
             this.button14.TabIndex = 108;
@@ -186,7 +187,7 @@
             // OrderList
             // 
             this.OrderList.FormattingEnabled = true;
-            this.OrderList.Location = new System.Drawing.Point(11, 21);
+            this.OrderList.Location = new System.Drawing.Point(1, 57);
             this.OrderList.Name = "OrderList";
             this.OrderList.Size = new System.Drawing.Size(191, 277);
             this.OrderList.TabIndex = 107;
@@ -296,12 +297,24 @@
             this.Draughtbtn.UseVisualStyleBackColor = false;
             this.Draughtbtn.Click += new System.EventHandler(this.Draughtbtn_Click_1);
             // 
+            // Usernamelbl
+            // 
+            this.Usernamelbl.AutoSize = true;
+            this.Usernamelbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Usernamelbl.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.Usernamelbl.Location = new System.Drawing.Point(-1, 21);
+            this.Usernamelbl.Name = "Usernamelbl";
+            this.Usernamelbl.Size = new System.Drawing.Size(60, 20);
+            this.Usernamelbl.TabIndex = 137;
+            this.Usernamelbl.Text = "Name:";
+            // 
             // LiquersWindow
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.ClientSize = new System.Drawing.Size(786, 450);
+            this.Controls.Add(this.Usernamelbl);
             this.Controls.Add(this.Homebtn);
             this.Controls.Add(this.Softsbtn);
             this.Controls.Add(this.Sparklingbtn);
@@ -355,5 +368,6 @@
         private System.Windows.Forms.Button Spiritsbtn;
         private System.Windows.Forms.Button Bottlesbtn;
         private System.Windows.Forms.Button Draughtbtn;
+        private System.Windows.Forms.Label Usernamelbl;
     }
 }

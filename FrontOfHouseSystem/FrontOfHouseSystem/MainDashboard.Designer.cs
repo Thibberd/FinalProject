@@ -58,7 +58,7 @@
             this.Lemonadebtn = new System.Windows.Forms.Button();
             this.button26 = new System.Windows.Forms.Button();
             this.Voidbtn = new System.Windows.Forms.Button();
-            this.label1 = new System.Windows.Forms.Label();
+            this.Usernamelbl = new System.Windows.Forms.Label();
             this.Homebtn = new System.Windows.Forms.Button();
             this.TotalLbl = new System.Windows.Forms.Label();
             this.AmountLabel = new System.Windows.Forms.Label();
@@ -403,16 +403,15 @@
             this.Voidbtn.UseVisualStyleBackColor = true;
             this.Voidbtn.Click += new System.EventHandler(this.Voidbtn_Click);
             // 
-            // label1
+            // Usernamelbl
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label1.Location = new System.Drawing.Point(12, 9);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(60, 20);
-            this.label1.TabIndex = 29;
-            this.label1.Text = "Name:";
+            this.Usernamelbl.AutoSize = true;
+            this.Usernamelbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Usernamelbl.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.Usernamelbl.Location = new System.Drawing.Point(12, 9);
+            this.Usernamelbl.Name = "Usernamelbl";
+            this.Usernamelbl.Size = new System.Drawing.Size(0, 20);
+            this.Usernamelbl.TabIndex = 29;
             // 
             // Homebtn
             // 
@@ -457,7 +456,7 @@
             this.Controls.Add(this.AmountLabel);
             this.Controls.Add(this.TotalLbl);
             this.Controls.Add(this.Homebtn);
-            this.Controls.Add(this.label1);
+            this.Controls.Add(this.Usernamelbl);
             this.Controls.Add(this.Voidbtn);
             this.Controls.Add(this.button26);
             this.Controls.Add(this.Lemonadebtn);
@@ -527,7 +526,7 @@
         private System.Windows.Forms.Button Lemonadebtn;
         private System.Windows.Forms.Button button26;
         private System.Windows.Forms.Button Voidbtn;
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label Usernamelbl;
         private System.Windows.Forms.Button Homebtn;
         private System.Windows.Forms.Label TotalLbl;
         public System.Windows.Forms.Label AmountLabel;

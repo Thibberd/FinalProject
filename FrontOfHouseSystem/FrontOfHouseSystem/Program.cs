@@ -16,7 +16,7 @@ namespace FrontOfHouseSystem
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new FOHDashboard());
+            Application.Run(new UserLogInWindow());
         }
     }
 }

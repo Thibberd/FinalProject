@@ -55,6 +55,7 @@
             this.Bottlesbtn = new System.Windows.Forms.Button();
             this.Draught = new System.Windows.Forms.Button();
             this.Homebtn = new System.Windows.Forms.Button();
+            this.Usernamelbl = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // label1
@@ -71,7 +72,7 @@
             // OrderList
             // 
             this.OrderList.FormattingEnabled = true;
-            this.OrderList.Location = new System.Drawing.Point(1, 12);
+            this.OrderList.Location = new System.Drawing.Point(-2, 39);
             this.OrderList.Name = "OrderList";
             this.OrderList.Size = new System.Drawing.Size(191, 277);
             this.OrderList.TabIndex = 1;
@@ -87,7 +88,7 @@
             this.button1.TabIndex = 2;
             this.button1.Text = "Amstel";
             this.button1.UseVisualStyleBackColor = false;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            
             // 
             // button2
             // 
@@ -199,7 +200,7 @@
             // 
             // button27
             // 
-            this.button27.Location = new System.Drawing.Point(84, 337);
+            this.button27.Location = new System.Drawing.Point(81, 364);
             this.button27.Name = "button27";
             this.button27.Size = new System.Drawing.Size(75, 23);
             this.button27.TabIndex = 34;
@@ -208,7 +209,7 @@
             // 
             // button26
             // 
-            this.button26.Location = new System.Drawing.Point(3, 337);
+            this.button26.Location = new System.Drawing.Point(0, 364);
             this.button26.Name = "button26";
             this.button26.Size = new System.Drawing.Size(75, 23);
             this.button26.TabIndex = 33;
@@ -221,7 +222,7 @@
             this.button11.FlatAppearance.BorderColor = System.Drawing.Color.Yellow;
             this.button11.FlatAppearance.BorderSize = 0;
             this.button11.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button11.Location = new System.Drawing.Point(132, 295);
+            this.button11.Location = new System.Drawing.Point(129, 322);
             this.button11.Name = "button11";
             this.button11.Size = new System.Drawing.Size(45, 34);
             this.button11.TabIndex = 32;
@@ -232,7 +233,7 @@
             // 
             this.button12.BackColor = System.Drawing.Color.Yellow;
             this.button12.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button12.Location = new System.Drawing.Point(90, 295);
+            this.button12.Location = new System.Drawing.Point(87, 322);
             this.button12.Name = "button12";
             this.button12.Size = new System.Drawing.Size(45, 34);
             this.button12.TabIndex = 31;
@@ -243,7 +244,7 @@
             // 
             this.button13.BackColor = System.Drawing.Color.Yellow;
             this.button13.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button13.Location = new System.Drawing.Point(47, 295);
+            this.button13.Location = new System.Drawing.Point(44, 322);
             this.button13.Name = "button13";
             this.button13.Size = new System.Drawing.Size(45, 34);
             this.button13.TabIndex = 30;
@@ -254,7 +255,7 @@
             // 
             this.button14.BackColor = System.Drawing.Color.Yellow;
             this.button14.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button14.Location = new System.Drawing.Point(3, 295);
+            this.button14.Location = new System.Drawing.Point(0, 322);
             this.button14.Name = "button14";
             this.button14.Size = new System.Drawing.Size(45, 34);
             this.button14.TabIndex = 29;
@@ -370,12 +371,24 @@
             this.Homebtn.UseVisualStyleBackColor = false;
             this.Homebtn.Click += new System.EventHandler(this.Homebtn_Click);
             // 
+            // Usernamelbl
+            // 
+            this.Usernamelbl.AutoSize = true;
+            this.Usernamelbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Usernamelbl.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.Usernamelbl.Location = new System.Drawing.Point(-4, 12);
+            this.Usernamelbl.Name = "Usernamelbl";
+            this.Usernamelbl.Size = new System.Drawing.Size(60, 20);
+            this.Usernamelbl.TabIndex = 44;
+            this.Usernamelbl.Text = "Name:";
+            // 
             // DraughtWindow
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.ClientSize = new System.Drawing.Size(778, 440);
+            this.Controls.Add(this.Usernamelbl);
             this.Controls.Add(this.Homebtn);
             this.Controls.Add(this.Softdrinksbtn);
             this.Controls.Add(this.Sparklingbtn);
@@ -439,5 +452,6 @@
         private System.Windows.Forms.Button Bottlesbtn;
         private System.Windows.Forms.Button Draught;
         private System.Windows.Forms.Button Homebtn;
+        private System.Windows.Forms.Label Usernamelbl;
     }
 }
