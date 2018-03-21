@@ -228,10 +228,12 @@
             // 
             // Passwordtxtb
             // 
+            this.Passwordtxtb.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Passwordtxtb.Location = new System.Drawing.Point(63, 94);
             this.Passwordtxtb.Name = "Passwordtxtb";
-            this.Passwordtxtb.Size = new System.Drawing.Size(206, 20);
+            this.Passwordtxtb.Size = new System.Drawing.Size(206, 26);
             this.Passwordtxtb.TabIndex = 1;
+            this.Passwordtxtb.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // label2
             // 
