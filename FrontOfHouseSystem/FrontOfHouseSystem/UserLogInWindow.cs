@@ -16,16 +16,21 @@ namespace FrontOfHouseSystem
     {
 
         private string Enteredpassword = "";// string to strore entered password
-        private string CheckPassword;
+        //private string CheckPassword;
 
 
         public UserLogInWindow()
         {
             InitializeComponent();
             OrderList.Hide();
-            
+            DateTime TodayDateandTime = DateTime.Now;
+            DandTlbl.Text = TodayDateandTime.ToString();
+
+
 
         }
+        
+        
 
         private void Enterbtn_Click(object sender, EventArgs e)
         {

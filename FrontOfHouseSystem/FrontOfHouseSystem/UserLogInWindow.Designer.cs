@@ -46,6 +46,7 @@
             this.label1 = new System.Windows.Forms.Label();
             this.OrderList = new System.Windows.Forms.ListBox();
             this.Usernamelbl = new System.Windows.Forms.Label();
+            this.DandTlbl = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -254,10 +255,11 @@
             // OrderList
             // 
             this.OrderList.BackColor = System.Drawing.SystemColors.InactiveCaptionText;
+            this.OrderList.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.OrderList.FormattingEnabled = true;
-            this.OrderList.Location = new System.Drawing.Point(24, 48);
+            this.OrderList.Location = new System.Drawing.Point(22, 85);
             this.OrderList.Name = "OrderList";
-            this.OrderList.Size = new System.Drawing.Size(120, 95);
+            this.OrderList.Size = new System.Drawing.Size(120, 91);
             this.OrderList.TabIndex = 2;
             // 
             // Usernamelbl
@@ -269,12 +271,24 @@
             this.Usernamelbl.TabIndex = 3;
             this.Usernamelbl.Text = "label3";
             // 
+            // DandTlbl
+            // 
+            this.DandTlbl.AutoSize = true;
+            this.DandTlbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.DandTlbl.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.DandTlbl.Location = new System.Drawing.Point(19, 29);
+            this.DandTlbl.Name = "DandTlbl";
+            this.DandTlbl.Size = new System.Drawing.Size(57, 20);
+            this.DandTlbl.TabIndex = 4;
+            this.DandTlbl.Text = "label3";
+            // 
             // UserLogInWindow
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.ClientSize = new System.Drawing.Size(790, 414);
+            this.Controls.Add(this.DandTlbl);
             this.Controls.Add(this.Usernamelbl);
             this.Controls.Add(this.OrderList);
             this.Controls.Add(this.label1);
@@ -308,5 +322,6 @@
         private System.Windows.Forms.Button Enterbtn;
         private System.Windows.Forms.ListBox OrderList;
         private System.Windows.Forms.Label Usernamelbl;
+        private System.Windows.Forms.Label DandTlbl;
     }
 }
