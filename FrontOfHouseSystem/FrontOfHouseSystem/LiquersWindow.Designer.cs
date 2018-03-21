@@ -51,6 +51,8 @@
             this.Bottlesbtn = new System.Windows.Forms.Button();
             this.Draughtbtn = new System.Windows.Forms.Button();
             this.Usernamelbl = new System.Windows.Forms.Label();
+            this.AmountLabel = new System.Windows.Forms.Label();
+            this.TotalLbl = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // Sambuccabtn
@@ -63,6 +65,7 @@
             this.Sambuccabtn.TabIndex = 127;
             this.Sambuccabtn.Text = "Sambucca";
             this.Sambuccabtn.UseVisualStyleBackColor = false;
+            this.Sambuccabtn.Click += new System.EventHandler(this.Sambuccabtn_Click);
             // 
             // Tequilabtn
             // 
@@ -74,6 +77,7 @@
             this.Tequilabtn.TabIndex = 126;
             this.Tequilabtn.Text = "Tequila";
             this.Tequilabtn.UseVisualStyleBackColor = false;
+            this.Tequilabtn.Click += new System.EventHandler(this.Tequilabtn_Click);
             // 
             // Southerncobtn
             // 
@@ -85,6 +89,7 @@
             this.Southerncobtn.TabIndex = 125;
             this.Southerncobtn.Text = "Southern Comfort";
             this.Southerncobtn.UseVisualStyleBackColor = false;
+            this.Southerncobtn.Click += new System.EventHandler(this.Southerncobtn_Click);
             // 
             // Dissaronnobtn
             // 
@@ -97,6 +102,7 @@
             this.Dissaronnobtn.TabIndex = 124;
             this.Dissaronnobtn.Text = "Dissaronno";
             this.Dissaronnobtn.UseVisualStyleBackColor = false;
+            this.Dissaronnobtn.Click += new System.EventHandler(this.Dissaronnobtn_Click);
             // 
             // jagerbombbtn
             // 
@@ -108,6 +114,7 @@
             this.jagerbombbtn.TabIndex = 123;
             this.jagerbombbtn.Text = "Jagerbomb";
             this.jagerbombbtn.UseVisualStyleBackColor = false;
+            this.jagerbombbtn.Click += new System.EventHandler(this.jagerbombbtn_Click);
             // 
             // Liquerslbl
             // 
@@ -122,7 +129,7 @@
             // 
             // button27
             // 
-            this.button27.Location = new System.Drawing.Point(84, 382);
+            this.button27.Location = new System.Drawing.Point(84, 422);
             this.button27.Name = "button27";
             this.button27.Size = new System.Drawing.Size(75, 23);
             this.button27.TabIndex = 113;
@@ -131,7 +138,7 @@
             // 
             // button26
             // 
-            this.button26.Location = new System.Drawing.Point(3, 382);
+            this.button26.Location = new System.Drawing.Point(3, 422);
             this.button26.Name = "button26";
             this.button26.Size = new System.Drawing.Size(75, 23);
             this.button26.TabIndex = 112;
@@ -144,7 +151,7 @@
             this.button11.FlatAppearance.BorderColor = System.Drawing.Color.Yellow;
             this.button11.FlatAppearance.BorderSize = 0;
             this.button11.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button11.Location = new System.Drawing.Point(132, 340);
+            this.button11.Location = new System.Drawing.Point(132, 380);
             this.button11.Name = "button11";
             this.button11.Size = new System.Drawing.Size(45, 34);
             this.button11.TabIndex = 111;
@@ -155,7 +162,7 @@
             // 
             this.button12.BackColor = System.Drawing.Color.Yellow;
             this.button12.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button12.Location = new System.Drawing.Point(90, 340);
+            this.button12.Location = new System.Drawing.Point(90, 380);
             this.button12.Name = "button12";
             this.button12.Size = new System.Drawing.Size(45, 34);
             this.button12.TabIndex = 110;
@@ -166,7 +173,7 @@
             // 
             this.button13.BackColor = System.Drawing.Color.Yellow;
             this.button13.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button13.Location = new System.Drawing.Point(47, 340);
+            this.button13.Location = new System.Drawing.Point(47, 380);
             this.button13.Name = "button13";
             this.button13.Size = new System.Drawing.Size(45, 34);
             this.button13.TabIndex = 109;
@@ -177,7 +184,7 @@
             // 
             this.button14.BackColor = System.Drawing.Color.Yellow;
             this.button14.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button14.Location = new System.Drawing.Point(3, 340);
+            this.button14.Location = new System.Drawing.Point(3, 380);
             this.button14.Name = "button14";
             this.button14.Size = new System.Drawing.Size(45, 34);
             this.button14.TabIndex = 108;
@@ -308,12 +315,36 @@
             this.Usernamelbl.TabIndex = 137;
             this.Usernamelbl.Text = "Name:";
             // 
+            // AmountLabel
+            // 
+            this.AmountLabel.AutoSize = true;
+            this.AmountLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.AmountLabel.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.AmountLabel.Location = new System.Drawing.Point(64, 352);
+            this.AmountLabel.Name = "AmountLabel";
+            this.AmountLabel.Size = new System.Drawing.Size(60, 24);
+            this.AmountLabel.TabIndex = 139;
+            this.AmountLabel.Text = "00.00";
+            // 
+            // TotalLbl
+            // 
+            this.TotalLbl.AutoSize = true;
+            this.TotalLbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TotalLbl.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.TotalLbl.Location = new System.Drawing.Point(-1, 352);
+            this.TotalLbl.Name = "TotalLbl";
+            this.TotalLbl.Size = new System.Drawing.Size(68, 24);
+            this.TotalLbl.TabIndex = 138;
+            this.TotalLbl.Text = "Total: ";
+            // 
             // LiquersWindow
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.ClientSize = new System.Drawing.Size(786, 450);
+            this.Controls.Add(this.AmountLabel);
+            this.Controls.Add(this.TotalLbl);
             this.Controls.Add(this.Usernamelbl);
             this.Controls.Add(this.Homebtn);
             this.Controls.Add(this.Softsbtn);
@@ -369,5 +400,7 @@
         private System.Windows.Forms.Button Bottlesbtn;
         private System.Windows.Forms.Button Draughtbtn;
         private System.Windows.Forms.Label Usernamelbl;
+        public System.Windows.Forms.Label AmountLabel;
+        private System.Windows.Forms.Label TotalLbl;
     }
 }
