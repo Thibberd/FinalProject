@@ -53,11 +53,13 @@
             this.Bottlesbtn = new System.Windows.Forms.Button();
             this.Draughtbtn = new System.Windows.Forms.Button();
             this.Usernamelbl = new System.Windows.Forms.Label();
+            this.AmountLabel = new System.Windows.Forms.Label();
+            this.TotalLbl = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // button27
             // 
-            this.button27.Location = new System.Drawing.Point(85, 375);
+            this.button27.Location = new System.Drawing.Point(83, 410);
             this.button27.Name = "button27";
             this.button27.Size = new System.Drawing.Size(75, 23);
             this.button27.TabIndex = 120;
@@ -66,7 +68,7 @@
             // 
             // button26
             // 
-            this.button26.Location = new System.Drawing.Point(4, 375);
+            this.button26.Location = new System.Drawing.Point(2, 410);
             this.button26.Name = "button26";
             this.button26.Size = new System.Drawing.Size(75, 23);
             this.button26.TabIndex = 119;
@@ -79,7 +81,7 @@
             this.button11.FlatAppearance.BorderColor = System.Drawing.Color.Yellow;
             this.button11.FlatAppearance.BorderSize = 0;
             this.button11.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button11.Location = new System.Drawing.Point(133, 333);
+            this.button11.Location = new System.Drawing.Point(131, 368);
             this.button11.Name = "button11";
             this.button11.Size = new System.Drawing.Size(45, 34);
             this.button11.TabIndex = 118;
@@ -90,7 +92,7 @@
             // 
             this.button12.BackColor = System.Drawing.Color.Yellow;
             this.button12.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button12.Location = new System.Drawing.Point(91, 333);
+            this.button12.Location = new System.Drawing.Point(89, 368);
             this.button12.Name = "button12";
             this.button12.Size = new System.Drawing.Size(45, 34);
             this.button12.TabIndex = 117;
@@ -101,7 +103,7 @@
             // 
             this.button13.BackColor = System.Drawing.Color.Yellow;
             this.button13.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button13.Location = new System.Drawing.Point(48, 333);
+            this.button13.Location = new System.Drawing.Point(46, 368);
             this.button13.Name = "button13";
             this.button13.Size = new System.Drawing.Size(45, 34);
             this.button13.TabIndex = 116;
@@ -112,7 +114,7 @@
             // 
             this.button14.BackColor = System.Drawing.Color.Yellow;
             this.button14.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button14.Location = new System.Drawing.Point(4, 333);
+            this.button14.Location = new System.Drawing.Point(2, 368);
             this.button14.Name = "button14";
             this.button14.Size = new System.Drawing.Size(45, 34);
             this.button14.TabIndex = 115;
@@ -124,7 +126,7 @@
             this.OrderList.FormattingEnabled = true;
             this.OrderList.Location = new System.Drawing.Point(2, 50);
             this.OrderList.Name = "OrderList";
-            this.OrderList.Size = new System.Drawing.Size(191, 277);
+            this.OrderList.Size = new System.Drawing.Size(221, 277);
             this.OrderList.TabIndex = 114;
             // 
             // Cocktailslbl
@@ -148,6 +150,7 @@
             this.Purplerainbtn.TabIndex = 136;
             this.Purplerainbtn.Text = "Purple Rain";
             this.Purplerainbtn.UseVisualStyleBackColor = false;
+            this.Purplerainbtn.Click += new System.EventHandler(this.Purplerainbtn_Click);
             // 
             // Pawnstarbtn
             // 
@@ -159,6 +162,7 @@
             this.Pawnstarbtn.TabIndex = 135;
             this.Pawnstarbtn.Text = "Pawn Star Martini";
             this.Pawnstarbtn.UseVisualStyleBackColor = false;
+            this.Pawnstarbtn.Click += new System.EventHandler(this.Pawnstarbtn_Click);
             // 
             // Mojitobtn
             // 
@@ -170,6 +174,7 @@
             this.Mojitobtn.TabIndex = 134;
             this.Mojitobtn.Text = "Mojito";
             this.Mojitobtn.UseVisualStyleBackColor = false;
+            this.Mojitobtn.Click += new System.EventHandler(this.Mojitobtn_Click);
             // 
             // LIITbtn
             // 
@@ -181,6 +186,7 @@
             this.LIITbtn.TabIndex = 133;
             this.LIITbtn.Text = "Long Island Ice T";
             this.LIITbtn.UseVisualStyleBackColor = false;
+            this.LIITbtn.Click += new System.EventHandler(this.LIITbtn_Click);
             // 
             // Bluelagoonbtn
             // 
@@ -193,6 +199,7 @@
             this.Bluelagoonbtn.TabIndex = 132;
             this.Bluelagoonbtn.Text = "Blue Lagoon";
             this.Bluelagoonbtn.UseVisualStyleBackColor = false;
+            this.Bluelagoonbtn.Click += new System.EventHandler(this.Bluelagoonbtn_Click);
             // 
             // Godfatherbtn
             // 
@@ -204,6 +211,7 @@
             this.Godfatherbtn.TabIndex = 131;
             this.Godfatherbtn.Text = "The Godfather";
             this.Godfatherbtn.UseVisualStyleBackColor = false;
+            this.Godfatherbtn.Click += new System.EventHandler(this.Godfatherbtn_Click);
             // 
             // Sotbbtn
             // 
@@ -215,6 +223,7 @@
             this.Sotbbtn.TabIndex = 137;
             this.Sotbbtn.Text = "Sex on the Beach";
             this.Sotbbtn.UseVisualStyleBackColor = false;
+            this.Sotbbtn.Click += new System.EventHandler(this.Sotbbtn_Click);
             // 
             // Homebtn
             // 
@@ -330,12 +339,36 @@
             this.Usernamelbl.TabIndex = 147;
             this.Usernamelbl.Text = "Name:";
             // 
+            // AmountLabel
+            // 
+            this.AmountLabel.AutoSize = true;
+            this.AmountLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.AmountLabel.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.AmountLabel.Location = new System.Drawing.Point(69, 341);
+            this.AmountLabel.Name = "AmountLabel";
+            this.AmountLabel.Size = new System.Drawing.Size(60, 24);
+            this.AmountLabel.TabIndex = 149;
+            this.AmountLabel.Text = "00.00";
+            // 
+            // TotalLbl
+            // 
+            this.TotalLbl.AutoSize = true;
+            this.TotalLbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TotalLbl.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.TotalLbl.Location = new System.Drawing.Point(4, 341);
+            this.TotalLbl.Name = "TotalLbl";
+            this.TotalLbl.Size = new System.Drawing.Size(68, 24);
+            this.TotalLbl.TabIndex = 148;
+            this.TotalLbl.Text = "Total: ";
+            // 
             // CocktailsWindow
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.ClientSize = new System.Drawing.Size(809, 443);
+            this.Controls.Add(this.AmountLabel);
+            this.Controls.Add(this.TotalLbl);
             this.Controls.Add(this.Usernamelbl);
             this.Controls.Add(this.Homebtn);
             this.Controls.Add(this.Softsbtn);
@@ -396,5 +429,7 @@
         private System.Windows.Forms.Button Bottlesbtn;
         private System.Windows.Forms.Button Draughtbtn;
         private System.Windows.Forms.Label Usernamelbl;
+        public System.Windows.Forms.Label AmountLabel;
+        private System.Windows.Forms.Label TotalLbl;
     }
 }
