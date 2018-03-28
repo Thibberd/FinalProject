@@ -40,8 +40,11 @@
             this.Zerocokebtn = new System.Windows.Forms.Button();
             this.Cocacolabtn = new System.Windows.Forms.Button();
             this.Dietcokebtn = new System.Windows.Forms.Button();
-            this.Addmixerbtn = new System.Windows.Forms.Button();
             this.Backmixerbtn = new System.Windows.Forms.Button();
+            this.OrderList = new System.Windows.Forms.ListBox();
+            this.Usernamelbl = new System.Windows.Forms.Label();
+            this.AmountLabel = new System.Windows.Forms.Label();
+            this.TotalLbl = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // Mixerslbl
@@ -165,6 +168,7 @@
             this.Cocacolabtn.TabIndex = 160;
             this.Cocacolabtn.Text = "Coke";
             this.Cocacolabtn.UseVisualStyleBackColor = false;
+            this.Cocacolabtn.Click += new System.EventHandler(this.Cocacolabtn_Click);
             // 
             // Dietcokebtn
             // 
@@ -177,27 +181,63 @@
             this.Dietcokebtn.Text = "Diet Coke";
             this.Dietcokebtn.UseVisualStyleBackColor = false;
             // 
-            // Addmixerbtn
-            // 
-            this.Addmixerbtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
-            this.Addmixerbtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Addmixerbtn.Location = new System.Drawing.Point(234, 375);
-            this.Addmixerbtn.Name = "Addmixerbtn";
-            this.Addmixerbtn.Size = new System.Drawing.Size(108, 41);
-            this.Addmixerbtn.TabIndex = 170;
-            this.Addmixerbtn.Text = "Add >>";
-            this.Addmixerbtn.UseVisualStyleBackColor = false;
-            // 
             // Backmixerbtn
             // 
             this.Backmixerbtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
-            this.Backmixerbtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Backmixerbtn.Location = new System.Drawing.Point(80, 375);
+            this.Backmixerbtn.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Backmixerbtn.Location = new System.Drawing.Point(156, 375);
             this.Backmixerbtn.Name = "Backmixerbtn";
             this.Backmixerbtn.Size = new System.Drawing.Size(108, 41);
             this.Backmixerbtn.TabIndex = 171;
-            this.Backmixerbtn.Text = "<<Back";
+            this.Backmixerbtn.Text = "<< Back";
             this.Backmixerbtn.UseVisualStyleBackColor = false;
+            this.Backmixerbtn.Click += new System.EventHandler(this.Backmixerbtn_Click);
+            // 
+            // OrderList
+            // 
+            this.OrderList.BackColor = System.Drawing.SystemColors.InfoText;
+            this.OrderList.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.OrderList.FormattingEnabled = true;
+            this.OrderList.Location = new System.Drawing.Point(355, 383);
+            this.OrderList.Name = "OrderList";
+            this.OrderList.Size = new System.Drawing.Size(120, 91);
+            this.OrderList.TabIndex = 172;
+            this.OrderList.Visible = false;
+            // 
+            // Usernamelbl
+            // 
+            this.Usernamelbl.AutoSize = true;
+            this.Usernamelbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Usernamelbl.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.Usernamelbl.Location = new System.Drawing.Point(1, 9);
+            this.Usernamelbl.Name = "Usernamelbl";
+            this.Usernamelbl.Size = new System.Drawing.Size(60, 20);
+            this.Usernamelbl.TabIndex = 173;
+            this.Usernamelbl.Text = "Name:";
+            // 
+            // AmountLabel
+            // 
+            this.AmountLabel.AutoSize = true;
+            this.AmountLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.AmountLabel.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.AmountLabel.Location = new System.Drawing.Point(66, 383);
+            this.AmountLabel.Name = "AmountLabel";
+            this.AmountLabel.Size = new System.Drawing.Size(60, 24);
+            this.AmountLabel.TabIndex = 176;
+            this.AmountLabel.Text = "00.00";
+            this.AmountLabel.Visible = false;
+            // 
+            // TotalLbl
+            // 
+            this.TotalLbl.AutoSize = true;
+            this.TotalLbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TotalLbl.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.TotalLbl.Location = new System.Drawing.Point(1, 383);
+            this.TotalLbl.Name = "TotalLbl";
+            this.TotalLbl.Size = new System.Drawing.Size(68, 24);
+            this.TotalLbl.TabIndex = 175;
+            this.TotalLbl.Text = "Total: ";
+            this.TotalLbl.Visible = false;
             // 
             // MixersWindow
             // 
@@ -205,8 +245,11 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.ClientSize = new System.Drawing.Size(422, 428);
+            this.Controls.Add(this.AmountLabel);
+            this.Controls.Add(this.TotalLbl);
+            this.Controls.Add(this.Usernamelbl);
+            this.Controls.Add(this.OrderList);
             this.Controls.Add(this.Backmixerbtn);
-            this.Controls.Add(this.Addmixerbtn);
             this.Controls.Add(this.Redbullbtn);
             this.Controls.Add(this.Lemonadebtn);
             this.Controls.Add(this.Elderflowerbtn);
@@ -240,7 +283,10 @@
         private System.Windows.Forms.Button Zerocokebtn;
         private System.Windows.Forms.Button Cocacolabtn;
         private System.Windows.Forms.Button Dietcokebtn;
-        private System.Windows.Forms.Button Addmixerbtn;
         private System.Windows.Forms.Button Backmixerbtn;
+        private System.Windows.Forms.ListBox OrderList;
+        private System.Windows.Forms.Label Usernamelbl;
+        public System.Windows.Forms.Label AmountLabel;
+        private System.Windows.Forms.Label TotalLbl;
     }
 }

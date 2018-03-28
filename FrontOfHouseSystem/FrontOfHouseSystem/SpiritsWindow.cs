@@ -148,7 +148,7 @@ namespace FrontOfHouseSystem
                     connection.Close();
             }
 
-            MixersWindow mixersWindow = new MixersWindow();
+            MixersWindow mixersWindow = new MixersWindow(userID, firstName, lastName, OrderList.Items, Usernamelbl.Text);
             mixersWindow.Show();
         }
 
@@ -196,7 +196,7 @@ namespace FrontOfHouseSystem
                     connection.Close();
             }
 
-            MixersWindow mixersWindow = new MixersWindow();
+            MixersWindow mixersWindow = new MixersWindow(userID, firstName, lastName, OrderList.Items, Usernamelbl.Text);
             mixersWindow.Show();
         }
 
@@ -244,7 +244,7 @@ namespace FrontOfHouseSystem
                     connection.Close();
             }
 
-            MixersWindow mixersWindow = new MixersWindow();
+            MixersWindow mixersWindow = new MixersWindow(userID, firstName, lastName, OrderList.Items, Usernamelbl.Text);
             mixersWindow.Show();
         }
 
@@ -292,7 +292,7 @@ namespace FrontOfHouseSystem
                     connection.Close();
             }
 
-            MixersWindow mixersWindow = new MixersWindow();
+            MixersWindow mixersWindow = new MixersWindow(userID, firstName, lastName, OrderList.Items, Usernamelbl.Text);
             mixersWindow.Show();
         }
 
@@ -340,7 +340,7 @@ namespace FrontOfHouseSystem
                     connection.Close();
             }
 
-            MixersWindow mixersWindow = new MixersWindow();
+            MixersWindow mixersWindow = new MixersWindow(userID, firstName, lastName, OrderList.Items, Usernamelbl.Text);
             mixersWindow.Show();
         }
 
@@ -388,7 +388,7 @@ namespace FrontOfHouseSystem
                     connection.Close();
             }
 
-            MixersWindow mixersWindow = new MixersWindow();
+            MixersWindow mixersWindow = new MixersWindow(userID, firstName, lastName, OrderList.Items, Usernamelbl.Text);
             mixersWindow.Show();
         }
 
@@ -436,7 +436,7 @@ namespace FrontOfHouseSystem
                     connection.Close();
             }
 
-            MixersWindow mixersWindow = new MixersWindow();
+            MixersWindow mixersWindow = new MixersWindow(userID, firstName, lastName, OrderList.Items, Usernamelbl.Text);
             mixersWindow.Show();
         }
 
@@ -484,7 +484,7 @@ namespace FrontOfHouseSystem
                     connection.Close();
             }
 
-            MixersWindow mixersWindow = new MixersWindow();
+            MixersWindow mixersWindow = new MixersWindow(userID, firstName, lastName, OrderList.Items, Usernamelbl.Text);
             mixersWindow.Show();
         }
     }
