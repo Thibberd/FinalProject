@@ -16,5 +16,21 @@ namespace FrontOfHouseSystem
         {
             InitializeComponent();
         }
+
+        private void Enterbtn_Click(object sender, EventArgs e)
+        {
+            Transaction transaction = new Transaction();
+            if (transaction.transactionID == 2)
+            {
+                EFTpaymentWindow eFTpaymentWindow = new EFTpaymentWindow();
+                this.Hide();
+                eFTpaymentWindow.Show();
+            }
+            else if (transaction.transactionID == 4)
+            {
+                PaymentSucessfulwindow paymentSucessfulwindow = new PaymentSucessfulwindow();
+                paymentSucessfulwindow.Show();
+            }
+        }
     }
 }

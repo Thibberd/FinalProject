@@ -32,7 +32,7 @@
             this.label2 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
             this.button12 = new System.Windows.Forms.Button();
-            this.button11 = new System.Windows.Forms.Button();
+            this.Enterbtn = new System.Windows.Forms.Button();
             this.button10 = new System.Windows.Forms.Button();
             this.button9 = new System.Windows.Forms.Button();
             this.button8 = new System.Windows.Forms.Button();
@@ -90,16 +90,17 @@
             this.button12.Text = "Cancel";
             this.button12.UseVisualStyleBackColor = false;
             // 
-            // button11
+            // Enterbtn
             // 
-            this.button11.BackColor = System.Drawing.Color.GreenYellow;
-            this.button11.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button11.Location = new System.Drawing.Point(324, 329);
-            this.button11.Name = "button11";
-            this.button11.Size = new System.Drawing.Size(87, 35);
-            this.button11.TabIndex = 24;
-            this.button11.Text = "Enter >>";
-            this.button11.UseVisualStyleBackColor = false;
+            this.Enterbtn.BackColor = System.Drawing.Color.GreenYellow;
+            this.Enterbtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Enterbtn.Location = new System.Drawing.Point(324, 329);
+            this.Enterbtn.Name = "Enterbtn";
+            this.Enterbtn.Size = new System.Drawing.Size(87, 35);
+            this.Enterbtn.TabIndex = 24;
+            this.Enterbtn.Text = "Enter >>";
+            this.Enterbtn.UseVisualStyleBackColor = false;
+            this.Enterbtn.Click += new System.EventHandler(this.Enterbtn_Click);
             // 
             // button10
             // 
@@ -254,7 +255,7 @@
             this.Controls.Add(this.button14);
             this.Controls.Add(this.button13);
             this.Controls.Add(this.button12);
-            this.Controls.Add(this.button11);
+            this.Controls.Add(this.Enterbtn);
             this.Controls.Add(this.button10);
             this.Controls.Add(this.button9);
             this.Controls.Add(this.button8);
@@ -267,7 +268,7 @@
             this.Controls.Add(this.button1);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.label1);
-            this.MinimumSize = new System.Drawing.Size(0, 5);
+            this.MinimumSize = new System.Drawing.Size(16, 39);
             this.Name = "EnterAmount";
             this.Text = "EnterAmount";
             this.panel1.ResumeLayout(false);
@@ -283,7 +284,7 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Button button12;
-        private System.Windows.Forms.Button button11;
+        private System.Windows.Forms.Button Enterbtn;
         private System.Windows.Forms.Button button10;
         private System.Windows.Forms.Button button9;
         private System.Windows.Forms.Button button8;

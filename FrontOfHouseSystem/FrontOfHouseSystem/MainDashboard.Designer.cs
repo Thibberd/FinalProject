@@ -56,7 +56,7 @@
             this.Shirazbtn = new System.Windows.Forms.Button();
             this.Cocacolabtn = new System.Windows.Forms.Button();
             this.Lemonadebtn = new System.Windows.Forms.Button();
-            this.button26 = new System.Windows.Forms.Button();
+            this.EFTbtn = new System.Windows.Forms.Button();
             this.Voidbtn = new System.Windows.Forms.Button();
             this.Usernamelbl = new System.Windows.Forms.Label();
             this.Homebtn = new System.Windows.Forms.Button();
@@ -384,14 +384,15 @@
             this.Lemonadebtn.UseVisualStyleBackColor = false;
             this.Lemonadebtn.Click += new System.EventHandler(this.Lemonadebtn_Click);
             // 
-            // button26
+            // EFTbtn
             // 
-            this.button26.Location = new System.Drawing.Point(3, 382);
-            this.button26.Name = "button26";
-            this.button26.Size = new System.Drawing.Size(89, 33);
-            this.button26.TabIndex = 27;
-            this.button26.Text = "EFT";
-            this.button26.UseVisualStyleBackColor = true;
+            this.EFTbtn.Location = new System.Drawing.Point(3, 382);
+            this.EFTbtn.Name = "EFTbtn";
+            this.EFTbtn.Size = new System.Drawing.Size(89, 33);
+            this.EFTbtn.TabIndex = 27;
+            this.EFTbtn.Text = "EFT";
+            this.EFTbtn.UseVisualStyleBackColor = true;
+            this.EFTbtn.Click += new System.EventHandler(this.EFTbtn_Click);
             // 
             // Voidbtn
             // 
@@ -458,7 +459,7 @@
             this.Controls.Add(this.Homebtn);
             this.Controls.Add(this.Usernamelbl);
             this.Controls.Add(this.Voidbtn);
-            this.Controls.Add(this.button26);
+            this.Controls.Add(this.EFTbtn);
             this.Controls.Add(this.Lemonadebtn);
             this.Controls.Add(this.Cocacolabtn);
             this.Controls.Add(this.Shirazbtn);
@@ -524,7 +525,7 @@
         private System.Windows.Forms.Button Shirazbtn;
         private System.Windows.Forms.Button Cocacolabtn;
         private System.Windows.Forms.Button Lemonadebtn;
-        private System.Windows.Forms.Button button26;
+        private System.Windows.Forms.Button EFTbtn;
         private System.Windows.Forms.Button Voidbtn;
         private System.Windows.Forms.Label Usernamelbl;
         private System.Windows.Forms.Button Homebtn;

@@ -778,6 +778,16 @@ namespace FrontOfHouseSystem
             enterAmount.Show();
             //need to pass through total label so user is aware of order total and can then check if correct amount is present
         }
+
+        private void EFTbtn_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Transaction transaction = new Transaction();
+            transaction.transactionID = 2;
+            EnterAmount enterAmount = new EnterAmount(); // take through total Amount eventually
+
+            
+        }
     }
 }
 
