@@ -29,9 +29,9 @@
         private void InitializeComponent()
         {
             this.Shirazbtn = new System.Windows.Forms.Button();
-            this.button5 = new System.Windows.Forms.Button();
+            this.WhiteZinbtn = new System.Windows.Forms.Button();
             this.Malbecbtn = new System.Windows.Forms.Button();
-            this.Desperadosbtn = new System.Windows.Forms.Button();
+            this.Houserosebtn = new System.Windows.Forms.Button();
             this.Chardonnaybtn = new System.Windows.Forms.Button();
             this.Pinotgrigiobtn = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
@@ -55,6 +55,8 @@
             this.Bottlesbtn = new System.Windows.Forms.Button();
             this.Draughtbtn = new System.Windows.Forms.Button();
             this.Usernamelbl = new System.Windows.Forms.Label();
+            this.AmountLabel = new System.Windows.Forms.Label();
+            this.TotalLbl = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // Shirazbtn
@@ -67,17 +69,19 @@
             this.Shirazbtn.TabIndex = 103;
             this.Shirazbtn.Text = "Shiraz";
             this.Shirazbtn.UseVisualStyleBackColor = false;
+            this.Shirazbtn.Click += new System.EventHandler(this.Shirazbtn_Click);
             // 
-            // button5
+            // WhiteZinbtn
             // 
-            this.button5.BackColor = System.Drawing.Color.Pink;
-            this.button5.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button5.Location = new System.Drawing.Point(450, 208);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(110, 41);
-            this.button5.TabIndex = 102;
-            this.button5.Text = "White Zinfendel";
-            this.button5.UseVisualStyleBackColor = false;
+            this.WhiteZinbtn.BackColor = System.Drawing.Color.Pink;
+            this.WhiteZinbtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.WhiteZinbtn.Location = new System.Drawing.Point(450, 208);
+            this.WhiteZinbtn.Name = "WhiteZinbtn";
+            this.WhiteZinbtn.Size = new System.Drawing.Size(110, 41);
+            this.WhiteZinbtn.TabIndex = 102;
+            this.WhiteZinbtn.Text = "White Zinfendel";
+            this.WhiteZinbtn.UseVisualStyleBackColor = false;
+            this.WhiteZinbtn.Click += new System.EventHandler(this.WhiteZinbtn_Click);
             // 
             // Malbecbtn
             // 
@@ -89,21 +93,23 @@
             this.Malbecbtn.TabIndex = 101;
             this.Malbecbtn.Text = "Malbec";
             this.Malbecbtn.UseVisualStyleBackColor = false;
+            this.Malbecbtn.Click += new System.EventHandler(this.Malbecbtn_Click);
             // 
-            // Desperadosbtn
+            // Houserosebtn
             // 
-            this.Desperadosbtn.BackColor = System.Drawing.Color.Pink;
-            this.Desperadosbtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Desperadosbtn.Location = new System.Drawing.Point(259, 208);
-            this.Desperadosbtn.Name = "Desperadosbtn";
-            this.Desperadosbtn.Size = new System.Drawing.Size(108, 41);
-            this.Desperadosbtn.TabIndex = 100;
-            this.Desperadosbtn.Text = "House Rose";
-            this.Desperadosbtn.UseVisualStyleBackColor = false;
+            this.Houserosebtn.BackColor = System.Drawing.Color.Pink;
+            this.Houserosebtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Houserosebtn.Location = new System.Drawing.Point(259, 208);
+            this.Houserosebtn.Name = "Houserosebtn";
+            this.Houserosebtn.Size = new System.Drawing.Size(108, 41);
+            this.Houserosebtn.TabIndex = 100;
+            this.Houserosebtn.Text = "House Rose";
+            this.Houserosebtn.UseVisualStyleBackColor = false;
+            this.Houserosebtn.Click += new System.EventHandler(this.Houserosebtn_Click);
             // 
             // Chardonnaybtn
             // 
-            this.Chardonnaybtn.BackColor = System.Drawing.Color.Aquamarine;
+            this.Chardonnaybtn.BackColor = System.Drawing.Color.PaleGreen;
             this.Chardonnaybtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Chardonnaybtn.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.Chardonnaybtn.Location = new System.Drawing.Point(256, 107);
@@ -112,10 +118,11 @@
             this.Chardonnaybtn.TabIndex = 99;
             this.Chardonnaybtn.Text = "H Chardonnay";
             this.Chardonnaybtn.UseVisualStyleBackColor = false;
+            this.Chardonnaybtn.Click += new System.EventHandler(this.Chardonnaybtn_Click);
             // 
             // Pinotgrigiobtn
             // 
-            this.Pinotgrigiobtn.BackColor = System.Drawing.Color.Aquamarine;
+            this.Pinotgrigiobtn.BackColor = System.Drawing.Color.PaleGreen;
             this.Pinotgrigiobtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Pinotgrigiobtn.Location = new System.Drawing.Point(450, 109);
             this.Pinotgrigiobtn.Name = "Pinotgrigiobtn";
@@ -123,6 +130,7 @@
             this.Pinotgrigiobtn.TabIndex = 98;
             this.Pinotgrigiobtn.Text = "Pinot Grigio";
             this.Pinotgrigiobtn.UseVisualStyleBackColor = false;
+            this.Pinotgrigiobtn.Click += new System.EventHandler(this.Pinotgrigiobtn_Click);
             // 
             // label1
             // 
@@ -137,7 +145,7 @@
             // 
             // button27
             // 
-            this.button27.Location = new System.Drawing.Point(86, 367);
+            this.button27.Location = new System.Drawing.Point(82, 413);
             this.button27.Name = "button27";
             this.button27.Size = new System.Drawing.Size(75, 23);
             this.button27.TabIndex = 88;
@@ -146,7 +154,7 @@
             // 
             // button26
             // 
-            this.button26.Location = new System.Drawing.Point(5, 367);
+            this.button26.Location = new System.Drawing.Point(1, 413);
             this.button26.Name = "button26";
             this.button26.Size = new System.Drawing.Size(75, 23);
             this.button26.TabIndex = 87;
@@ -159,7 +167,7 @@
             this.button11.FlatAppearance.BorderColor = System.Drawing.Color.Yellow;
             this.button11.FlatAppearance.BorderSize = 0;
             this.button11.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button11.Location = new System.Drawing.Point(134, 325);
+            this.button11.Location = new System.Drawing.Point(130, 371);
             this.button11.Name = "button11";
             this.button11.Size = new System.Drawing.Size(45, 34);
             this.button11.TabIndex = 86;
@@ -170,7 +178,7 @@
             // 
             this.button12.BackColor = System.Drawing.Color.Yellow;
             this.button12.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button12.Location = new System.Drawing.Point(92, 325);
+            this.button12.Location = new System.Drawing.Point(88, 371);
             this.button12.Name = "button12";
             this.button12.Size = new System.Drawing.Size(45, 34);
             this.button12.TabIndex = 85;
@@ -181,7 +189,7 @@
             // 
             this.button13.BackColor = System.Drawing.Color.Yellow;
             this.button13.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button13.Location = new System.Drawing.Point(49, 325);
+            this.button13.Location = new System.Drawing.Point(45, 371);
             this.button13.Name = "button13";
             this.button13.Size = new System.Drawing.Size(45, 34);
             this.button13.TabIndex = 84;
@@ -192,7 +200,7 @@
             // 
             this.button14.BackColor = System.Drawing.Color.Yellow;
             this.button14.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button14.Location = new System.Drawing.Point(5, 325);
+            this.button14.Location = new System.Drawing.Point(1, 371);
             this.button14.Name = "button14";
             this.button14.Size = new System.Drawing.Size(45, 34);
             this.button14.TabIndex = 83;
@@ -355,12 +363,36 @@
             this.Usernamelbl.TabIndex = 116;
             this.Usernamelbl.Text = "Name:";
             // 
+            // AmountLabel
+            // 
+            this.AmountLabel.AutoSize = true;
+            this.AmountLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.AmountLabel.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.AmountLabel.Location = new System.Drawing.Point(73, 333);
+            this.AmountLabel.Name = "AmountLabel";
+            this.AmountLabel.Size = new System.Drawing.Size(60, 24);
+            this.AmountLabel.TabIndex = 176;
+            this.AmountLabel.Text = "00.00";
+            // 
+            // TotalLbl
+            // 
+            this.TotalLbl.AutoSize = true;
+            this.TotalLbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TotalLbl.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.TotalLbl.Location = new System.Drawing.Point(8, 333);
+            this.TotalLbl.Name = "TotalLbl";
+            this.TotalLbl.Size = new System.Drawing.Size(68, 24);
+            this.TotalLbl.TabIndex = 175;
+            this.TotalLbl.Text = "Total: ";
+            // 
             // WineWindow
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.ClientSize = new System.Drawing.Size(777, 446);
+            this.Controls.Add(this.AmountLabel);
+            this.Controls.Add(this.TotalLbl);
             this.Controls.Add(this.Usernamelbl);
             this.Controls.Add(this.Homebtn);
             this.Controls.Add(this.Softsbtn);
@@ -375,9 +407,9 @@
             this.Controls.Add(this.Rosewinelbl);
             this.Controls.Add(this.WhiteWinelbl);
             this.Controls.Add(this.Shirazbtn);
-            this.Controls.Add(this.button5);
+            this.Controls.Add(this.WhiteZinbtn);
             this.Controls.Add(this.Malbecbtn);
-            this.Controls.Add(this.Desperadosbtn);
+            this.Controls.Add(this.Houserosebtn);
             this.Controls.Add(this.Chardonnaybtn);
             this.Controls.Add(this.Pinotgrigiobtn);
             this.Controls.Add(this.label1);
@@ -398,9 +430,9 @@
         #endregion
 
         private System.Windows.Forms.Button Shirazbtn;
-        private System.Windows.Forms.Button button5;
+        private System.Windows.Forms.Button WhiteZinbtn;
         private System.Windows.Forms.Button Malbecbtn;
-        private System.Windows.Forms.Button Desperadosbtn;
+        private System.Windows.Forms.Button Houserosebtn;
         private System.Windows.Forms.Button Chardonnaybtn;
         private System.Windows.Forms.Button Pinotgrigiobtn;
         private System.Windows.Forms.Label label1;
@@ -424,5 +456,7 @@
         private System.Windows.Forms.Button Bottlesbtn;
         private System.Windows.Forms.Button Draughtbtn;
         private System.Windows.Forms.Label Usernamelbl;
+        public System.Windows.Forms.Label AmountLabel;
+        private System.Windows.Forms.Label TotalLbl;
     }
 }
