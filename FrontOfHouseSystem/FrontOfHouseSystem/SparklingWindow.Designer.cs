@@ -50,11 +50,13 @@
             this.Bottlesbtn = new System.Windows.Forms.Button();
             this.Draughtbtn = new System.Windows.Forms.Button();
             this.Usernamelbl = new System.Windows.Forms.Label();
+            this.AmountLabel = new System.Windows.Forms.Label();
+            this.TotalLbl = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // button27
             // 
-            this.button27.Location = new System.Drawing.Point(95, 387);
+            this.button27.Location = new System.Drawing.Point(93, 415);
             this.button27.Name = "button27";
             this.button27.Size = new System.Drawing.Size(75, 23);
             this.button27.TabIndex = 127;
@@ -63,7 +65,7 @@
             // 
             // button26
             // 
-            this.button26.Location = new System.Drawing.Point(14, 387);
+            this.button26.Location = new System.Drawing.Point(12, 415);
             this.button26.Name = "button26";
             this.button26.Size = new System.Drawing.Size(75, 23);
             this.button26.TabIndex = 126;
@@ -76,7 +78,7 @@
             this.button11.FlatAppearance.BorderColor = System.Drawing.Color.Yellow;
             this.button11.FlatAppearance.BorderSize = 0;
             this.button11.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button11.Location = new System.Drawing.Point(143, 345);
+            this.button11.Location = new System.Drawing.Point(141, 373);
             this.button11.Name = "button11";
             this.button11.Size = new System.Drawing.Size(45, 34);
             this.button11.TabIndex = 125;
@@ -87,7 +89,7 @@
             // 
             this.button12.BackColor = System.Drawing.Color.Yellow;
             this.button12.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button12.Location = new System.Drawing.Point(101, 345);
+            this.button12.Location = new System.Drawing.Point(99, 373);
             this.button12.Name = "button12";
             this.button12.Size = new System.Drawing.Size(45, 34);
             this.button12.TabIndex = 124;
@@ -98,7 +100,7 @@
             // 
             this.button13.BackColor = System.Drawing.Color.Yellow;
             this.button13.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button13.Location = new System.Drawing.Point(58, 345);
+            this.button13.Location = new System.Drawing.Point(56, 373);
             this.button13.Name = "button13";
             this.button13.Size = new System.Drawing.Size(45, 34);
             this.button13.TabIndex = 123;
@@ -109,7 +111,7 @@
             // 
             this.button14.BackColor = System.Drawing.Color.Yellow;
             this.button14.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button14.Location = new System.Drawing.Point(14, 345);
+            this.button14.Location = new System.Drawing.Point(12, 373);
             this.button14.Name = "button14";
             this.button14.Size = new System.Drawing.Size(45, 34);
             this.button14.TabIndex = 122;
@@ -145,6 +147,7 @@
             this.Mummbrutbtn.TabIndex = 143;
             this.Mummbrutbtn.Text = "Mumm Brut";
             this.Mummbrutbtn.UseVisualStyleBackColor = false;
+            this.Mummbrutbtn.Click += new System.EventHandler(this.Mummbrutbtn_Click);
             // 
             // Proseccobtn
             // 
@@ -156,6 +159,7 @@
             this.Proseccobtn.TabIndex = 141;
             this.Proseccobtn.Text = "Prosecco";
             this.Proseccobtn.UseVisualStyleBackColor = false;
+            this.Proseccobtn.Click += new System.EventHandler(this.Proseccobtn_Click);
             // 
             // Domperingonbtn
             // 
@@ -168,6 +172,7 @@
             this.Domperingonbtn.TabIndex = 140;
             this.Domperingonbtn.Text = "Dom Peringon";
             this.Domperingonbtn.UseVisualStyleBackColor = false;
+            this.Domperingonbtn.Click += new System.EventHandler(this.Domperingonbtn_Click);
             // 
             // Laurentpbtn
             // 
@@ -179,6 +184,7 @@
             this.Laurentpbtn.TabIndex = 139;
             this.Laurentpbtn.Text = "Laurent Perrier";
             this.Laurentpbtn.UseVisualStyleBackColor = false;
+            this.Laurentpbtn.Click += new System.EventHandler(this.Laurentpbtn_Click);
             // 
             // Homebtn
             // 
@@ -296,12 +302,36 @@
             this.Usernamelbl.TabIndex = 156;
             this.Usernamelbl.Text = "Name:";
             // 
+            // AmountLabel
+            // 
+            this.AmountLabel.AutoSize = true;
+            this.AmountLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.AmountLabel.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.AmountLabel.Location = new System.Drawing.Point(77, 342);
+            this.AmountLabel.Name = "AmountLabel";
+            this.AmountLabel.Size = new System.Drawing.Size(60, 24);
+            this.AmountLabel.TabIndex = 172;
+            this.AmountLabel.Text = "00.00";
+            // 
+            // TotalLbl
+            // 
+            this.TotalLbl.AutoSize = true;
+            this.TotalLbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TotalLbl.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.TotalLbl.Location = new System.Drawing.Point(12, 342);
+            this.TotalLbl.Name = "TotalLbl";
+            this.TotalLbl.Size = new System.Drawing.Size(68, 24);
+            this.TotalLbl.TabIndex = 171;
+            this.TotalLbl.Text = "Total: ";
+            // 
             // SparklingWindow
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.ClientSize = new System.Drawing.Size(806, 448);
+            this.Controls.Add(this.AmountLabel);
+            this.Controls.Add(this.TotalLbl);
             this.Controls.Add(this.Usernamelbl);
             this.Controls.Add(this.Homebtn);
             this.Controls.Add(this.Softsbtn);
@@ -355,5 +385,7 @@
         private System.Windows.Forms.Button Bottlesbtn;
         private System.Windows.Forms.Button Draughtbtn;
         private System.Windows.Forms.Label Usernamelbl;
+        public System.Windows.Forms.Label AmountLabel;
+        private System.Windows.Forms.Label TotalLbl;
     }
 }
