@@ -46,7 +46,7 @@
             this.Lowcaltonicbtn = new System.Windows.Forms.Button();
             this.Elderflowerbtn = new System.Windows.Forms.Button();
             this.Lemonadebtn = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
+            this.Redbullbtn = new System.Windows.Forms.Button();
             this.Homebtn = new System.Windows.Forms.Button();
             this.Softsbtn = new System.Windows.Forms.Button();
             this.Sparklingbtn = new System.Windows.Forms.Button();
@@ -57,11 +57,13 @@
             this.Bottlesbtn = new System.Windows.Forms.Button();
             this.Draughtbtn = new System.Windows.Forms.Button();
             this.Usernamelbl = new System.Windows.Forms.Label();
+            this.AmountLabel = new System.Windows.Forms.Label();
+            this.TotalLbl = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // button27
             // 
-            this.button27.Location = new System.Drawing.Point(85, 385);
+            this.button27.Location = new System.Drawing.Point(85, 413);
             this.button27.Name = "button27";
             this.button27.Size = new System.Drawing.Size(75, 23);
             this.button27.TabIndex = 134;
@@ -70,7 +72,7 @@
             // 
             // button26
             // 
-            this.button26.Location = new System.Drawing.Point(4, 385);
+            this.button26.Location = new System.Drawing.Point(4, 413);
             this.button26.Name = "button26";
             this.button26.Size = new System.Drawing.Size(75, 23);
             this.button26.TabIndex = 133;
@@ -83,7 +85,7 @@
             this.button11.FlatAppearance.BorderColor = System.Drawing.Color.Yellow;
             this.button11.FlatAppearance.BorderSize = 0;
             this.button11.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button11.Location = new System.Drawing.Point(133, 343);
+            this.button11.Location = new System.Drawing.Point(133, 371);
             this.button11.Name = "button11";
             this.button11.Size = new System.Drawing.Size(45, 34);
             this.button11.TabIndex = 132;
@@ -94,7 +96,7 @@
             // 
             this.button12.BackColor = System.Drawing.Color.Yellow;
             this.button12.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button12.Location = new System.Drawing.Point(91, 343);
+            this.button12.Location = new System.Drawing.Point(91, 371);
             this.button12.Name = "button12";
             this.button12.Size = new System.Drawing.Size(45, 34);
             this.button12.TabIndex = 131;
@@ -105,7 +107,7 @@
             // 
             this.button13.BackColor = System.Drawing.Color.Yellow;
             this.button13.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button13.Location = new System.Drawing.Point(48, 343);
+            this.button13.Location = new System.Drawing.Point(48, 371);
             this.button13.Name = "button13";
             this.button13.Size = new System.Drawing.Size(45, 34);
             this.button13.TabIndex = 130;
@@ -116,7 +118,7 @@
             // 
             this.button14.BackColor = System.Drawing.Color.Yellow;
             this.button14.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button14.Location = new System.Drawing.Point(4, 343);
+            this.button14.Location = new System.Drawing.Point(4, 371);
             this.button14.Name = "button14";
             this.button14.Size = new System.Drawing.Size(45, 34);
             this.button14.TabIndex = 129;
@@ -152,6 +154,7 @@
             this.Fevertreebtn.TabIndex = 146;
             this.Fevertreebtn.Text = "Fevertree Tonic";
             this.Fevertreebtn.UseVisualStyleBackColor = false;
+            this.Fevertreebtn.Click += new System.EventHandler(this.Fevertreebtn_Click);
             // 
             // Cranberryjbtn
             // 
@@ -163,6 +166,7 @@
             this.Cranberryjbtn.TabIndex = 145;
             this.Cranberryjbtn.Text = "Cranberry Juice";
             this.Cranberryjbtn.UseVisualStyleBackColor = false;
+            this.Cranberryjbtn.Click += new System.EventHandler(this.Cranberryjbtn_Click);
             // 
             // Applejbtn
             // 
@@ -174,6 +178,7 @@
             this.Applejbtn.TabIndex = 144;
             this.Applejbtn.Text = "Apple Juice";
             this.Applejbtn.UseVisualStyleBackColor = false;
+            this.Applejbtn.Click += new System.EventHandler(this.Applejbtn_Click);
             // 
             // Orangejbtn
             // 
@@ -185,6 +190,7 @@
             this.Orangejbtn.TabIndex = 143;
             this.Orangejbtn.Text = "Orange Juice";
             this.Orangejbtn.UseVisualStyleBackColor = false;
+            this.Orangejbtn.Click += new System.EventHandler(this.Orangejbtn_Click);
             // 
             // Zerocokebtn
             // 
@@ -196,6 +202,7 @@
             this.Zerocokebtn.TabIndex = 142;
             this.Zerocokebtn.Text = "Coke Zero";
             this.Zerocokebtn.UseVisualStyleBackColor = false;
+            this.Zerocokebtn.Click += new System.EventHandler(this.Zerocokebtn_Click);
             // 
             // Cocacolabtn
             // 
@@ -208,6 +215,7 @@
             this.Cocacolabtn.TabIndex = 141;
             this.Cocacolabtn.Text = "Coke";
             this.Cocacolabtn.UseVisualStyleBackColor = false;
+            this.Cocacolabtn.Click += new System.EventHandler(this.Cocacolabtn_Click);
             // 
             // Dietcokebtn
             // 
@@ -219,6 +227,7 @@
             this.Dietcokebtn.TabIndex = 140;
             this.Dietcokebtn.Text = "Diet Coke";
             this.Dietcokebtn.UseVisualStyleBackColor = false;
+            this.Dietcokebtn.Click += new System.EventHandler(this.Dietcokebtn_Click);
             // 
             // Lowcaltonicbtn
             // 
@@ -230,6 +239,7 @@
             this.Lowcaltonicbtn.TabIndex = 155;
             this.Lowcaltonicbtn.Text = "Low Cal Tonic";
             this.Lowcaltonicbtn.UseVisualStyleBackColor = false;
+            this.Lowcaltonicbtn.Click += new System.EventHandler(this.Lowcaltonicbtn_Click);
             // 
             // Elderflowerbtn
             // 
@@ -241,6 +251,7 @@
             this.Elderflowerbtn.TabIndex = 156;
             this.Elderflowerbtn.Text = "Elderflower Tonic";
             this.Elderflowerbtn.UseVisualStyleBackColor = false;
+            this.Elderflowerbtn.Click += new System.EventHandler(this.Elderflowerbtn_Click);
             // 
             // Lemonadebtn
             // 
@@ -252,17 +263,19 @@
             this.Lemonadebtn.TabIndex = 157;
             this.Lemonadebtn.Text = "Lemonade";
             this.Lemonadebtn.UseVisualStyleBackColor = false;
+            this.Lemonadebtn.Click += new System.EventHandler(this.Lemonadebtn_Click);
             // 
-            // button4
+            // Redbullbtn
             // 
-            this.button4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(143)))), ((int)(((byte)(33)))));
-            this.button4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button4.Location = new System.Drawing.Point(439, 288);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(108, 41);
-            this.button4.TabIndex = 158;
-            this.button4.Text = "Red Bull";
-            this.button4.UseVisualStyleBackColor = false;
+            this.Redbullbtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(143)))), ((int)(((byte)(33)))));
+            this.Redbullbtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Redbullbtn.Location = new System.Drawing.Point(439, 288);
+            this.Redbullbtn.Name = "Redbullbtn";
+            this.Redbullbtn.Size = new System.Drawing.Size(108, 41);
+            this.Redbullbtn.TabIndex = 158;
+            this.Redbullbtn.Text = "Red Bull";
+            this.Redbullbtn.UseVisualStyleBackColor = false;
+            this.Redbullbtn.Click += new System.EventHandler(this.Redbullbtn_Click);
             // 
             // Homebtn
             // 
@@ -378,12 +391,36 @@
             this.Usernamelbl.TabIndex = 168;
             this.Usernamelbl.Text = "Name:";
             // 
+            // AmountLabel
+            // 
+            this.AmountLabel.AutoSize = true;
+            this.AmountLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.AmountLabel.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.AmountLabel.Location = new System.Drawing.Point(65, 344);
+            this.AmountLabel.Name = "AmountLabel";
+            this.AmountLabel.Size = new System.Drawing.Size(60, 24);
+            this.AmountLabel.TabIndex = 170;
+            this.AmountLabel.Text = "00.00";
+            // 
+            // TotalLbl
+            // 
+            this.TotalLbl.AutoSize = true;
+            this.TotalLbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TotalLbl.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.TotalLbl.Location = new System.Drawing.Point(0, 344);
+            this.TotalLbl.Name = "TotalLbl";
+            this.TotalLbl.Size = new System.Drawing.Size(68, 24);
+            this.TotalLbl.TabIndex = 169;
+            this.TotalLbl.Text = "Total: ";
+            // 
             // SoftdrinksWindow
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.ClientSize = new System.Drawing.Size(799, 439);
+            this.ClientSize = new System.Drawing.Size(799, 447);
+            this.Controls.Add(this.AmountLabel);
+            this.Controls.Add(this.TotalLbl);
             this.Controls.Add(this.Usernamelbl);
             this.Controls.Add(this.Homebtn);
             this.Controls.Add(this.Softsbtn);
@@ -394,7 +431,7 @@
             this.Controls.Add(this.Spiritsbtn);
             this.Controls.Add(this.Bottlesbtn);
             this.Controls.Add(this.Draughtbtn);
-            this.Controls.Add(this.button4);
+            this.Controls.Add(this.Redbullbtn);
             this.Controls.Add(this.Lemonadebtn);
             this.Controls.Add(this.Elderflowerbtn);
             this.Controls.Add(this.Lowcaltonicbtn);
@@ -440,7 +477,7 @@
         private System.Windows.Forms.Button Lowcaltonicbtn;
         private System.Windows.Forms.Button Elderflowerbtn;
         private System.Windows.Forms.Button Lemonadebtn;
-        private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.Button Redbullbtn;
         private System.Windows.Forms.Button Homebtn;
         private System.Windows.Forms.Button Softsbtn;
         private System.Windows.Forms.Button Sparklingbtn;
@@ -451,5 +488,7 @@
         private System.Windows.Forms.Button Bottlesbtn;
         private System.Windows.Forms.Button Draughtbtn;
         private System.Windows.Forms.Label Usernamelbl;
+        public System.Windows.Forms.Label AmountLabel;
+        private System.Windows.Forms.Label TotalLbl;
     }
 }
