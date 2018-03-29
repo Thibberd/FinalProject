@@ -21,12 +21,13 @@ namespace FrontOfHouseSystem
             timer.Interval = 10000;
             timer.Tick += new EventHandler(timer_Tick);
             timer.Start();
+            
         }
 
         void timer_Tick(object sender, EventArgs e)
         {
             this.Close();
-            PaymentSucessfulwindow paymentSucessfulwindow = new PaymentSucessfulwindow();
+            PaymentSucessfulwindow paymentSucessfulwindow = new PaymentSucessfulwindow(2,"3",2);
             paymentSucessfulwindow.Show();
         }
     }

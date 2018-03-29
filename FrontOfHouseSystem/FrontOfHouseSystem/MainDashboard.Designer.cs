@@ -32,9 +32,9 @@
             this.Draught = new System.Windows.Forms.Button();
             this.OrderList = new System.Windows.Forms.ListBox();
             this.Cashbtn = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
-            this.button5 = new System.Windows.Forms.Button();
+            this.FivePoundsbtn = new System.Windows.Forms.Button();
+            this.TenPoundsbtn = new System.Windows.Forms.Button();
+            this.TwentyPoundbtn = new System.Windows.Forms.Button();
             this.Bottlesbtn = new System.Windows.Forms.Button();
             this.Spiritsbtn = new System.Windows.Forms.Button();
             this.Winebtn = new System.Windows.Forms.Button();
@@ -97,40 +97,43 @@
             this.Cashbtn.UseVisualStyleBackColor = false;
             this.Cashbtn.Click += new System.EventHandler(this.Cashbtn_Click);
             // 
-            // button3
+            // FivePoundsbtn
             // 
-            this.button3.BackColor = System.Drawing.Color.Yellow;
-            this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button3.Location = new System.Drawing.Point(47, 345);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(45, 34);
-            this.button3.TabIndex = 3;
-            this.button3.Text = "£5";
-            this.button3.UseVisualStyleBackColor = false;
+            this.FivePoundsbtn.BackColor = System.Drawing.Color.Yellow;
+            this.FivePoundsbtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.FivePoundsbtn.Location = new System.Drawing.Point(47, 345);
+            this.FivePoundsbtn.Name = "FivePoundsbtn";
+            this.FivePoundsbtn.Size = new System.Drawing.Size(45, 34);
+            this.FivePoundsbtn.TabIndex = 3;
+            this.FivePoundsbtn.Text = "£5";
+            this.FivePoundsbtn.UseVisualStyleBackColor = false;
+            this.FivePoundsbtn.Click += new System.EventHandler(this.FivePoundsbtn_Click);
             // 
-            // button4
+            // TenPoundsbtn
             // 
-            this.button4.BackColor = System.Drawing.Color.Yellow;
-            this.button4.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button4.Location = new System.Drawing.Point(90, 345);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(45, 34);
-            this.button4.TabIndex = 4;
-            this.button4.Text = "£10";
-            this.button4.UseVisualStyleBackColor = false;
+            this.TenPoundsbtn.BackColor = System.Drawing.Color.Yellow;
+            this.TenPoundsbtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TenPoundsbtn.Location = new System.Drawing.Point(90, 345);
+            this.TenPoundsbtn.Name = "TenPoundsbtn";
+            this.TenPoundsbtn.Size = new System.Drawing.Size(45, 34);
+            this.TenPoundsbtn.TabIndex = 4;
+            this.TenPoundsbtn.Text = "£10";
+            this.TenPoundsbtn.UseVisualStyleBackColor = false;
+            this.TenPoundsbtn.Click += new System.EventHandler(this.TenPoundsbtn_Click);
             // 
-            // button5
+            // TwentyPoundbtn
             // 
-            this.button5.BackColor = System.Drawing.Color.Yellow;
-            this.button5.FlatAppearance.BorderColor = System.Drawing.Color.Yellow;
-            this.button5.FlatAppearance.BorderSize = 0;
-            this.button5.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button5.Location = new System.Drawing.Point(132, 345);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(45, 34);
-            this.button5.TabIndex = 5;
-            this.button5.Text = "£20";
-            this.button5.UseVisualStyleBackColor = false;
+            this.TwentyPoundbtn.BackColor = System.Drawing.Color.Yellow;
+            this.TwentyPoundbtn.FlatAppearance.BorderColor = System.Drawing.Color.Yellow;
+            this.TwentyPoundbtn.FlatAppearance.BorderSize = 0;
+            this.TwentyPoundbtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TwentyPoundbtn.Location = new System.Drawing.Point(132, 345);
+            this.TwentyPoundbtn.Name = "TwentyPoundbtn";
+            this.TwentyPoundbtn.Size = new System.Drawing.Size(45, 34);
+            this.TwentyPoundbtn.TabIndex = 5;
+            this.TwentyPoundbtn.Text = "£20";
+            this.TwentyPoundbtn.UseVisualStyleBackColor = false;
+            this.TwentyPoundbtn.Click += new System.EventHandler(this.TwentyPoundbtn_Click);
             // 
             // Bottlesbtn
             // 
@@ -481,9 +484,9 @@
             this.Controls.Add(this.Winebtn);
             this.Controls.Add(this.Spiritsbtn);
             this.Controls.Add(this.Bottlesbtn);
-            this.Controls.Add(this.button5);
-            this.Controls.Add(this.button4);
-            this.Controls.Add(this.button3);
+            this.Controls.Add(this.TwentyPoundbtn);
+            this.Controls.Add(this.TenPoundsbtn);
+            this.Controls.Add(this.FivePoundsbtn);
             this.Controls.Add(this.Cashbtn);
             this.Controls.Add(this.OrderList);
             this.Controls.Add(this.Draught);
@@ -501,9 +504,9 @@
         private System.Windows.Forms.Button Draught;
         public System.Windows.Forms.ListBox OrderList;
         private System.Windows.Forms.Button Cashbtn;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.Button button5;
+        private System.Windows.Forms.Button FivePoundsbtn;
+        private System.Windows.Forms.Button TenPoundsbtn;
+        private System.Windows.Forms.Button TwentyPoundbtn;
         private System.Windows.Forms.Button Bottlesbtn;
         private System.Windows.Forms.Button Spiritsbtn;
         private System.Windows.Forms.Button Winebtn;

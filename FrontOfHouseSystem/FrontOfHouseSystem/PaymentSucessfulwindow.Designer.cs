@@ -29,10 +29,10 @@
         private void InitializeComponent()
         {
             this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
+            this.ChangeAmountlbl = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
+            this.TotalAmountLbl = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // label1
@@ -46,22 +46,22 @@
             this.label1.TabIndex = 0;
             this.label1.Text = "Payment Succesful";
             // 
-            // label2
+            // ChangeAmountlbl
             // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Arial Rounded MT Bold", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(418, 218);
-            this.label2.Margin = new System.Windows.Forms.Padding(7, 0, 7, 0);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(119, 43);
-            this.label2.TabIndex = 1;
-            this.label2.Text = "£2.50";
+            this.ChangeAmountlbl.AutoSize = true;
+            this.ChangeAmountlbl.Font = new System.Drawing.Font("Arial Rounded MT Bold", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ChangeAmountlbl.Location = new System.Drawing.Point(418, 232);
+            this.ChangeAmountlbl.Margin = new System.Windows.Forms.Padding(7, 0, 7, 0);
+            this.ChangeAmountlbl.Name = "ChangeAmountlbl";
+            this.ChangeAmountlbl.Size = new System.Drawing.Size(119, 43);
+            this.ChangeAmountlbl.TabIndex = 1;
+            this.ChangeAmountlbl.Text = "£2.50";
             // 
             // label3
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Arial Rounded MT Bold", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(207, 218);
+            this.label3.Location = new System.Drawing.Point(207, 232);
             this.label3.Margin = new System.Windows.Forms.Padding(7, 0, 7, 0);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(169, 43);
@@ -79,16 +79,16 @@
             this.label4.TabIndex = 3;
             this.label4.Text = "Total:";
             // 
-            // label5
+            // TotalAmountLbl
             // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Arial Rounded MT Bold", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(418, 165);
-            this.label5.Margin = new System.Windows.Forms.Padding(7, 0, 7, 0);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(119, 43);
-            this.label5.TabIndex = 4;
-            this.label5.Text = "£7.50";
+            this.TotalAmountLbl.AutoSize = true;
+            this.TotalAmountLbl.Font = new System.Drawing.Font("Arial Rounded MT Bold", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TotalAmountLbl.Location = new System.Drawing.Point(418, 165);
+            this.TotalAmountLbl.Margin = new System.Windows.Forms.Padding(7, 0, 7, 0);
+            this.TotalAmountLbl.Name = "TotalAmountLbl";
+            this.TotalAmountLbl.Size = new System.Drawing.Size(119, 43);
+            this.TotalAmountLbl.TabIndex = 4;
+            this.TotalAmountLbl.Text = "£7.50";
             // 
             // PaymentSucessfulwindow
             // 
@@ -96,10 +96,10 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.ClientSize = new System.Drawing.Size(779, 399);
-            this.Controls.Add(this.label5);
+            this.Controls.Add(this.TotalAmountLbl);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
-            this.Controls.Add(this.label2);
+            this.Controls.Add(this.ChangeAmountlbl);
             this.Controls.Add(this.label1);
             this.Font = new System.Drawing.Font("Arial Rounded MT Bold", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ForeColor = System.Drawing.Color.Yellow;
@@ -114,9 +114,9 @@
         #endregion
 
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label ChangeAmountlbl;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label TotalAmountLbl;
     }
 }

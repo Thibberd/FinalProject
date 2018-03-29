@@ -22,7 +22,7 @@ namespace FrontOfHouseSystem
         int userID;
         string firstName;
         string lastName;
-
+        float CalculatedChange;
         public FOHDashboard(int UserID, string FirstName, string LastName,ListBox.ObjectCollection orderItems, string userName)
         {
             InitializeComponent();
@@ -439,6 +439,9 @@ namespace FrontOfHouseSystem
                 if (connection.State == ConnectionState.Open)
                     connection.Close();
             }
+
+            MixersWindow mixersWindow = new MixersWindow(userID, firstName, lastName, OrderList.Items, Usernamelbl.Text);
+            mixersWindow.Show();
         }
 
         private void Gordansbtn_Click(object sender, EventArgs e)
@@ -485,6 +488,9 @@ namespace FrontOfHouseSystem
                 if (connection.State == ConnectionState.Open)
                     connection.Close();
             }
+
+            MixersWindow mixersWindow = new MixersWindow(userID, firstName, lastName, OrderList.Items, Usernamelbl.Text);
+            mixersWindow.Show();
         }
 
         private void Jackdanielsbtn_Click(object sender, EventArgs e)
@@ -532,6 +538,8 @@ namespace FrontOfHouseSystem
                 if (connection.State == ConnectionState.Open)
                     connection.Close();
             }
+            MixersWindow mixersWindow = new MixersWindow(userID, firstName, lastName, OrderList.Items, Usernamelbl.Text);
+            mixersWindow.Show();
 
         }
 
@@ -786,6 +794,45 @@ namespace FrontOfHouseSystem
             transaction.transactionID = 2;
             EnterAmount enterAmount = new EnterAmount(); // take through total Amount eventually
 
+            
+        }
+
+        private void FivePoundsbtn_Click(object sender, EventArgs e)
+        {
+            float calc;
+            this.Hide();
+            Transaction transaction = new Transaction();
+            transaction.transactionID = 4;
+            calc = float.Parse(AmountLabel.Text);
+            CalculatedChange = 5.00f - calc;
+            PaymentSucessfulwindow paymentSucessfulwindow = new PaymentSucessfulwindow(transaction.transactionID, AmountLabel.Text, CalculatedChange);
+            paymentSucessfulwindow.Show();
+            
+        }
+
+        private void TenPoundsbtn_Click(object sender, EventArgs e)
+        {
+            float calc;
+            this.Hide();
+            Transaction transaction = new Transaction();
+            transaction.transactionID = 4;
+            calc = float.Parse(AmountLabel.Text);
+            CalculatedChange = 10.00f - calc;
+            PaymentSucessfulwindow paymentSucessfulwindow = new PaymentSucessfulwindow(transaction.transactionID, AmountLabel.Text, CalculatedChange);
+            paymentSucessfulwindow.Show();
+          
+        }
+
+        private void TwentyPoundbtn_Click(object sender, EventArgs e)
+        {
+            float calc;
+            this.Hide();
+            Transaction transaction = new Transaction();
+            transaction.transactionID = 4;
+            calc = float.Parse(AmountLabel.Text);
+            CalculatedChange = 20.00f - calc;
+            PaymentSucessfulwindow paymentSucessfulwindow = new PaymentSucessfulwindow(transaction.transactionID, AmountLabel.Text, CalculatedChange);
+            paymentSucessfulwindow.Show();
             
         }
     }

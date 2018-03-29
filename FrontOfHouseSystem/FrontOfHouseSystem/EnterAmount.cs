@@ -12,6 +12,9 @@ namespace FrontOfHouseSystem
 {
     public partial class EnterAmount : Form
     {
+
+        private int CalculatedChange;
+
         public EnterAmount()
         {
             InitializeComponent();
@@ -28,8 +31,8 @@ namespace FrontOfHouseSystem
             }
             else if (transaction.transactionID == 4)
             {
-                PaymentSucessfulwindow paymentSucessfulwindow = new PaymentSucessfulwindow();
-                paymentSucessfulwindow.Show();
+                PaymentSucessfulwindow paymentSucessfulwindow = new PaymentSucessfulwindow(transaction.transactionID,EnteredAmountlbl.Text, CalculatedChange);
+                paymentSucessfulwindow.Show(); //show payment sucesful window
             }
         }
     }

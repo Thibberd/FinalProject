@@ -45,6 +45,7 @@
             this.button1 = new System.Windows.Forms.Button();
             this.button13 = new System.Windows.Forms.Button();
             this.button14 = new System.Windows.Forms.Button();
+            this.EnteredAmountlbl = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -73,6 +74,7 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.SystemColors.AppWorkspace;
+            this.panel1.Controls.Add(this.EnteredAmountlbl);
             this.panel1.Controls.Add(this.label2);
             this.panel1.Location = new System.Drawing.Point(150, 90);
             this.panel1.Name = "panel1";
@@ -246,6 +248,15 @@
             this.button14.Text = "00";
             this.button14.UseVisualStyleBackColor = false;
             // 
+            // EnteredAmountlbl
+            // 
+            this.EnteredAmountlbl.AutoSize = true;
+            this.EnteredAmountlbl.Location = new System.Drawing.Point(85, 29);
+            this.EnteredAmountlbl.Name = "EnteredAmountlbl";
+            this.EnteredAmountlbl.Size = new System.Drawing.Size(35, 13);
+            this.EnteredAmountlbl.TabIndex = 28;
+            this.EnteredAmountlbl.Text = "label3";
+            // 
             // EnterAmount
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -297,5 +308,6 @@
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button13;
         private System.Windows.Forms.Button button14;
+        private System.Windows.Forms.Label EnteredAmountlbl;
     }
 }
