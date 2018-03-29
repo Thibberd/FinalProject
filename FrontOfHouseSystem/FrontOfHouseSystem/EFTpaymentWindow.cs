@@ -12,9 +12,22 @@ namespace FrontOfHouseSystem
 {
     public partial class EFTpaymentWindow : Form
     {
+
+        System.Windows.Forms.Timer timer = new System.Windows.Forms.Timer();
+
         public EFTpaymentWindow()
         {
             InitializeComponent();
+            timer.Interval = 10000;
+            timer.Tick += new EventHandler(timer_Tick);
+            timer.Start();
+        }
+
+        void timer_Tick(object sender, EventArgs e)
+        {
+            this.Close();
+            PaymentSucessfulwindow paymentSucessfulwindow = new PaymentSucessfulwindow();
+            paymentSucessfulwindow.Show();
         }
     }
 }
