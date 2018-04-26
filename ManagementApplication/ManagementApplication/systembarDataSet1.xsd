@@ -1,0 +1,62 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="systembarDataSet" targetNamespace="http://tempuri.org/systembarDataSet1.xsd" xmlns:mstns="http://tempuri.org/systembarDataSet1.xsd" xmlns="http://tempuri.org/systembarDataSet1.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="systembarConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="systembarConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.ManagementApplication.Properties.Settings.GlobalReference.Default.systembarConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="StockControlViewTableAdapter" GeneratorDataComponentClassName="StockControlViewTableAdapter" Name="StockControlView" UserDataComponentName="StockControlViewTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="systembarConnectionString (Settings)" DbObjectName="systembar.dbo.StockControlView" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT ProductID, ProductCode, ProductName, StockCount, CountedDate FROM dbo.StockControlView</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="ProductID" DataSetColumn="ProductID" />
+              <Mapping SourceColumn="ProductCode" DataSetColumn="ProductCode" />
+              <Mapping SourceColumn="ProductName" DataSetColumn="ProductName" />
+              <Mapping SourceColumn="StockCount" DataSetColumn="StockCount" />
+              <Mapping SourceColumn="CountedDate" DataSetColumn="CountedDate" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="systembarDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="systembarDataSet" msprop:Generator_UserDSName="systembarDataSet">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="StockControlView" msprop:Generator_TableClassName="StockControlViewDataTable" msprop:Generator_TableVarName="tableStockControlView" msprop:Generator_TablePropName="StockControlView" msprop:Generator_RowDeletingName="StockControlViewRowDeleting" msprop:Generator_RowChangingName="StockControlViewRowChanging" msprop:Generator_RowEvHandlerName="StockControlViewRowChangeEventHandler" msprop:Generator_RowDeletedName="StockControlViewRowDeleted" msprop:Generator_UserTableName="StockControlView" msprop:Generator_RowChangedName="StockControlViewRowChanged" msprop:Generator_RowEvArgName="StockControlViewRowChangeEvent" msprop:Generator_RowClassName="StockControlViewRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="ProductID" msprop:Generator_ColumnVarNameInTable="columnProductID" msprop:Generator_ColumnPropNameInRow="ProductID" msprop:Generator_ColumnPropNameInTable="ProductIDColumn" msprop:Generator_UserColumnName="ProductID" type="xs:int" />
+              <xs:element name="ProductCode" msprop:Generator_ColumnVarNameInTable="columnProductCode" msprop:Generator_ColumnPropNameInRow="ProductCode" msprop:Generator_ColumnPropNameInTable="ProductCodeColumn" msprop:Generator_UserColumnName="ProductCode" type="xs:int" />
+              <xs:element name="ProductName" msprop:Generator_ColumnVarNameInTable="columnProductName" msprop:Generator_ColumnPropNameInRow="ProductName" msprop:Generator_ColumnPropNameInTable="ProductNameColumn" msprop:Generator_UserColumnName="ProductName">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="30" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="StockCount" msprop:Generator_ColumnVarNameInTable="columnStockCount" msprop:Generator_ColumnPropNameInRow="StockCount" msprop:Generator_ColumnPropNameInTable="StockCountColumn" msprop:Generator_UserColumnName="StockCount" type="xs:int" minOccurs="0" />
+              <xs:element name="CountedDate" msprop:Generator_ColumnVarNameInTable="columnCountedDate" msprop:Generator_ColumnPropNameInRow="CountedDate" msprop:Generator_ColumnPropNameInTable="CountedDateColumn" msprop:Generator_UserColumnName="CountedDate" type="xs:dateTime" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:StockControlView" />
+      <xs:field xpath="mstns:ProductID" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>

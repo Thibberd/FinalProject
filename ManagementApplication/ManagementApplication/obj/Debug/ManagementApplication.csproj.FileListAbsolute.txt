@@ -1,0 +1,16 @@
+c:\users\tomhi\source\repos\ManagementApplication\ManagementApplication\bin\Debug\ManagementApplication.exe.config
+c:\users\tomhi\source\repos\ManagementApplication\ManagementApplication\bin\Debug\ManagementApplication.exe
+c:\users\tomhi\source\repos\ManagementApplication\ManagementApplication\bin\Debug\ManagementApplication.pdb
+c:\users\tomhi\source\repos\ManagementApplication\ManagementApplication\obj\Debug\ManagementApplication.csprojResolveAssemblyReference.cache
+c:\users\tomhi\source\repos\ManagementApplication\ManagementApplication\obj\Debug\ManagementApplication.Dashboard.resources
+c:\users\tomhi\source\repos\ManagementApplication\ManagementApplication\obj\Debug\ManagementApplication.Properties.Resources.resources
+c:\users\tomhi\source\repos\ManagementApplication\ManagementApplication\obj\Debug\ManagementApplication.UserAdmin.resources
+c:\users\tomhi\source\repos\ManagementApplication\ManagementApplication\obj\Debug\ManagementApplication.csproj.GenerateResource.cache
+c:\users\tomhi\source\repos\ManagementApplication\ManagementApplication\obj\Debug\ManagementApplication.csproj.CoreCompileInputs.cache
+c:\users\tomhi\source\repos\ManagementApplication\ManagementApplication\obj\Debug\ManagementApplication.exe
+c:\users\tomhi\source\repos\ManagementApplication\ManagementApplication\obj\Debug\ManagementApplication.pdb
+c:\users\tomhi\source\repos\ManagementApplication\ManagementApplication\bin\Debug\UserData.Designer.cs
+c:\users\tomhi\source\repos\ManagementApplication\ManagementApplication\bin\Debug\UserData.xsc
+c:\users\tomhi\source\repos\ManagementApplication\ManagementApplication\bin\Debug\UserData.xsd
+c:\users\tomhi\source\repos\ManagementApplication\ManagementApplication\bin\Debug\UserData.xss
+C:\Users\tomhi\source\repos\ManagementApplication\ManagementApplication\obj\Debug\ManagementApplication.StockControl.resources

@@ -1,0 +1,371 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{4B5BD32E-F70A-4E9A-8B60-1DCC13068FDF}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>ManagementApplication</RootNamespace>
+    <AssemblyName>ManagementApplication</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AmountbySaleTypeWindow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AmountbySaleTypeWindow.Designer.cs">
+      <DependentUpon>AmountbySaleTypeWindow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BankingWindow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BankingWindow.Designer.cs">
+      <DependentUpon>BankingWindow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LastMonthlySalesView.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>LastMonthlySalesView.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="ManagementDashboard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ManagementDashboard.Designer.cs">
+      <DependentUpon>ManagementDashboard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ManagementLogIn.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ManagementLogIn.Designer.cs">
+      <DependentUpon>ManagementLogIn.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ManagementLogInWindow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ManagementLogInWindow.Designer.cs">
+      <DependentUpon>ManagementLogInWindow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MonthlySalesReportWindow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MonthlySalesReportWindow.Designer.cs">
+      <DependentUpon>MonthlySalesReportWindow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ProductListView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ProductListView.Designer.cs">
+      <DependentUpon>ProductListView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ProductListViewData.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ProductListViewData.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="ProductsAboveAveragePrice.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ProductsAboveAveragePrice.Designer.cs">
+      <DependentUpon>ProductsAboveAveragePrice.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ProductsOverAveragePriceView.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ProductsOverAveragePriceView.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ReportsWindow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ReportsWindow.Designer.cs">
+      <DependentUpon>ReportsWindow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="StockControl.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StockControl.Designer.cs">
+      <DependentUpon>StockControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="StockDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>StockDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="systembarDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>systembarDataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="systembarDataSet11.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>systembarDataSet11.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="systembarDataSet2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>systembarDataSet2.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="TypeOfsalebyAmount.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>TypeOfsalebyAmount.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="UserAdmin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UserAdmin.Designer.cs">
+      <DependentUpon>UserAdmin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserData.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>UserData.xsd</DependentUpon>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Compile>
+    <Compile Include="userSalesbyWeek.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>userSalesbyWeek.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="UserSalesReportWindow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UserSalesReportWindow.Designer.cs">
+      <DependentUpon>UserSalesReportWindow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WeeklySalesReportWindow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WeeklySalesReportWindow.Designer.cs">
+      <DependentUpon>WeeklySalesReportWindow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WeeklySalesView.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>WeeklySalesView.xsd</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="AmountbySaleTypeWindow.resx">
+      <DependentUpon>AmountbySaleTypeWindow.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BankingWindow.resx">
+      <DependentUpon>BankingWindow.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ManagementDashboard.resx">
+      <DependentUpon>ManagementDashboard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ManagementLogIn.resx">
+      <DependentUpon>ManagementLogIn.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ManagementLogInWindow.resx">
+      <DependentUpon>ManagementLogInWindow.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MonthlySalesReportWindow.resx">
+      <DependentUpon>MonthlySalesReportWindow.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ProductListView.resx">
+      <DependentUpon>ProductListView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ProductsAboveAveragePrice.resx">
+      <DependentUpon>ProductsAboveAveragePrice.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="ReportsWindow.resx">
+      <DependentUpon>ReportsWindow.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StockControl.resx">
+      <DependentUpon>StockControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserAdmin.resx">
+      <DependentUpon>UserAdmin.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserSalesReportWindow.resx">
+      <DependentUpon>UserSalesReportWindow.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WeeklySalesReportWindow.resx">
+      <DependentUpon>WeeklySalesReportWindow.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="LastMonthlySalesView.xsc">
+      <DependentUpon>LastMonthlySalesView.xsd</DependentUpon>
+    </None>
+    <None Include="LastMonthlySalesView.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>LastMonthlySalesView.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="LastMonthlySalesView.xss">
+      <DependentUpon>LastMonthlySalesView.xsd</DependentUpon>
+    </None>
+    <None Include="ProductListViewData.xsc">
+      <DependentUpon>ProductListViewData.xsd</DependentUpon>
+    </None>
+    <None Include="ProductListViewData.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ProductListViewData.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="ProductListViewData.xss">
+      <DependentUpon>ProductListViewData.xsd</DependentUpon>
+    </None>
+    <None Include="ProductsOverAveragePriceView.xsc">
+      <DependentUpon>ProductsOverAveragePriceView.xsd</DependentUpon>
+    </None>
+    <None Include="ProductsOverAveragePriceView.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ProductsOverAveragePriceView.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="ProductsOverAveragePriceView.xss">
+      <DependentUpon>ProductsOverAveragePriceView.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <None Include="StockDataSet.xsc">
+      <DependentUpon>StockDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="StockDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>StockDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="StockDataSet.xss">
+      <DependentUpon>StockDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="systembarDataSet1.xsc">
+      <DependentUpon>systembarDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="systembarDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>systembarDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="systembarDataSet1.xss">
+      <DependentUpon>systembarDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="systembarDataSet11.xsc">
+      <DependentUpon>systembarDataSet11.xsd</DependentUpon>
+    </None>
+    <None Include="systembarDataSet11.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>systembarDataSet11.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="systembarDataSet11.xss">
+      <DependentUpon>systembarDataSet11.xsd</DependentUpon>
+    </None>
+    <None Include="systembarDataSet2.xsc">
+      <DependentUpon>systembarDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="systembarDataSet2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>systembarDataSet2.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="systembarDataSet2.xss">
+      <DependentUpon>systembarDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="TypeOfsalebyAmount.xsc">
+      <DependentUpon>TypeOfsalebyAmount.xsd</DependentUpon>
+    </None>
+    <None Include="TypeOfsalebyAmount.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>TypeOfsalebyAmount.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="TypeOfsalebyAmount.xss">
+      <DependentUpon>TypeOfsalebyAmount.xsd</DependentUpon>
+    </None>
+    <None Include="UserData.xsc">
+      <DependentUpon>UserData.xsd</DependentUpon>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="UserData.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>UserData.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="UserData.xss">
+      <DependentUpon>UserData.xsd</DependentUpon>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="userSalesbyWeek.xsc">
+      <DependentUpon>userSalesbyWeek.xsd</DependentUpon>
+    </None>
+    <None Include="userSalesbyWeek.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>userSalesbyWeek.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="userSalesbyWeek.xss">
+      <DependentUpon>userSalesbyWeek.xsd</DependentUpon>
+    </None>
+    <None Include="WeeklySalesView.xsc">
+      <DependentUpon>WeeklySalesView.xsd</DependentUpon>
+    </None>
+    <None Include="WeeklySalesView.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>WeeklySalesView.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="WeeklySalesView.xss">
+      <DependentUpon>WeeklySalesView.xsd</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
