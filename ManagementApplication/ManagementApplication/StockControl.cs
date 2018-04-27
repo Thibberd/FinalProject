@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Drawing.Imaging;
 
 namespace ManagementApplication
 {
@@ -35,7 +36,7 @@ namespace ManagementApplication
                 this.Validate();
                 this.StockGridView.EndEdit();
                 this.stockTableAdapter.Update(this.stockDataSet.Stock);
-                
+
 
                 MessageBox.Show("Update successful");
             }
@@ -69,7 +70,29 @@ namespace ManagementApplication
 
         }
 
-        
-    }
-    }
+        private void LogOutbtn_Click(object sender, EventArgs e)
+        {
+            ManagementLogInWindow managementLogIn = new ManagementLogInWindow();
+            managementLogIn.Show();
+            this.Hide();
+        }
 
+        private void ScreenShotbtn_Click(object sender, EventArgs e)
+        {
+            PrintScreen();
+        }
+
+        private static void PrintScreen()
+        {
+            SaveFileDialog sfg = new SaveFileDialog();
+            sfg.Filter = "(*.jpeg)|*.jpeg";
+            if (sfg.ShowDialog() == DialogResult.OK)
+            {
+                Bitmap scr = new Bitmap(Screen.PrimaryScreen.Bounds.Width, Screen.PrimaryScreen.Bounds.Height);
+                Graphics grp = Graphics.FromImage(scr as Image);
+                grp.CopyFromScreen(0, 0, 0, 0, scr.Size);
+                scr.Save(sfg.FileName, ImageFormat.Jpeg);
+            }
+        }
+    }
+}

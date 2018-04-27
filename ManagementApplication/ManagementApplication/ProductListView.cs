@@ -53,5 +53,14 @@ namespace ManagementApplication
             this.Hide();
 
         }
+
+        private void LogOutbtn_Click(object sender, EventArgs e)
+        {
+            
+                ManagementLogInWindow managementLogIn = new ManagementLogInWindow();
+                managementLogIn.Show();
+                this.Hide();
+            
+        }
     }
 }

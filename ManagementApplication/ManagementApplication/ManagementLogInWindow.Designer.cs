@@ -33,13 +33,15 @@
             this.label2 = new System.Windows.Forms.Label();
             this.PinEnterTb = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
+            this.EnterPwordbtn = new System.Windows.Forms.Button();
+            this.Cancelbtn = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(479, 42);
+            this.label1.Location = new System.Drawing.Point(467, 42);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(121, 42);
             this.label1.TabIndex = 0;
@@ -49,7 +51,7 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(422, 84);
+            this.label2.Location = new System.Drawing.Point(410, 84);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(240, 29);
             this.label2.TabIndex = 1;
@@ -58,8 +60,9 @@
             // PinEnterTb
             // 
             this.PinEnterTb.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.PinEnterTb.Location = new System.Drawing.Point(405, 257);
+            this.PinEnterTb.Location = new System.Drawing.Point(393, 257);
             this.PinEnterTb.Name = "PinEnterTb";
+            this.PinEnterTb.PasswordChar = '*';
             this.PinEnterTb.Size = new System.Drawing.Size(287, 40);
             this.PinEnterTb.TabIndex = 2;
             // 
@@ -67,18 +70,44 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(252, 205);
+            this.label3.Location = new System.Drawing.Point(240, 205);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(674, 29);
             this.label3.TabIndex = 3;
             this.label3.Text = "Please Enter your Personal Identification Number Below:";
+            // 
+            // EnterPwordbtn
+            // 
+            this.EnterPwordbtn.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.EnterPwordbtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.EnterPwordbtn.Location = new System.Drawing.Point(615, 337);
+            this.EnterPwordbtn.Name = "EnterPwordbtn";
+            this.EnterPwordbtn.Size = new System.Drawing.Size(131, 45);
+            this.EnterPwordbtn.TabIndex = 4;
+            this.EnterPwordbtn.Text = "Enter";
+            this.EnterPwordbtn.UseVisualStyleBackColor = false;
+            this.EnterPwordbtn.Click += new System.EventHandler(this.EnterPwordbtn_Click);
+            // 
+            // Cancelbtn
+            // 
+            this.Cancelbtn.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.Cancelbtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Cancelbtn.Location = new System.Drawing.Point(321, 337);
+            this.Cancelbtn.Name = "Cancelbtn";
+            this.Cancelbtn.Size = new System.Drawing.Size(131, 45);
+            this.Cancelbtn.TabIndex = 5;
+            this.Cancelbtn.Text = "Cancel";
+            this.Cancelbtn.UseVisualStyleBackColor = false;
+            this.Cancelbtn.Click += new System.EventHandler(this.Cancelbtn_Click);
             // 
             // ManagementLogInWindow
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.ClientSize = new System.Drawing.Size(1063, 486);
+            this.ClientSize = new System.Drawing.Size(1093, 486);
+            this.Controls.Add(this.Cancelbtn);
+            this.Controls.Add(this.EnterPwordbtn);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.PinEnterTb);
             this.Controls.Add(this.label2);
@@ -97,5 +126,7 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox PinEnterTb;
         private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Button EnterPwordbtn;
+        private System.Windows.Forms.Button Cancelbtn;
     }
 }

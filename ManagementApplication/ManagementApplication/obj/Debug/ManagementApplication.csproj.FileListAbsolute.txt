@@ -14,3 +14,12 @@ c:\users\tomhi\source\repos\ManagementApplication\ManagementApplication\bin\Debu
 c:\users\tomhi\source\repos\ManagementApplication\ManagementApplication\bin\Debug\UserData.xsd
 c:\users\tomhi\source\repos\ManagementApplication\ManagementApplication\bin\Debug\UserData.xss
 C:\Users\tomhi\source\repos\ManagementApplication\ManagementApplication\obj\Debug\ManagementApplication.StockControl.resources
+C:\Users\tomhi\source\repos\ManagementApplication\ManagementApplication\obj\Debug\ManagementApplication.AmountbySaleTypeWindow.resources
+C:\Users\tomhi\source\repos\ManagementApplication\ManagementApplication\obj\Debug\ManagementApplication.BankingWindow.resources
+C:\Users\tomhi\source\repos\ManagementApplication\ManagementApplication\obj\Debug\ManagementApplication.ManagementLogInWindow.resources
+C:\Users\tomhi\source\repos\ManagementApplication\ManagementApplication\obj\Debug\ManagementApplication.MonthlySalesReportWindow.resources
+C:\Users\tomhi\source\repos\ManagementApplication\ManagementApplication\obj\Debug\ManagementApplication.ProductListView.resources
+C:\Users\tomhi\source\repos\ManagementApplication\ManagementApplication\obj\Debug\ManagementApplication.ProductsAboveAveragePrice.resources
+C:\Users\tomhi\source\repos\ManagementApplication\ManagementApplication\obj\Debug\ManagementApplication.ReportsWindow.resources
+C:\Users\tomhi\source\repos\ManagementApplication\ManagementApplication\obj\Debug\ManagementApplication.UserSalesReportWindow.resources
+C:\Users\tomhi\source\repos\ManagementApplication\ManagementApplication\obj\Debug\ManagementApplication.WeeklySalesReportWindow.resources

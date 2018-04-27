@@ -30,7 +30,9 @@
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(BankingWindow));
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.LogOutbtn = new System.Windows.Forms.Button();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
@@ -41,6 +43,11 @@
             this.StockControlbtn = new System.Windows.Forms.Button();
             this.UserAdminbtn = new System.Windows.Forms.Button();
             this.BankingView = new System.Windows.Forms.DataGridView();
+            this.bankBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.systembarDataSet2 = new ManagementApplication.systembarDataSet2();
+            this.bankTableAdapter = new ManagementApplication.systembarDataSet2TableAdapters.BankTableAdapter();
+            this.label2 = new System.Windows.Forms.Label();
+            this.UpdateBtn = new System.Windows.Forms.Button();
             this.bankingIDDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.expectedCashDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.expectedEFTDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -49,12 +56,6 @@
             this.safeCountDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.totalDifferenceDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.bankingDateDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.bankBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.systembarDataSet2 = new ManagementApplication.systembarDataSet2();
-            this.bankTableAdapter = new ManagementApplication.systembarDataSet2TableAdapters.BankTableAdapter();
-            this.label2 = new System.Windows.Forms.Label();
-            this.UpdateBtn = new System.Windows.Forms.Button();
-            this.LogOutbtn = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
@@ -84,6 +85,16 @@
             this.groupBox1.Size = new System.Drawing.Size(230, 503);
             this.groupBox1.TabIndex = 2;
             this.groupBox1.TabStop = false;
+            // 
+            // LogOutbtn
+            // 
+            this.LogOutbtn.Location = new System.Drawing.Point(77, 465);
+            this.LogOutbtn.Name = "LogOutbtn";
+            this.LogOutbtn.Size = new System.Drawing.Size(75, 23);
+            this.LogOutbtn.TabIndex = 13;
+            this.LogOutbtn.Text = "Log Out";
+            this.LogOutbtn.UseVisualStyleBackColor = true;
+            this.LogOutbtn.Click += new System.EventHandler(this.LogOutbtn_Click);
             // 
             // pictureBox4
             // 
@@ -208,6 +219,43 @@
             this.BankingView.Size = new System.Drawing.Size(849, 333);
             this.BankingView.TabIndex = 3;
             // 
+            // bankBindingSource
+            // 
+            this.bankBindingSource.DataMember = "Bank";
+            this.bankBindingSource.DataSource = this.systembarDataSet2;
+            // 
+            // systembarDataSet2
+            // 
+            this.systembarDataSet2.DataSetName = "systembarDataSet2";
+            this.systembarDataSet2.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // bankTableAdapter
+            // 
+            this.bankTableAdapter.ClearBeforeFill = true;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(532, 28);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(257, 29);
+            this.label2.TabIndex = 4;
+            this.label2.Text = "Banking and Finance";
+            // 
+            // UpdateBtn
+            // 
+            this.UpdateBtn.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.UpdateBtn.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.UpdateBtn.Location = new System.Drawing.Point(551, 443);
+            this.UpdateBtn.Margin = new System.Windows.Forms.Padding(4);
+            this.UpdateBtn.Name = "UpdateBtn";
+            this.UpdateBtn.Size = new System.Drawing.Size(220, 54);
+            this.UpdateBtn.TabIndex = 5;
+            this.UpdateBtn.Text = "Update";
+            this.UpdateBtn.UseVisualStyleBackColor = false;
+            this.UpdateBtn.Click += new System.EventHandler(this.UpdateBtn_Click);
+            // 
             // bankingIDDataGridViewTextBoxColumn
             // 
             this.bankingIDDataGridViewTextBoxColumn.DataPropertyName = "BankingID";
@@ -253,54 +301,11 @@
             // bankingDateDataGridViewTextBoxColumn
             // 
             this.bankingDateDataGridViewTextBoxColumn.DataPropertyName = "BankingDate";
-            this.bankingDateDataGridViewTextBoxColumn.HeaderText = "BankingDate";
+            dataGridViewCellStyle1.Format = "d";
+            dataGridViewCellStyle1.NullValue = null;
+            this.bankingDateDataGridViewTextBoxColumn.DefaultCellStyle = dataGridViewCellStyle1;
+            this.bankingDateDataGridViewTextBoxColumn.HeaderText = "Banking Date";
             this.bankingDateDataGridViewTextBoxColumn.Name = "bankingDateDataGridViewTextBoxColumn";
-            // 
-            // bankBindingSource
-            // 
-            this.bankBindingSource.DataMember = "Bank";
-            this.bankBindingSource.DataSource = this.systembarDataSet2;
-            // 
-            // systembarDataSet2
-            // 
-            this.systembarDataSet2.DataSetName = "systembarDataSet2";
-            this.systembarDataSet2.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // bankTableAdapter
-            // 
-            this.bankTableAdapter.ClearBeforeFill = true;
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(532, 28);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(257, 29);
-            this.label2.TabIndex = 4;
-            this.label2.Text = "Banking and Finance";
-            // 
-            // UpdateBtn
-            // 
-            this.UpdateBtn.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.UpdateBtn.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.UpdateBtn.Location = new System.Drawing.Point(551, 443);
-            this.UpdateBtn.Margin = new System.Windows.Forms.Padding(4);
-            this.UpdateBtn.Name = "UpdateBtn";
-            this.UpdateBtn.Size = new System.Drawing.Size(220, 54);
-            this.UpdateBtn.TabIndex = 5;
-            this.UpdateBtn.Text = "Update";
-            this.UpdateBtn.UseVisualStyleBackColor = false;
-            this.UpdateBtn.Click += new System.EventHandler(this.UpdateBtn_Click);
-            // 
-            // LogOutbtn
-            // 
-            this.LogOutbtn.Location = new System.Drawing.Point(77, 465);
-            this.LogOutbtn.Name = "LogOutbtn";
-            this.LogOutbtn.Size = new System.Drawing.Size(75, 23);
-            this.LogOutbtn.TabIndex = 13;
-            this.LogOutbtn.Text = "Log Out";
-            this.LogOutbtn.UseVisualStyleBackColor = true;
             // 
             // BankingWindow
             // 
@@ -345,6 +350,10 @@
         private systembarDataSet2 systembarDataSet2;
         private System.Windows.Forms.BindingSource bankBindingSource;
         private systembarDataSet2TableAdapters.BankTableAdapter bankTableAdapter;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Button UpdateBtn;
+        private System.Windows.Forms.PictureBox pictureBox4;
+        private System.Windows.Forms.Button LogOutbtn;
         private System.Windows.Forms.DataGridViewTextBoxColumn bankingIDDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn expectedCashDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn expectedEFTDataGridViewTextBoxColumn;
@@ -353,9 +362,5 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn safeCountDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn totalDifferenceDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn bankingDateDataGridViewTextBoxColumn;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Button UpdateBtn;
-        private System.Windows.Forms.PictureBox pictureBox4;
-        private System.Windows.Forms.Button LogOutbtn;
     }
 }

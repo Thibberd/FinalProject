@@ -30,6 +30,9 @@
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(WeeklySalesReportWindow));
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea1 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend1 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series1 = new System.Windows.Forms.DataVisualization.Charting.Series();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.LogOutbtn = new System.Windows.Forms.Button();
@@ -43,19 +46,23 @@
             this.UserAdminbtn = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.weeklySalesView = new ManagementApplication.WeeklySalesView();
-            this.typeOfSaleByAmountLastWeekBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.typeOfSaleByAmountLastWeekTableAdapter = new ManagementApplication.WeeklySalesViewTableAdapters.TypeOfSaleByAmountLastWeekTableAdapter();
             this.transactionTypeDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.salesAmountDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.SalesAmount = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.typeOfSaleByAmountLastWeekBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.weeklySalesView = new ManagementApplication.WeeklySalesView();
+            this.typeOfSaleByAmountLastWeekTableAdapter = new ManagementApplication.WeeklySalesViewTableAdapters.TypeOfSaleByAmountLastWeekTableAdapter();
+            this.chart1 = new System.Windows.Forms.DataVisualization.Charting.Chart();
+            this.typeOfSaleByAmountLastWeekBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.weeklySalesView)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.typeOfSaleByAmountLastWeekBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.weeklySalesView)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.chart1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.typeOfSaleByAmountLastWeekBindingSource1)).BeginInit();
             this.SuspendLayout();
             // 
             // groupBox1
@@ -97,6 +104,7 @@
             this.LogOutbtn.TabIndex = 12;
             this.LogOutbtn.Text = "Log Out";
             this.LogOutbtn.UseVisualStyleBackColor = true;
+            this.LogOutbtn.Click += new System.EventHandler(this.LogOutbtn_Click);
             // 
             // pictureBox3
             // 
@@ -204,27 +212,13 @@
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.transactionTypeDataGridViewTextBoxColumn,
-            this.salesAmountDataGridViewTextBoxColumn});
+            this.SalesAmount});
             this.dataGridView1.DataSource = this.typeOfSaleByAmountLastWeekBindingSource;
-            this.dataGridView1.Location = new System.Drawing.Point(438, 108);
+            this.dataGridView1.Location = new System.Drawing.Point(267, 101);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.ReadOnly = true;
-            this.dataGridView1.Size = new System.Drawing.Size(329, 150);
+            this.dataGridView1.Size = new System.Drawing.Size(246, 187);
             this.dataGridView1.TabIndex = 15;
-            // 
-            // weeklySalesView
-            // 
-            this.weeklySalesView.DataSetName = "WeeklySalesView";
-            this.weeklySalesView.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // typeOfSaleByAmountLastWeekBindingSource
-            // 
-            this.typeOfSaleByAmountLastWeekBindingSource.DataMember = "TypeOfSaleByAmountLastWeek";
-            this.typeOfSaleByAmountLastWeekBindingSource.DataSource = this.weeklySalesView;
-            // 
-            // typeOfSaleByAmountLastWeekTableAdapter
-            // 
-            this.typeOfSaleByAmountLastWeekTableAdapter.ClearBeforeFill = true;
             // 
             // transactionTypeDataGridViewTextBoxColumn
             // 
@@ -233,12 +227,51 @@
             this.transactionTypeDataGridViewTextBoxColumn.Name = "transactionTypeDataGridViewTextBoxColumn";
             this.transactionTypeDataGridViewTextBoxColumn.ReadOnly = true;
             // 
-            // salesAmountDataGridViewTextBoxColumn
+            // SalesAmount
             // 
-            this.salesAmountDataGridViewTextBoxColumn.DataPropertyName = "Sales Amount";
-            this.salesAmountDataGridViewTextBoxColumn.HeaderText = "SalesAmount";
-            this.salesAmountDataGridViewTextBoxColumn.Name = "salesAmountDataGridViewTextBoxColumn";
-            this.salesAmountDataGridViewTextBoxColumn.ReadOnly = true;
+            this.SalesAmount.DataPropertyName = "SalesAmount";
+            this.SalesAmount.HeaderText = "Sales Amount";
+            this.SalesAmount.Name = "SalesAmount";
+            this.SalesAmount.ReadOnly = true;
+            // 
+            // typeOfSaleByAmountLastWeekBindingSource
+            // 
+            this.typeOfSaleByAmountLastWeekBindingSource.DataMember = "TypeOfSaleByAmountLastWeek";
+            this.typeOfSaleByAmountLastWeekBindingSource.DataSource = this.weeklySalesView;
+            // 
+            // weeklySalesView
+            // 
+            this.weeklySalesView.DataSetName = "WeeklySalesView";
+            this.weeklySalesView.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // typeOfSaleByAmountLastWeekTableAdapter
+            // 
+            this.typeOfSaleByAmountLastWeekTableAdapter.ClearBeforeFill = true;
+            // 
+            // chart1
+            // 
+            chartArea1.Name = "ChartArea1";
+            this.chart1.ChartAreas.Add(chartArea1);
+            this.chart1.DataSource = this.typeOfSaleByAmountLastWeekBindingSource1;
+            legend1.Name = "Legend1";
+            this.chart1.Legends.Add(legend1);
+            this.chart1.Location = new System.Drawing.Point(614, 101);
+            this.chart1.Name = "chart1";
+            series1.ChartArea = "ChartArea1";
+            series1.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Doughnut;
+            series1.Legend = "Legend1";
+            series1.Name = "Weekly Sales";
+            series1.XValueMember = "TransactionType";
+            series1.YValueMembers = "SalesAmount";
+            this.chart1.Series.Add(series1);
+            this.chart1.Size = new System.Drawing.Size(238, 206);
+            this.chart1.TabIndex = 16;
+            this.chart1.Text = "chart1";
+            // 
+            // typeOfSaleByAmountLastWeekBindingSource1
+            // 
+            this.typeOfSaleByAmountLastWeekBindingSource1.DataMember = "TypeOfSaleByAmountLastWeek";
+            this.typeOfSaleByAmountLastWeekBindingSource1.DataSource = this.weeklySalesView;
             // 
             // WeeklySalesReportWindow
             // 
@@ -246,6 +279,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveBorder;
             this.ClientSize = new System.Drawing.Size(953, 490);
+            this.Controls.Add(this.chart1);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.groupBox1);
@@ -259,8 +293,10 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.weeklySalesView)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.typeOfSaleByAmountLastWeekBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.weeklySalesView)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.chart1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.typeOfSaleByAmountLastWeekBindingSource1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -284,7 +320,10 @@
         private WeeklySalesView weeklySalesView;
         private System.Windows.Forms.BindingSource typeOfSaleByAmountLastWeekBindingSource;
         private WeeklySalesViewTableAdapters.TypeOfSaleByAmountLastWeekTableAdapter typeOfSaleByAmountLastWeekTableAdapter;
-        private System.Windows.Forms.DataGridViewTextBoxColumn transactionTypeDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn salesAmountDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn transactionTypeDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn SalesAmount;
+        private System.Windows.Forms.DataVisualization.Charting.Chart chart1;
+        private System.Windows.Forms.BindingSource typeOfSaleByAmountLastWeekBindingSource1;
     }
 }

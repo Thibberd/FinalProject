@@ -43,20 +43,20 @@
             this.UserAdminbtn = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.productListViewData = new ManagementApplication.ProductListViewData();
-            this.productListViewBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.productList_ViewTableAdapter = new ManagementApplication.ProductListViewDataTableAdapters.ProductList_ViewTableAdapter();
             this.productNameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.brandDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.productDescriptionDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.productListViewBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.productListViewData = new ManagementApplication.ProductListViewData();
+            this.productList_ViewTableAdapter = new ManagementApplication.ProductListViewDataTableAdapters.ProductList_ViewTableAdapter();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.productListViewData)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.productListViewBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.productListViewData)).BeginInit();
             this.SuspendLayout();
             // 
             // groupBox1
@@ -98,6 +98,7 @@
             this.LogOutbtn.TabIndex = 12;
             this.LogOutbtn.Text = "Log Out";
             this.LogOutbtn.UseVisualStyleBackColor = true;
+            this.LogOutbtn.Click += new System.EventHandler(this.LogOutbtn_Click);
             // 
             // pictureBox3
             // 
@@ -215,20 +216,6 @@
             this.dataGridView1.Size = new System.Drawing.Size(385, 74);
             this.dataGridView1.TabIndex = 19;
             // 
-            // productListViewData
-            // 
-            this.productListViewData.DataSetName = "ProductListViewData";
-            this.productListViewData.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // productListViewBindingSource
-            // 
-            this.productListViewBindingSource.DataMember = "ProductList_View";
-            this.productListViewBindingSource.DataSource = this.productListViewData;
-            // 
-            // productList_ViewTableAdapter
-            // 
-            this.productList_ViewTableAdapter.ClearBeforeFill = true;
-            // 
             // productNameDataGridViewTextBoxColumn
             // 
             this.productNameDataGridViewTextBoxColumn.DataPropertyName = "ProductName";
@@ -250,6 +237,20 @@
             this.productDescriptionDataGridViewTextBoxColumn.Name = "productDescriptionDataGridViewTextBoxColumn";
             this.productDescriptionDataGridViewTextBoxColumn.ReadOnly = true;
             // 
+            // productListViewBindingSource
+            // 
+            this.productListViewBindingSource.DataMember = "ProductList_View";
+            this.productListViewBindingSource.DataSource = this.productListViewData;
+            // 
+            // productListViewData
+            // 
+            this.productListViewData.DataSetName = "ProductListViewData";
+            this.productListViewData.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // productList_ViewTableAdapter
+            // 
+            this.productList_ViewTableAdapter.ClearBeforeFill = true;
+            // 
             // ProductListView
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -269,8 +270,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.productListViewData)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.productListViewBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.productListViewData)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 

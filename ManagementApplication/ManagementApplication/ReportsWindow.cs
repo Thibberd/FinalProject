@@ -67,5 +67,12 @@ namespace ManagementApplication
             amountbySaleTypeWindow.Show();
             this.Hide();
         }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            ManagementLogInWindow managementLogIn = new ManagementLogInWindow();
+            managementLogIn.Show();
+            this.Hide();
+        }
     }
 }

@@ -62,6 +62,7 @@
             this.Bankingbtn = new System.Windows.Forms.Button();
             this.StockBtn = new System.Windows.Forms.Button();
             this.UserAdminbtn = new System.Windows.Forms.Button();
+            this.ScreenShotbtn = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.systembarDataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.stockControlViewBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ProductView)).BeginInit();
@@ -119,7 +120,7 @@
             this.ProductView.DataSource = this.productBindingSource;
             this.ProductView.Location = new System.Drawing.Point(260, 66);
             this.ProductView.Name = "ProductView";
-            this.ProductView.Size = new System.Drawing.Size(323, 305);
+            this.ProductView.Size = new System.Drawing.Size(348, 305);
             this.ProductView.TabIndex = 5;
             // 
             // productIDDataGridViewTextBoxColumn
@@ -260,6 +261,7 @@
             this.LogOutbtn.TabIndex = 12;
             this.LogOutbtn.Text = "Log Out";
             this.LogOutbtn.UseVisualStyleBackColor = true;
+            this.LogOutbtn.Click += new System.EventHandler(this.LogOutbtn_Click);
             // 
             // pictureBox3
             // 
@@ -348,7 +350,16 @@
             this.UserAdminbtn.TabIndex = 1;
             this.UserAdminbtn.Text = "User Admin";
             this.UserAdminbtn.UseVisualStyleBackColor = false;
-            
+            // 
+            // ScreenShotbtn
+            // 
+            this.ScreenShotbtn.Location = new System.Drawing.Point(788, 417);
+            this.ScreenShotbtn.Name = "ScreenShotbtn";
+            this.ScreenShotbtn.Size = new System.Drawing.Size(134, 41);
+            this.ScreenShotbtn.TabIndex = 12;
+            this.ScreenShotbtn.Text = "Screen Shot";
+            this.ScreenShotbtn.UseVisualStyleBackColor = true;
+            this.ScreenShotbtn.Click += new System.EventHandler(this.ScreenShotbtn_Click);
             // 
             // StockControl
             // 
@@ -356,6 +367,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveBorder;
             this.ClientSize = new System.Drawing.Size(1011, 483);
+            this.Controls.Add(this.ScreenShotbtn);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.StockGridView);
@@ -416,5 +428,6 @@
         private System.Windows.Forms.Button Bankingbtn;
         private System.Windows.Forms.Button StockBtn;
         private System.Windows.Forms.Button UserAdminbtn;
+        private System.Windows.Forms.Button ScreenShotbtn;
     }
 }

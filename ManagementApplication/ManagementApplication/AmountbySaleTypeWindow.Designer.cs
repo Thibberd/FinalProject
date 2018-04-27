@@ -30,6 +30,9 @@
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(AmountbySaleTypeWindow));
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea1 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend1 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series1 = new System.Windows.Forms.DataVisualization.Charting.Series();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.LogOutbtn = new System.Windows.Forms.Button();
@@ -42,20 +45,26 @@
             this.StockBtn = new System.Windows.Forms.Button();
             this.UserAdminbtn = new System.Windows.Forms.Button();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.typeOfsalebyAmount = new ManagementApplication.TypeOfsalebyAmount();
-            this.typeOfSaleByAmountBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.typeOfSaleByAmountTableAdapter = new ManagementApplication.TypeOfsalebyAmountTableAdapters.TypeOfSaleByAmountTableAdapter();
             this.transactionTypeDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.salesAmountDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.typeOfSaleByAmountBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.typeOfsalebyAmount = new ManagementApplication.TypeOfsalebyAmount();
+            this.typeOfSaleByAmountTableAdapter = new ManagementApplication.TypeOfsalebyAmountTableAdapters.TypeOfSaleByAmountTableAdapter();
             this.label2 = new System.Windows.Forms.Label();
+            this.chart1 = new System.Windows.Forms.DataVisualization.Charting.Chart();
+            this.typeOfsalebyAmountBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
+            this.typeOfSaleByAmountBindingSource2 = new System.Windows.Forms.BindingSource(this.components);
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.typeOfsalebyAmount)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.typeOfSaleByAmountBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.typeOfsalebyAmount)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.chart1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.typeOfsalebyAmountBindingSource1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.typeOfSaleByAmountBindingSource2)).BeginInit();
             this.SuspendLayout();
             // 
             // groupBox1
@@ -97,6 +106,7 @@
             this.LogOutbtn.TabIndex = 12;
             this.LogOutbtn.Text = "Log Out";
             this.LogOutbtn.UseVisualStyleBackColor = true;
+            this.LogOutbtn.Click += new System.EventHandler(this.LogOutbtn_Click);
             // 
             // pictureBox3
             // 
@@ -194,24 +204,10 @@
             this.transactionTypeDataGridViewTextBoxColumn,
             this.salesAmountDataGridViewTextBoxColumn});
             this.dataGridView1.DataSource = this.typeOfSaleByAmountBindingSource;
-            this.dataGridView1.Location = new System.Drawing.Point(406, 145);
+            this.dataGridView1.Location = new System.Drawing.Point(260, 91);
             this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(383, 75);
+            this.dataGridView1.Size = new System.Drawing.Size(267, 195);
             this.dataGridView1.TabIndex = 16;
-            // 
-            // typeOfsalebyAmount
-            // 
-            this.typeOfsalebyAmount.DataSetName = "TypeOfsalebyAmount";
-            this.typeOfsalebyAmount.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // typeOfSaleByAmountBindingSource
-            // 
-            this.typeOfSaleByAmountBindingSource.DataMember = "TypeOfSaleByAmount";
-            this.typeOfSaleByAmountBindingSource.DataSource = this.typeOfsalebyAmount;
-            // 
-            // typeOfSaleByAmountTableAdapter
-            // 
-            this.typeOfSaleByAmountTableAdapter.ClearBeforeFill = true;
             // 
             // transactionTypeDataGridViewTextBoxColumn
             // 
@@ -225,6 +221,20 @@
             this.salesAmountDataGridViewTextBoxColumn.HeaderText = "SalesAmount";
             this.salesAmountDataGridViewTextBoxColumn.Name = "salesAmountDataGridViewTextBoxColumn";
             // 
+            // typeOfSaleByAmountBindingSource
+            // 
+            this.typeOfSaleByAmountBindingSource.DataMember = "TypeOfSaleByAmount";
+            this.typeOfSaleByAmountBindingSource.DataSource = this.typeOfsalebyAmount;
+            // 
+            // typeOfsalebyAmount
+            // 
+            this.typeOfsalebyAmount.DataSetName = "TypeOfsalebyAmount";
+            this.typeOfsalebyAmount.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // typeOfSaleByAmountTableAdapter
+            // 
+            this.typeOfSaleByAmountTableAdapter.ClearBeforeFill = true;
+            // 
             // label2
             // 
             this.label2.AutoSize = true;
@@ -235,12 +245,42 @@
             this.label2.TabIndex = 17;
             this.label2.Text = "Amount per Type of Sale";
             // 
+            // chart1
+            // 
+            chartArea1.Name = "ChartArea1";
+            this.chart1.ChartAreas.Add(chartArea1);
+            this.chart1.DataSource = this.typeOfSaleByAmountBindingSource2;
+            legend1.Name = "Legend1";
+            this.chart1.Legends.Add(legend1);
+            this.chart1.Location = new System.Drawing.Point(606, 91);
+            this.chart1.Name = "chart1";
+            series1.ChartArea = "ChartArea1";
+            series1.Legend = "Legend1";
+            series1.Name = "Amount Per Type";
+            series1.XValueMember = "TransactionType";
+            series1.YValueMembers = "SalesAmount";
+            this.chart1.Series.Add(series1);
+            this.chart1.Size = new System.Drawing.Size(304, 194);
+            this.chart1.TabIndex = 18;
+            this.chart1.Text = "chart1";
+            // 
+            // typeOfsalebyAmountBindingSource1
+            // 
+            this.typeOfsalebyAmountBindingSource1.DataSource = this.typeOfsalebyAmount;
+            this.typeOfsalebyAmountBindingSource1.Position = 0;
+            // 
+            // typeOfSaleByAmountBindingSource2
+            // 
+            this.typeOfSaleByAmountBindingSource2.DataMember = "TypeOfSaleByAmount";
+            this.typeOfSaleByAmountBindingSource2.DataSource = this.typeOfsalebyAmountBindingSource1;
+            // 
             // AmountbySaleTypeWindow
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveBorder;
             this.ClientSize = new System.Drawing.Size(974, 484);
+            this.Controls.Add(this.chart1);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.groupBox1);
@@ -254,8 +294,11 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.typeOfsalebyAmount)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.typeOfSaleByAmountBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.typeOfsalebyAmount)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.chart1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.typeOfsalebyAmountBindingSource1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.typeOfSaleByAmountBindingSource2)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -281,5 +324,8 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn transactionTypeDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn salesAmountDataGridViewTextBoxColumn;
         private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.DataVisualization.Charting.Chart chart1;
+        private System.Windows.Forms.BindingSource typeOfSaleByAmountBindingSource2;
+        private System.Windows.Forms.BindingSource typeOfsalebyAmountBindingSource1;
     }
 }
