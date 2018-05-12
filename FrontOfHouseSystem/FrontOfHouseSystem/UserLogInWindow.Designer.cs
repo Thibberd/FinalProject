@@ -47,6 +47,7 @@
             this.OrderList = new System.Windows.Forms.ListBox();
             this.Usernamelbl = new System.Windows.Forms.Label();
             this.DandTlbl = new System.Windows.Forms.Label();
+            this.AmountLabel = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -284,12 +285,22 @@
             this.DandTlbl.TabIndex = 4;
             this.DandTlbl.Text = "label3";
             // 
+            // AmountLabel
+            // 
+            this.AmountLabel.AutoSize = true;
+            this.AmountLabel.Location = new System.Drawing.Point(172, 180);
+            this.AmountLabel.Name = "AmountLabel";
+            this.AmountLabel.Size = new System.Drawing.Size(35, 13);
+            this.AmountLabel.TabIndex = 5;
+            this.AmountLabel.Text = "label3";
+            // 
             // UserLogInWindow
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.ClientSize = new System.Drawing.Size(790, 414);
+            this.Controls.Add(this.AmountLabel);
             this.Controls.Add(this.DandTlbl);
             this.Controls.Add(this.Usernamelbl);
             this.Controls.Add(this.OrderList);
@@ -325,5 +336,6 @@
         private System.Windows.Forms.ListBox OrderList;
         private System.Windows.Forms.Label Usernamelbl;
         private System.Windows.Forms.Label DandTlbl;
+        private System.Windows.Forms.Label AmountLabel;
     }
 }

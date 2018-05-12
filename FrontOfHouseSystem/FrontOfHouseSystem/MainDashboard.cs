@@ -23,7 +23,7 @@ namespace FrontOfHouseSystem
         string firstName;
         string lastName;
         float CalculatedChange;
-        public FOHDashboard(int UserID, string FirstName, string LastName,ListBox.ObjectCollection orderItems, string userName)
+        public FOHDashboard(int UserID, string FirstName, string LastName,ListBox.ObjectCollection orderItems, string userName, string AmountLabel)
         {
             InitializeComponent();
 
@@ -45,14 +45,14 @@ namespace FrontOfHouseSystem
         private void Sparklingbtn_Click(object sender, EventArgs e)
         {
             this.Hide();
-            SparklingWindow sparklingWindow = new SparklingWindow(userID, firstName, lastName, OrderList.Items, Usernamelbl.Text);
+            SparklingWindow sparklingWindow = new SparklingWindow(userID, firstName, lastName, OrderList.Items, Usernamelbl.Text, AmountLabel.Text);
             sparklingWindow.Show();
         }
 
         private void Softbtn_Click(object sender, EventArgs e)
         {
             this.Hide();
-            SoftdrinksWindow softdrinksWindow = new SoftdrinksWindow(userID, firstName, lastName, OrderList.Items, Usernamelbl.Text);
+            SoftdrinksWindow softdrinksWindow = new SoftdrinksWindow(userID, firstName, lastName, OrderList.Items, Usernamelbl.Text, AmountLabel.Text);
             softdrinksWindow.Show();
         }
 
@@ -61,7 +61,7 @@ namespace FrontOfHouseSystem
         private void Draught_Click(object sender, EventArgs e)
         {
             this.Hide();
-            DraughtWindow draughtWindow = new DraughtWindow(userID, firstName, lastName, OrderList.Items, Usernamelbl.Text);
+            DraughtWindow draughtWindow = new DraughtWindow(userID, firstName, lastName, OrderList.Items, Usernamelbl.Text, AmountLabel.Text);
             draughtWindow.Show();
             
         }
@@ -69,35 +69,35 @@ namespace FrontOfHouseSystem
         private void Bottlesbtn_Click(object sender, EventArgs e)
         {
             this.Hide();
-            BottlesWindow bottlesWindow = new BottlesWindow(userID, firstName, lastName, OrderList.Items, Usernamelbl.Text);
+            BottlesWindow bottlesWindow = new BottlesWindow(userID, firstName, lastName, OrderList.Items, Usernamelbl.Text, AmountLabel.Text);
             bottlesWindow.Show();
         }
 
         private void Spiritsbtn_Click(object sender, EventArgs e)
         {
             this.Hide();
-            SpiritsWindow spiritsWindow = new SpiritsWindow(userID, firstName, lastName, OrderList.Items, Usernamelbl.Text);
+            SpiritsWindow spiritsWindow = new SpiritsWindow(userID, firstName, lastName, OrderList.Items, Usernamelbl.Text, AmountLabel.Text);
             spiritsWindow.Show();
         }
 
         private void Winebtn_Click(object sender, EventArgs e)
         {
             this.Hide();
-            WineWindow wineWindow = new WineWindow(userID, firstName, lastName, OrderList.Items, Usernamelbl.Text);
+            WineWindow wineWindow = new WineWindow(userID, firstName, lastName, OrderList.Items, Usernamelbl.Text, AmountLabel.Text);
             wineWindow.Show();
         }
 
         private void Liquersbtn_Click(object sender, EventArgs e)
         {
             this.Hide();
-            LiquersWindow liquersWindow  = new LiquersWindow(userID, firstName, lastName, OrderList.Items, Usernamelbl.Text);
+            LiquersWindow liquersWindow  = new LiquersWindow(userID, firstName, lastName, OrderList.Items, Usernamelbl.Text, AmountLabel.Text);
             liquersWindow.Show();
         }
 
         private void Cocktailsbtn_Click(object sender, EventArgs e)
         {
             this.Hide();
-            CocktailsWindow cocktailsWindow = new CocktailsWindow(userID, firstName, lastName, OrderList.Items, Usernamelbl.Text);
+            CocktailsWindow cocktailsWindow = new CocktailsWindow(userID, firstName, lastName, OrderList.Items, Usernamelbl.Text, AmountLabel.Text);
             cocktailsWindow.Show();
         }
 
