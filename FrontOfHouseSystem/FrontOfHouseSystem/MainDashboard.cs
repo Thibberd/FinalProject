@@ -16,25 +16,28 @@ namespace FrontOfHouseSystem
 
     {
 
-        public float NewTotal = 0;
-        public float OriginalTotal = 0;
-        public float ItemPrice = 0;
+        public float NewTotal ;
+        public float OriginalTotal ;
+        public float ItemPrice  ;
         public float RunningTotal;
         int userID;
         string firstName;
         string lastName;
         float CalculatedChange;
-        public FOHDashboard(int UserID, string FirstName, string LastName,ListBox.ObjectCollection orderItems, string userName, string AmountLabel, float runningTotal)
+        public FOHDashboard(int UserID, string FirstName, string LastName,ListBox.ObjectCollection orderItems, string userName, string amountLabel, float runningTotal)
         {
             InitializeComponent();
 
            OrderList.Items.AddRange(orderItems);
            Usernamelbl.Text = FirstName + " " + LastName;
-            RunningTotal = runningTotal;
+           RunningTotal = runningTotal;
 
             userID = UserID;
             firstName = FirstName;
             lastName = LastName;
+
+            
+            AmountLabel.Text = RunningTotal.ToString("£#0.00");
 
 
         }
@@ -799,7 +802,9 @@ namespace FrontOfHouseSystem
         private void Cashbtn_Click(object sender, EventArgs e)
         {
             this.Hide();
-            EnterAmount enterAmount = new EnterAmount(RunningTotal);
+            Transaction transaction = new Transaction();
+            transaction.transactionID = 4;
+            EnterAmount enterAmount = new EnterAmount(RunningTotal, OrderList.Items, userID, transaction.transactionID);
             enterAmount.Show();
             //need to pass through total label so user is aware of order total and can then check if correct amount is present
         }
@@ -809,7 +814,7 @@ namespace FrontOfHouseSystem
             this.Hide();
             Transaction transaction = new Transaction();
             transaction.transactionID = 2;
-            EFTpaymentWindow eFTpayment = new EFTpaymentWindow(RunningTotal);
+            EFTpaymentWindow eFTpayment = new EFTpaymentWindow(RunningTotal, OrderList.Items, userID, transaction.transactionID);
             eFTpayment.Show();
 
             
@@ -823,7 +828,7 @@ namespace FrontOfHouseSystem
             transaction.transactionID = 4;
             calc = RunningTotal;
             CalculatedChange = 5.00f - calc;
-            PaymentSucessfulwindow paymentSucessfulwindow = new PaymentSucessfulwindow(transaction.transactionID, RunningTotal, CalculatedChange);
+            PaymentSucessfulwindow paymentSucessfulwindow = new PaymentSucessfulwindow(transaction.transactionID, RunningTotal, CalculatedChange, OrderList.Items, userID);
             paymentSucessfulwindow.Show();
             
         }
@@ -836,7 +841,7 @@ namespace FrontOfHouseSystem
             transaction.transactionID = 4;
             calc = RunningTotal;
             CalculatedChange = 10.00f - calc;
-            PaymentSucessfulwindow paymentSucessfulwindow = new PaymentSucessfulwindow(transaction.transactionID, RunningTotal, CalculatedChange);
+            PaymentSucessfulwindow paymentSucessfulwindow = new PaymentSucessfulwindow(transaction.transactionID, RunningTotal, CalculatedChange, OrderList.Items, userID);
             paymentSucessfulwindow.Show();
           
         }
@@ -849,9 +854,21 @@ namespace FrontOfHouseSystem
             transaction.transactionID = 4;
             calc = RunningTotal;
             CalculatedChange = 20.00f - calc;
-            PaymentSucessfulwindow paymentSucessfulwindow = new PaymentSucessfulwindow(transaction.transactionID, RunningTotal, CalculatedChange);
+            PaymentSucessfulwindow paymentSucessfulwindow = new PaymentSucessfulwindow(transaction.transactionID, RunningTotal, CalculatedChange, OrderList.Items,userID);
             paymentSucessfulwindow.Show();
             
+        }
+
+        private void LogOutbtn_Click(object sender, EventArgs e)
+        {
+            UserLogInWindow userLogIn = new UserLogInWindow();
+            userLogIn.Show();
+            this.Hide();
+        }
+
+        private void OpenDrawerBtn_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Cash Register Open");
         }
     }
 }

@@ -14,29 +14,37 @@ namespace FrontOfHouseSystem
     {
         
 
-        System.Windows.Forms.Timer timer = new System.Windows.Forms.Timer();
+        
         public float RunningTotal;
+        public float userID;
+        public float transID;
 
-        public PaymentSucessfulwindow(int TransID, float runningTotal, float Change)
+
+        public PaymentSucessfulwindow(int TransID, float runningTotal, float Change, ListBox.ObjectCollection orderItems, int UserID)
         {
             InitializeComponent();
-            timer.Interval = 10000;
-            timer.Tick += new EventHandler(timer_Tick);
-            timer.Start();
+            
 
             Transaction transaction = new Transaction();
             transaction.transactionID = TransID;
+
+            OrderList.Items.AddRange(orderItems);
+            userID = UserID;
+            transID = TransID;
 
             RunningTotal = runningTotal;
             TotalAmountLbl.Text = RunningTotal.ToString("£#0.00");
             ChangeAmountlbl.Text = Change.ToString("£#0.00");
         }
 
-        void timer_Tick(object sender, EventArgs e)
+        
+            
+private void button1_Click(object sender, EventArgs e)
         {
             this.Close();
             UserLogInWindow userLogInWindow = new UserLogInWindow();
             userLogInWindow.Show();
         }
+        
     }
 }

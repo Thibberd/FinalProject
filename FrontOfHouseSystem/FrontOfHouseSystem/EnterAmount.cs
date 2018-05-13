@@ -15,11 +15,19 @@ namespace FrontOfHouseSystem
 
         public float CalculatedChange ;
         public float RunningTotal;
+        public int userID;
+        public int transID;
 
-        public EnterAmount(float runningTotal)
+        public EnterAmount(float runningTotal, ListBox.ObjectCollection orderItems, int UserID, int TransID)
+
+            
         {
             InitializeComponent();
             RunningTotal = runningTotal;
+            OrderList.Items.AddRange(orderItems);
+            userID = UserID;
+            transID = TransID;
+            
         }
 
         private void Enterbtn_Click(object sender, EventArgs e)
@@ -27,14 +35,14 @@ namespace FrontOfHouseSystem
             Transaction transaction = new Transaction();
             if (transaction.transactionID == 2)
             {
-                EFTpaymentWindow eFTpaymentWindow = new EFTpaymentWindow(RunningTotal);
+                EFTpaymentWindow eFTpaymentWindow = new EFTpaymentWindow(RunningTotal, OrderList.Items, userID, transaction.transactionID);
                 this.Hide();
                 eFTpaymentWindow.Show();
             }
             else if (transaction.transactionID == 4)
             {
                 CalculatedChange = (float.Parse(EnteredAmountlbl.Text) - RunningTotal);
-                PaymentSucessfulwindow paymentSucessfulwindow = new PaymentSucessfulwindow(transaction.transactionID,RunningTotal, CalculatedChange);
+                PaymentSucessfulwindow paymentSucessfulwindow = new PaymentSucessfulwindow(transaction.transactionID,RunningTotal, CalculatedChange, OrderList.Items, userID);
                 paymentSucessfulwindow.Show(); //show payment sucesful window
             }
         }

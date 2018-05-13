@@ -62,6 +62,8 @@
             this.Homebtn = new System.Windows.Forms.Button();
             this.TotalLbl = new System.Windows.Forms.Label();
             this.AmountLabel = new System.Windows.Forms.Label();
+            this.LogOutbtn = new System.Windows.Forms.Button();
+            this.OpenDrawerBtn = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // Draught
@@ -451,12 +453,34 @@
             this.AmountLabel.TabIndex = 33;
             this.AmountLabel.Text = "00.00";
             // 
+            // LogOutbtn
+            // 
+            this.LogOutbtn.Location = new System.Drawing.Point(30, 421);
+            this.LogOutbtn.Name = "LogOutbtn";
+            this.LogOutbtn.Size = new System.Drawing.Size(131, 41);
+            this.LogOutbtn.TabIndex = 34;
+            this.LogOutbtn.Text = "Log Out";
+            this.LogOutbtn.UseVisualStyleBackColor = true;
+            this.LogOutbtn.Click += new System.EventHandler(this.LogOutbtn_Click);
+            // 
+            // OpenDrawerBtn
+            // 
+            this.OpenDrawerBtn.Location = new System.Drawing.Point(177, 422);
+            this.OpenDrawerBtn.Name = "OpenDrawerBtn";
+            this.OpenDrawerBtn.Size = new System.Drawing.Size(145, 40);
+            this.OpenDrawerBtn.TabIndex = 35;
+            this.OpenDrawerBtn.Text = "Open Drawer";
+            this.OpenDrawerBtn.UseVisualStyleBackColor = true;
+            this.OpenDrawerBtn.Click += new System.EventHandler(this.OpenDrawerBtn_Click);
+            // 
             // FOHDashboard
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.ClientSize = new System.Drawing.Size(770, 449);
+            this.ClientSize = new System.Drawing.Size(770, 465);
+            this.Controls.Add(this.OpenDrawerBtn);
+            this.Controls.Add(this.LogOutbtn);
             this.Controls.Add(this.AmountLabel);
             this.Controls.Add(this.TotalLbl);
             this.Controls.Add(this.Homebtn);
@@ -534,6 +558,8 @@
         private System.Windows.Forms.Button Homebtn;
         private System.Windows.Forms.Label TotalLbl;
         public System.Windows.Forms.Label AmountLabel;
+        private System.Windows.Forms.Button LogOutbtn;
+        private System.Windows.Forms.Button OpenDrawerBtn;
     }
 }
 

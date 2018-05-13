@@ -609,7 +609,7 @@ namespace FrontOfHouseSystem
         private void Cashbtn_Click(object sender, EventArgs e)
         {
             this.Hide();
-            EnterAmount enterAmount = new EnterAmount(RunningTotal);
+            EnterAmount enterAmount = new EnterAmount(RunningTotal, OrderList.Items, userID, 2);
             enterAmount.Show();
         }
 
@@ -621,7 +621,7 @@ namespace FrontOfHouseSystem
             transaction.transactionID = 4;
             calc = RunningTotal;
             CalculatedChange = 5.00f - calc;
-            PaymentSucessfulwindow paymentSucessfulwindow = new PaymentSucessfulwindow(transaction.transactionID, RunningTotal, CalculatedChange);
+            PaymentSucessfulwindow paymentSucessfulwindow = new PaymentSucessfulwindow(transaction.transactionID, RunningTotal, CalculatedChange, OrderList.Items, userID);
             paymentSucessfulwindow.Show();
         }
 
@@ -633,7 +633,7 @@ namespace FrontOfHouseSystem
             transaction.transactionID = 4;
             calc = RunningTotal;
             CalculatedChange = 10.00f - calc;
-            PaymentSucessfulwindow paymentSucessfulwindow = new PaymentSucessfulwindow(transaction.transactionID, RunningTotal, CalculatedChange);
+            PaymentSucessfulwindow paymentSucessfulwindow = new PaymentSucessfulwindow(transaction.transactionID, RunningTotal, CalculatedChange, OrderList.Items, userID);
             paymentSucessfulwindow.Show();
         }
 
@@ -645,7 +645,7 @@ namespace FrontOfHouseSystem
             transaction.transactionID = 4;
             calc = RunningTotal;
             CalculatedChange = 20.00f - calc;
-            PaymentSucessfulwindow paymentSucessfulwindow = new PaymentSucessfulwindow(transaction.transactionID, RunningTotal, CalculatedChange);
+            PaymentSucessfulwindow paymentSucessfulwindow = new PaymentSucessfulwindow(transaction.transactionID, RunningTotal, CalculatedChange, OrderList.Items, userID);
             paymentSucessfulwindow.Show();
         }
 
@@ -654,7 +654,7 @@ namespace FrontOfHouseSystem
             this.Hide();
             Transaction transaction = new Transaction();
             transaction.transactionID = 2;
-            EFTpaymentWindow eFTpayment = new EFTpaymentWindow(RunningTotal);
+            EFTpaymentWindow eFTpayment = new EFTpaymentWindow(RunningTotal, OrderList.Items, userID, transaction.transactionID);
             eFTpayment.Show();
         }
 
@@ -668,5 +668,6 @@ namespace FrontOfHouseSystem
                 RunningTotal = NewTotal;
                 AmountLabel.Text = NewTotal.ToString("#£0.00");
             }
+        }
     }
 }

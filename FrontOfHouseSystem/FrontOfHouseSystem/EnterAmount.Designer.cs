@@ -46,6 +46,7 @@
             this.Number1btn = new System.Windows.Forms.Button();
             this.Pointbtn = new System.Windows.Forms.Button();
             this.Doulbe0btn = new System.Windows.Forms.Button();
+            this.OrderList = new System.Windows.Forms.ListBox();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -271,12 +272,22 @@
             this.Doulbe0btn.UseVisualStyleBackColor = false;
             this.Doulbe0btn.Click += new System.EventHandler(this.Doulbe0btn_Click);
             // 
+            // OrderList
+            // 
+            this.OrderList.FormattingEnabled = true;
+            this.OrderList.Location = new System.Drawing.Point(453, 168);
+            this.OrderList.Name = "OrderList";
+            this.OrderList.Size = new System.Drawing.Size(120, 95);
+            this.OrderList.TabIndex = 28;
+            this.OrderList.Visible = false;
+            // 
             // EnterAmount
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.ClientSize = new System.Drawing.Size(574, 394);
+            this.Controls.Add(this.OrderList);
             this.Controls.Add(this.Doulbe0btn);
             this.Controls.Add(this.Pointbtn);
             this.Controls.Add(this.button12);
@@ -323,5 +334,6 @@
         private System.Windows.Forms.Button Pointbtn;
         private System.Windows.Forms.Button Doulbe0btn;
         private System.Windows.Forms.Label EnteredAmountlbl;
+        private System.Windows.Forms.ListBox OrderList;
     }
 }
