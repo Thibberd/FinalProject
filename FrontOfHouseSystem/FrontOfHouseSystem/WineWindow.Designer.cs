@@ -145,18 +145,19 @@
             // 
             // Voidbtn
             // 
-            this.Voidbtn.Location = new System.Drawing.Point(82, 413);
+            this.Voidbtn.Location = new System.Drawing.Point(106, 415);
             this.Voidbtn.Name = "Voidbtn";
-            this.Voidbtn.Size = new System.Drawing.Size(75, 23);
+            this.Voidbtn.Size = new System.Drawing.Size(112, 32);
             this.Voidbtn.TabIndex = 88;
             this.Voidbtn.Text = "Void";
             this.Voidbtn.UseVisualStyleBackColor = true;
+            this.Voidbtn.Click += new System.EventHandler(this.Voidbtn_Click);
             // 
             // EFTbtn
             // 
             this.EFTbtn.Location = new System.Drawing.Point(1, 413);
             this.EFTbtn.Name = "EFTbtn";
-            this.EFTbtn.Size = new System.Drawing.Size(75, 23);
+            this.EFTbtn.Size = new System.Drawing.Size(99, 32);
             this.EFTbtn.TabIndex = 87;
             this.EFTbtn.Text = "EFT";
             this.EFTbtn.UseVisualStyleBackColor = true;
@@ -395,7 +396,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.ClientSize = new System.Drawing.Size(777, 446);
+            this.ClientSize = new System.Drawing.Size(777, 459);
             this.Controls.Add(this.AmountLabel);
             this.Controls.Add(this.TotalLbl);
             this.Controls.Add(this.Usernamelbl);

@@ -56,18 +56,19 @@
             // 
             // Voidbtn
             // 
-            this.Voidbtn.Location = new System.Drawing.Point(93, 415);
+            this.Voidbtn.Location = new System.Drawing.Point(111, 413);
             this.Voidbtn.Name = "Voidbtn";
-            this.Voidbtn.Size = new System.Drawing.Size(75, 23);
+            this.Voidbtn.Size = new System.Drawing.Size(75, 26);
             this.Voidbtn.TabIndex = 127;
             this.Voidbtn.Text = "Void";
             this.Voidbtn.UseVisualStyleBackColor = true;
+            this.Voidbtn.Click += new System.EventHandler(this.Voidbtn_Click);
             // 
             // EFTbtn
             // 
             this.EFTbtn.Location = new System.Drawing.Point(12, 415);
             this.EFTbtn.Name = "EFTbtn";
-            this.EFTbtn.Size = new System.Drawing.Size(75, 23);
+            this.EFTbtn.Size = new System.Drawing.Size(89, 24);
             this.EFTbtn.TabIndex = 126;
             this.EFTbtn.Text = "EFT";
             this.EFTbtn.UseVisualStyleBackColor = true;

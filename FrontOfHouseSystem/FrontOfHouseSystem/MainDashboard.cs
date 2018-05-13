@@ -158,9 +158,11 @@ namespace FrontOfHouseSystem
 
         private void Voidbtn_Click(object sender, EventArgs e)
         {
-            if (OrderList.SelectedIndex >= 0) {
-                OrderList.Items.RemoveAt(this.OrderList.SelectedIndex);
-                NewTotal = NewTotal - ItemPrice;
+            int iLastInd = OrderList.Items.Count - 1;
+            if (iLastInd >= 0) {
+                OrderList.Items.RemoveAt(iLastInd);
+                NewTotal = RunningTotal - ItemPrice;
+                RunningTotal = NewTotal;
                 AmountLabel.Text = NewTotal.ToString("#£0.00");            }
         }
 

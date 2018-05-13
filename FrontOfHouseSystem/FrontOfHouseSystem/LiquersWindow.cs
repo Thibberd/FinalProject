@@ -17,10 +17,10 @@ namespace FrontOfHouseSystem
         int userID;
         string firstName;
         string lastName;
-        public float NewTotal ;
-        public float OriginalTotal ;
-        public float ItemPrice ;
-        public float  RunningTotal;
+        public float NewTotal;
+        public float OriginalTotal;
+        public float ItemPrice;
+        public float RunningTotal;
         public float CalculatedChange;
 
         public LiquersWindow(int UserID, string FirstName, string LastName, ListBox.ObjectCollection orderItems, string userName, string amount, float runningTotal)
@@ -396,6 +396,18 @@ namespace FrontOfHouseSystem
             transaction.transactionID = 2;
             EFTpaymentWindow eFTpayment = new EFTpaymentWindow(RunningTotal);
             eFTpayment.Show();
+        }
+
+        private void Voidbtn_Click(object sender, EventArgs e)
+        {
+            int iLastInd = OrderList.Items.Count - 1;
+            if (iLastInd >= 0)
+            {
+                OrderList.Items.RemoveAt(iLastInd);
+                NewTotal = RunningTotal - ItemPrice;
+                RunningTotal = NewTotal;
+                AmountLabel.Text = NewTotal.ToString("#£0.00");
+            }
         }
     }
 }
