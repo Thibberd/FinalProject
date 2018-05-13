@@ -15,8 +15,9 @@ namespace FrontOfHouseSystem
         
 
         System.Windows.Forms.Timer timer = new System.Windows.Forms.Timer();
+        public float RunningTotal;
 
-        public PaymentSucessfulwindow(int TransID, string AmountTotal, float Change)
+        public PaymentSucessfulwindow(int TransID, float runningTotal, float Change)
         {
             InitializeComponent();
             timer.Interval = 10000;
@@ -25,7 +26,9 @@ namespace FrontOfHouseSystem
 
             Transaction transaction = new Transaction();
             transaction.transactionID = TransID;
-            TotalAmountLbl.Text = AmountTotal;
+
+            RunningTotal = runningTotal;
+            TotalAmountLbl.Text = RunningTotal.ToString("£#0.00");
             ChangeAmountlbl.Text = Change.ToString("£#0.00");
         }
 

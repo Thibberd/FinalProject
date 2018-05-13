@@ -31,21 +31,21 @@
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.EnteredAmountlbl = new System.Windows.Forms.Label();
             this.button12 = new System.Windows.Forms.Button();
             this.Enterbtn = new System.Windows.Forms.Button();
-            this.button10 = new System.Windows.Forms.Button();
-            this.button9 = new System.Windows.Forms.Button();
-            this.button8 = new System.Windows.Forms.Button();
-            this.button7 = new System.Windows.Forms.Button();
-            this.button6 = new System.Windows.Forms.Button();
-            this.button5 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button13 = new System.Windows.Forms.Button();
-            this.button14 = new System.Windows.Forms.Button();
-            this.EnteredAmountlbl = new System.Windows.Forms.Label();
+            this.Number0btn = new System.Windows.Forms.Button();
+            this.Number9btn = new System.Windows.Forms.Button();
+            this.Number8btn = new System.Windows.Forms.Button();
+            this.Number7btn = new System.Windows.Forms.Button();
+            this.Number6btn = new System.Windows.Forms.Button();
+            this.Number5btn = new System.Windows.Forms.Button();
+            this.Number4btn = new System.Windows.Forms.Button();
+            this.Number3btn = new System.Windows.Forms.Button();
+            this.Number2btn = new System.Windows.Forms.Button();
+            this.Number1btn = new System.Windows.Forms.Button();
+            this.Pointbtn = new System.Windows.Forms.Button();
+            this.Doulbe0btn = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -65,7 +65,7 @@
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.Yellow;
-            this.label2.Location = new System.Drawing.Point(10, 11);
+            this.label2.Location = new System.Drawing.Point(30, 13);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(36, 37);
             this.label2.TabIndex = 1;
@@ -80,6 +80,17 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(259, 61);
             this.panel1.TabIndex = 2;
+            // 
+            // EnteredAmountlbl
+            // 
+            this.EnteredAmountlbl.AutoSize = true;
+            this.EnteredAmountlbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.EnteredAmountlbl.ForeColor = System.Drawing.Color.Yellow;
+            this.EnteredAmountlbl.Location = new System.Drawing.Point(100, 17);
+            this.EnteredAmountlbl.Name = "EnteredAmountlbl";
+            this.EnteredAmountlbl.Size = new System.Drawing.Size(92, 33);
+            this.EnteredAmountlbl.TabIndex = 28;
+            this.EnteredAmountlbl.Text = "00.00";
             // 
             // button12
             // 
@@ -104,158 +115,161 @@
             this.Enterbtn.UseVisualStyleBackColor = false;
             this.Enterbtn.Click += new System.EventHandler(this.Enterbtn_Click);
             // 
-            // button10
+            // Number0btn
             // 
-            this.button10.BackColor = System.Drawing.Color.Chartreuse;
-            this.button10.Font = new System.Drawing.Font("Arial Rounded MT Bold", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button10.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.button10.Location = new System.Drawing.Point(256, 279);
-            this.button10.Name = "button10";
-            this.button10.Size = new System.Drawing.Size(46, 31);
-            this.button10.TabIndex = 23;
-            this.button10.Text = "0";
-            this.button10.UseVisualStyleBackColor = false;
+            this.Number0btn.BackColor = System.Drawing.Color.Chartreuse;
+            this.Number0btn.Font = new System.Drawing.Font("Arial Rounded MT Bold", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Number0btn.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.Number0btn.Location = new System.Drawing.Point(256, 279);
+            this.Number0btn.Name = "Number0btn";
+            this.Number0btn.Size = new System.Drawing.Size(46, 31);
+            this.Number0btn.TabIndex = 23;
+            this.Number0btn.Text = "0";
+            this.Number0btn.UseVisualStyleBackColor = false;
+            this.Number0btn.Click += new System.EventHandler(this.Number0btn_Click);
             // 
-            // button9
+            // Number9btn
             // 
-            this.button9.BackColor = System.Drawing.Color.Chartreuse;
-            this.button9.Font = new System.Drawing.Font("Arial Rounded MT Bold", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button9.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.button9.Location = new System.Drawing.Point(323, 242);
-            this.button9.Name = "button9";
-            this.button9.Size = new System.Drawing.Size(46, 31);
-            this.button9.TabIndex = 22;
-            this.button9.Text = "9";
-            this.button9.UseVisualStyleBackColor = false;
+            this.Number9btn.BackColor = System.Drawing.Color.Chartreuse;
+            this.Number9btn.Font = new System.Drawing.Font("Arial Rounded MT Bold", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Number9btn.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.Number9btn.Location = new System.Drawing.Point(323, 242);
+            this.Number9btn.Name = "Number9btn";
+            this.Number9btn.Size = new System.Drawing.Size(46, 31);
+            this.Number9btn.TabIndex = 22;
+            this.Number9btn.Text = "9";
+            this.Number9btn.UseVisualStyleBackColor = false;
+            this.Number9btn.Click += new System.EventHandler(this.Number9btn_Click);
             // 
-            // button8
+            // Number8btn
             // 
-            this.button8.BackColor = System.Drawing.Color.Chartreuse;
-            this.button8.Font = new System.Drawing.Font("Arial Rounded MT Bold", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button8.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.button8.Location = new System.Drawing.Point(256, 242);
-            this.button8.Name = "button8";
-            this.button8.Size = new System.Drawing.Size(46, 31);
-            this.button8.TabIndex = 21;
-            this.button8.Text = "8";
-            this.button8.UseVisualStyleBackColor = false;
+            this.Number8btn.BackColor = System.Drawing.Color.Chartreuse;
+            this.Number8btn.Font = new System.Drawing.Font("Arial Rounded MT Bold", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Number8btn.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.Number8btn.Location = new System.Drawing.Point(256, 242);
+            this.Number8btn.Name = "Number8btn";
+            this.Number8btn.Size = new System.Drawing.Size(46, 31);
+            this.Number8btn.TabIndex = 21;
+            this.Number8btn.Text = "8";
+            this.Number8btn.UseVisualStyleBackColor = false;
+            this.Number8btn.Click += new System.EventHandler(this.Number8btn_Click);
             // 
-            // button7
+            // Number7btn
             // 
-            this.button7.BackColor = System.Drawing.Color.Chartreuse;
-            this.button7.Font = new System.Drawing.Font("Arial Rounded MT Bold", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button7.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.button7.Location = new System.Drawing.Point(187, 242);
-            this.button7.Name = "button7";
-            this.button7.Size = new System.Drawing.Size(46, 31);
-            this.button7.TabIndex = 20;
-            this.button7.Text = "7";
-            this.button7.UseVisualStyleBackColor = false;
+            this.Number7btn.BackColor = System.Drawing.Color.Chartreuse;
+            this.Number7btn.Font = new System.Drawing.Font("Arial Rounded MT Bold", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Number7btn.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.Number7btn.Location = new System.Drawing.Point(187, 242);
+            this.Number7btn.Name = "Number7btn";
+            this.Number7btn.Size = new System.Drawing.Size(46, 31);
+            this.Number7btn.TabIndex = 20;
+            this.Number7btn.Text = "7";
+            this.Number7btn.UseVisualStyleBackColor = false;
+            this.Number7btn.Click += new System.EventHandler(this.Number7btn_Click);
             // 
-            // button6
+            // Number6btn
             // 
-            this.button6.BackColor = System.Drawing.Color.Chartreuse;
-            this.button6.Font = new System.Drawing.Font("Arial Rounded MT Bold", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button6.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.button6.Location = new System.Drawing.Point(323, 205);
-            this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(46, 31);
-            this.button6.TabIndex = 19;
-            this.button6.Text = "6";
-            this.button6.UseVisualStyleBackColor = false;
+            this.Number6btn.BackColor = System.Drawing.Color.Chartreuse;
+            this.Number6btn.Font = new System.Drawing.Font("Arial Rounded MT Bold", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Number6btn.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.Number6btn.Location = new System.Drawing.Point(323, 205);
+            this.Number6btn.Name = "Number6btn";
+            this.Number6btn.Size = new System.Drawing.Size(46, 31);
+            this.Number6btn.TabIndex = 19;
+            this.Number6btn.Text = "6";
+            this.Number6btn.UseVisualStyleBackColor = false;
+            this.Number6btn.Click += new System.EventHandler(this.Number6btn_Click);
             // 
-            // button5
+            // Number5btn
             // 
-            this.button5.BackColor = System.Drawing.Color.Chartreuse;
-            this.button5.Font = new System.Drawing.Font("Arial Rounded MT Bold", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button5.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.button5.Location = new System.Drawing.Point(256, 205);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(46, 31);
-            this.button5.TabIndex = 18;
-            this.button5.Text = "5";
-            this.button5.UseVisualStyleBackColor = false;
+            this.Number5btn.BackColor = System.Drawing.Color.Chartreuse;
+            this.Number5btn.Font = new System.Drawing.Font("Arial Rounded MT Bold", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Number5btn.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.Number5btn.Location = new System.Drawing.Point(256, 205);
+            this.Number5btn.Name = "Number5btn";
+            this.Number5btn.Size = new System.Drawing.Size(46, 31);
+            this.Number5btn.TabIndex = 18;
+            this.Number5btn.Text = "5";
+            this.Number5btn.UseVisualStyleBackColor = false;
+            this.Number5btn.Click += new System.EventHandler(this.Number5btn_Click);
             // 
-            // button4
+            // Number4btn
             // 
-            this.button4.BackColor = System.Drawing.Color.Chartreuse;
-            this.button4.Font = new System.Drawing.Font("Arial Rounded MT Bold", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button4.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.button4.Location = new System.Drawing.Point(187, 205);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(46, 31);
-            this.button4.TabIndex = 17;
-            this.button4.Text = "4";
-            this.button4.UseVisualStyleBackColor = false;
+            this.Number4btn.BackColor = System.Drawing.Color.Chartreuse;
+            this.Number4btn.Font = new System.Drawing.Font("Arial Rounded MT Bold", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Number4btn.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.Number4btn.Location = new System.Drawing.Point(187, 205);
+            this.Number4btn.Name = "Number4btn";
+            this.Number4btn.Size = new System.Drawing.Size(46, 31);
+            this.Number4btn.TabIndex = 17;
+            this.Number4btn.Text = "4";
+            this.Number4btn.UseVisualStyleBackColor = false;
+            this.Number4btn.Click += new System.EventHandler(this.Number4btn_Click);
             // 
-            // button3
+            // Number3btn
             // 
-            this.button3.BackColor = System.Drawing.Color.Chartreuse;
-            this.button3.Font = new System.Drawing.Font("Arial Rounded MT Bold", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button3.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.button3.Location = new System.Drawing.Point(323, 168);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(46, 31);
-            this.button3.TabIndex = 16;
-            this.button3.Text = "3";
-            this.button3.UseVisualStyleBackColor = false;
+            this.Number3btn.BackColor = System.Drawing.Color.Chartreuse;
+            this.Number3btn.Font = new System.Drawing.Font("Arial Rounded MT Bold", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Number3btn.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.Number3btn.Location = new System.Drawing.Point(323, 168);
+            this.Number3btn.Name = "Number3btn";
+            this.Number3btn.Size = new System.Drawing.Size(46, 31);
+            this.Number3btn.TabIndex = 16;
+            this.Number3btn.Text = "3";
+            this.Number3btn.UseVisualStyleBackColor = false;
+            this.Number3btn.Click += new System.EventHandler(this.Number3btn_Click);
             // 
-            // button2
+            // Number2btn
             // 
-            this.button2.BackColor = System.Drawing.Color.Chartreuse;
-            this.button2.Font = new System.Drawing.Font("Arial Rounded MT Bold", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.button2.Location = new System.Drawing.Point(256, 168);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(46, 31);
-            this.button2.TabIndex = 15;
-            this.button2.Text = "2";
-            this.button2.UseVisualStyleBackColor = false;
+            this.Number2btn.BackColor = System.Drawing.Color.Chartreuse;
+            this.Number2btn.Font = new System.Drawing.Font("Arial Rounded MT Bold", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Number2btn.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.Number2btn.Location = new System.Drawing.Point(256, 168);
+            this.Number2btn.Name = "Number2btn";
+            this.Number2btn.Size = new System.Drawing.Size(46, 31);
+            this.Number2btn.TabIndex = 15;
+            this.Number2btn.Text = "2";
+            this.Number2btn.UseVisualStyleBackColor = false;
+            this.Number2btn.Click += new System.EventHandler(this.Number2btn_Click);
             // 
-            // button1
+            // Number1btn
             // 
-            this.button1.BackColor = System.Drawing.Color.Chartreuse;
-            this.button1.Font = new System.Drawing.Font("Arial Rounded MT Bold", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.button1.Location = new System.Drawing.Point(187, 168);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(46, 31);
-            this.button1.TabIndex = 14;
-            this.button1.Text = "1";
-            this.button1.UseVisualStyleBackColor = false;
+            this.Number1btn.BackColor = System.Drawing.Color.Chartreuse;
+            this.Number1btn.Font = new System.Drawing.Font("Arial Rounded MT Bold", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Number1btn.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.Number1btn.Location = new System.Drawing.Point(187, 168);
+            this.Number1btn.Name = "Number1btn";
+            this.Number1btn.Size = new System.Drawing.Size(46, 31);
+            this.Number1btn.TabIndex = 14;
+            this.Number1btn.Text = "1";
+            this.Number1btn.UseVisualStyleBackColor = false;
+            this.Number1btn.Click += new System.EventHandler(this.Number1btn_Click);
             // 
-            // button13
+            // Pointbtn
             // 
-            this.button13.BackColor = System.Drawing.Color.Chartreuse;
-            this.button13.Font = new System.Drawing.Font("Arial Rounded MT Bold", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button13.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.button13.Location = new System.Drawing.Point(187, 279);
-            this.button13.Name = "button13";
-            this.button13.Size = new System.Drawing.Size(46, 31);
-            this.button13.TabIndex = 26;
-            this.button13.Text = ".";
-            this.button13.UseVisualStyleBackColor = false;
+            this.Pointbtn.BackColor = System.Drawing.Color.Chartreuse;
+            this.Pointbtn.Font = new System.Drawing.Font("Arial Rounded MT Bold", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Pointbtn.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.Pointbtn.Location = new System.Drawing.Point(187, 279);
+            this.Pointbtn.Name = "Pointbtn";
+            this.Pointbtn.Size = new System.Drawing.Size(46, 31);
+            this.Pointbtn.TabIndex = 26;
+            this.Pointbtn.Text = ".";
+            this.Pointbtn.UseVisualStyleBackColor = false;
+            this.Pointbtn.Click += new System.EventHandler(this.Pointbtn_Click);
             // 
-            // button14
+            // Doulbe0btn
             // 
-            this.button14.BackColor = System.Drawing.Color.Chartreuse;
-            this.button14.Font = new System.Drawing.Font("Arial Rounded MT Bold", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button14.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.button14.Location = new System.Drawing.Point(324, 279);
-            this.button14.Name = "button14";
-            this.button14.Size = new System.Drawing.Size(46, 31);
-            this.button14.TabIndex = 27;
-            this.button14.Text = "00";
-            this.button14.UseVisualStyleBackColor = false;
-            // 
-            // EnteredAmountlbl
-            // 
-            this.EnteredAmountlbl.AutoSize = true;
-            this.EnteredAmountlbl.Location = new System.Drawing.Point(85, 29);
-            this.EnteredAmountlbl.Name = "EnteredAmountlbl";
-            this.EnteredAmountlbl.Size = new System.Drawing.Size(35, 13);
-            this.EnteredAmountlbl.TabIndex = 28;
-            this.EnteredAmountlbl.Text = "label3";
+            this.Doulbe0btn.BackColor = System.Drawing.Color.Chartreuse;
+            this.Doulbe0btn.Font = new System.Drawing.Font("Arial Rounded MT Bold", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Doulbe0btn.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.Doulbe0btn.Location = new System.Drawing.Point(324, 279);
+            this.Doulbe0btn.Name = "Doulbe0btn";
+            this.Doulbe0btn.Size = new System.Drawing.Size(46, 31);
+            this.Doulbe0btn.TabIndex = 27;
+            this.Doulbe0btn.Text = "00";
+            this.Doulbe0btn.UseVisualStyleBackColor = false;
+            this.Doulbe0btn.Click += new System.EventHandler(this.Doulbe0btn_Click);
             // 
             // EnterAmount
             // 
@@ -263,20 +277,20 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.ClientSize = new System.Drawing.Size(574, 394);
-            this.Controls.Add(this.button14);
-            this.Controls.Add(this.button13);
+            this.Controls.Add(this.Doulbe0btn);
+            this.Controls.Add(this.Pointbtn);
             this.Controls.Add(this.button12);
             this.Controls.Add(this.Enterbtn);
-            this.Controls.Add(this.button10);
-            this.Controls.Add(this.button9);
-            this.Controls.Add(this.button8);
-            this.Controls.Add(this.button7);
-            this.Controls.Add(this.button6);
-            this.Controls.Add(this.button5);
-            this.Controls.Add(this.button4);
-            this.Controls.Add(this.button3);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.Number0btn);
+            this.Controls.Add(this.Number9btn);
+            this.Controls.Add(this.Number8btn);
+            this.Controls.Add(this.Number7btn);
+            this.Controls.Add(this.Number6btn);
+            this.Controls.Add(this.Number5btn);
+            this.Controls.Add(this.Number4btn);
+            this.Controls.Add(this.Number3btn);
+            this.Controls.Add(this.Number2btn);
+            this.Controls.Add(this.Number1btn);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.label1);
             this.MinimumSize = new System.Drawing.Size(16, 39);
@@ -296,18 +310,18 @@
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Button button12;
         private System.Windows.Forms.Button Enterbtn;
-        private System.Windows.Forms.Button button10;
-        private System.Windows.Forms.Button button9;
-        private System.Windows.Forms.Button button8;
-        private System.Windows.Forms.Button button7;
-        private System.Windows.Forms.Button button6;
-        private System.Windows.Forms.Button button5;
-        private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button13;
-        private System.Windows.Forms.Button button14;
+        private System.Windows.Forms.Button Number0btn;
+        private System.Windows.Forms.Button Number9btn;
+        private System.Windows.Forms.Button Number8btn;
+        private System.Windows.Forms.Button Number7btn;
+        private System.Windows.Forms.Button Number6btn;
+        private System.Windows.Forms.Button Number5btn;
+        private System.Windows.Forms.Button Number4btn;
+        private System.Windows.Forms.Button Number3btn;
+        private System.Windows.Forms.Button Number2btn;
+        private System.Windows.Forms.Button Number1btn;
+        private System.Windows.Forms.Button Pointbtn;
+        private System.Windows.Forms.Button Doulbe0btn;
         private System.Windows.Forms.Label EnteredAmountlbl;
     }
 }

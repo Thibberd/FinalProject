@@ -14,20 +14,22 @@ namespace FrontOfHouseSystem
     {
 
         System.Windows.Forms.Timer timer = new System.Windows.Forms.Timer();
+        public float RunningTotal;
 
-        public EFTpaymentWindow()
+        public EFTpaymentWindow(float runningTotal)
         {
             InitializeComponent();
             timer.Interval = 10000;
             timer.Tick += new EventHandler(timer_Tick);
             timer.Start();
+            RunningTotal = runningTotal;
             
         }
 
         void timer_Tick(object sender, EventArgs e)
         {
             this.Close();
-            PaymentSucessfulwindow paymentSucessfulwindow = new PaymentSucessfulwindow(2,"3",2);
+            PaymentSucessfulwindow paymentSucessfulwindow = new PaymentSucessfulwindow(2,RunningTotal,0);
             paymentSucessfulwindow.Show();
         }
     }
