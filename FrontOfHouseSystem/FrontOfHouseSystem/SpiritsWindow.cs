@@ -20,6 +20,7 @@ namespace FrontOfHouseSystem
         public float OriginalTotal;
         public float ItemPrice;
         public float RunningTotal;
+        public float CalculatedChange;
 
         public SpiritsWindow(int UserID, string FirstName, string LastName, ListBox.ObjectCollection orderItems, string userName, string amount, float runningTotal)
         {
@@ -507,6 +508,58 @@ namespace FrontOfHouseSystem
             MixersWindow mixersWindow = new MixersWindow(userID, firstName, lastName, OrderList.Items, Usernamelbl.Text, AmountLabel.Text, RunningTotal);
             mixersWindow.Show();
             this.Hide();
+        }
+
+        private void Cashbtn_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            EnterAmount enterAmount = new EnterAmount(RunningTotal);
+            enterAmount.Show();
+        }
+
+        private void FivePoundsbtn_Click(object sender, EventArgs e)
+        {
+            float calc;
+            this.Hide();
+            Transaction transaction = new Transaction();
+            transaction.transactionID = 4;
+            calc = RunningTotal;
+            CalculatedChange = 5.00f - calc;
+            PaymentSucessfulwindow paymentSucessfulwindow = new PaymentSucessfulwindow(transaction.transactionID, RunningTotal, CalculatedChange);
+            paymentSucessfulwindow.Show();
+        }
+
+        private void TenPoundsbtn_Click(object sender, EventArgs e)
+        {
+            float calc;
+            this.Hide();
+            Transaction transaction = new Transaction();
+            transaction.transactionID = 4;
+            calc = RunningTotal;
+            CalculatedChange = 10.00f - calc;
+            PaymentSucessfulwindow paymentSucessfulwindow = new PaymentSucessfulwindow(transaction.transactionID, RunningTotal, CalculatedChange);
+            paymentSucessfulwindow.Show();
+        }
+
+        private void TwentyPoundsbtn_Click(object sender, EventArgs e)
+        {
+            float calc;
+            this.Hide();
+            Transaction transaction = new Transaction();
+            transaction.transactionID = 4;
+            calc = RunningTotal;
+            CalculatedChange = 20.00f - calc;
+            PaymentSucessfulwindow paymentSucessfulwindow = new PaymentSucessfulwindow(transaction.transactionID, RunningTotal, CalculatedChange);
+            paymentSucessfulwindow.Show();
+        }
+
+        private void EFTbtn_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Transaction transaction = new Transaction();
+            transaction.transactionID = 2;
+            EFTpaymentWindow eFTpayment = new EFTpaymentWindow(RunningTotal);
+            eFTpayment.Show();
         }
     }
 }

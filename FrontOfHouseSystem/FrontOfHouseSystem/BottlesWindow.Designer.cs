@@ -43,12 +43,12 @@
             this.Spiritsbtn = new System.Windows.Forms.Button();
             this.Bottlesbtn = new System.Windows.Forms.Button();
             this.Draughtbtn = new System.Windows.Forms.Button();
-            this.button27 = new System.Windows.Forms.Button();
-            this.button26 = new System.Windows.Forms.Button();
-            this.button11 = new System.Windows.Forms.Button();
-            this.button12 = new System.Windows.Forms.Button();
-            this.button13 = new System.Windows.Forms.Button();
-            this.button14 = new System.Windows.Forms.Button();
+            this.Voidbtn = new System.Windows.Forms.Button();
+            this.Eftbtn = new System.Windows.Forms.Button();
+            this.TwentyPoundbtn = new System.Windows.Forms.Button();
+            this.TenPoundbtn = new System.Windows.Forms.Button();
+            this.FivePoundbtn = new System.Windows.Forms.Button();
+            this.Cashbtn = new System.Windows.Forms.Button();
             this.OrderList = new System.Windows.Forms.ListBox();
             this.Homebtn = new System.Windows.Forms.Button();
             this.Usernamelbl = new System.Windows.Forms.Label();
@@ -237,69 +237,74 @@
             this.Draughtbtn.UseVisualStyleBackColor = false;
             this.Draughtbtn.Click += new System.EventHandler(this.Draughtbtn_Click);
             // 
-            // button27
+            // Voidbtn
             // 
-            this.button27.Location = new System.Drawing.Point(83, 422);
-            this.button27.Name = "button27";
-            this.button27.Size = new System.Drawing.Size(75, 23);
-            this.button27.TabIndex = 66;
-            this.button27.Text = "Void";
-            this.button27.UseVisualStyleBackColor = true;
+            this.Voidbtn.Location = new System.Drawing.Point(83, 422);
+            this.Voidbtn.Name = "Voidbtn";
+            this.Voidbtn.Size = new System.Drawing.Size(75, 23);
+            this.Voidbtn.TabIndex = 66;
+            this.Voidbtn.Text = "Void";
+            this.Voidbtn.UseVisualStyleBackColor = true;
             // 
-            // button26
+            // Eftbtn
             // 
-            this.button26.Location = new System.Drawing.Point(2, 422);
-            this.button26.Name = "button26";
-            this.button26.Size = new System.Drawing.Size(75, 23);
-            this.button26.TabIndex = 65;
-            this.button26.Text = "EFT";
-            this.button26.UseVisualStyleBackColor = true;
+            this.Eftbtn.Location = new System.Drawing.Point(2, 422);
+            this.Eftbtn.Name = "Eftbtn";
+            this.Eftbtn.Size = new System.Drawing.Size(75, 23);
+            this.Eftbtn.TabIndex = 65;
+            this.Eftbtn.Text = "EFT";
+            this.Eftbtn.UseVisualStyleBackColor = true;
+            this.Eftbtn.Click += new System.EventHandler(this.Eftbtn_Click);
             // 
-            // button11
+            // TwentyPoundbtn
             // 
-            this.button11.BackColor = System.Drawing.Color.Yellow;
-            this.button11.FlatAppearance.BorderColor = System.Drawing.Color.Yellow;
-            this.button11.FlatAppearance.BorderSize = 0;
-            this.button11.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button11.Location = new System.Drawing.Point(131, 380);
-            this.button11.Name = "button11";
-            this.button11.Size = new System.Drawing.Size(45, 34);
-            this.button11.TabIndex = 64;
-            this.button11.Text = "£20";
-            this.button11.UseVisualStyleBackColor = false;
+            this.TwentyPoundbtn.BackColor = System.Drawing.Color.Yellow;
+            this.TwentyPoundbtn.FlatAppearance.BorderColor = System.Drawing.Color.Yellow;
+            this.TwentyPoundbtn.FlatAppearance.BorderSize = 0;
+            this.TwentyPoundbtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TwentyPoundbtn.Location = new System.Drawing.Point(131, 380);
+            this.TwentyPoundbtn.Name = "TwentyPoundbtn";
+            this.TwentyPoundbtn.Size = new System.Drawing.Size(45, 34);
+            this.TwentyPoundbtn.TabIndex = 64;
+            this.TwentyPoundbtn.Text = "£20";
+            this.TwentyPoundbtn.UseVisualStyleBackColor = false;
+            this.TwentyPoundbtn.Click += new System.EventHandler(this.TwentyPoundbtn_Click);
             // 
-            // button12
+            // TenPoundbtn
             // 
-            this.button12.BackColor = System.Drawing.Color.Yellow;
-            this.button12.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button12.Location = new System.Drawing.Point(89, 380);
-            this.button12.Name = "button12";
-            this.button12.Size = new System.Drawing.Size(45, 34);
-            this.button12.TabIndex = 63;
-            this.button12.Text = "£10";
-            this.button12.UseVisualStyleBackColor = false;
+            this.TenPoundbtn.BackColor = System.Drawing.Color.Yellow;
+            this.TenPoundbtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TenPoundbtn.Location = new System.Drawing.Point(89, 380);
+            this.TenPoundbtn.Name = "TenPoundbtn";
+            this.TenPoundbtn.Size = new System.Drawing.Size(45, 34);
+            this.TenPoundbtn.TabIndex = 63;
+            this.TenPoundbtn.Text = "£10";
+            this.TenPoundbtn.UseVisualStyleBackColor = false;
+            this.TenPoundbtn.Click += new System.EventHandler(this.TenPoundbtn_Click);
             // 
-            // button13
+            // FivePoundbtn
             // 
-            this.button13.BackColor = System.Drawing.Color.Yellow;
-            this.button13.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button13.Location = new System.Drawing.Point(46, 380);
-            this.button13.Name = "button13";
-            this.button13.Size = new System.Drawing.Size(45, 34);
-            this.button13.TabIndex = 62;
-            this.button13.Text = "£5";
-            this.button13.UseVisualStyleBackColor = false;
+            this.FivePoundbtn.BackColor = System.Drawing.Color.Yellow;
+            this.FivePoundbtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.FivePoundbtn.Location = new System.Drawing.Point(46, 380);
+            this.FivePoundbtn.Name = "FivePoundbtn";
+            this.FivePoundbtn.Size = new System.Drawing.Size(45, 34);
+            this.FivePoundbtn.TabIndex = 62;
+            this.FivePoundbtn.Text = "£5";
+            this.FivePoundbtn.UseVisualStyleBackColor = false;
+            this.FivePoundbtn.Click += new System.EventHandler(this.FivePoundbtn_Click);
             // 
-            // button14
+            // Cashbtn
             // 
-            this.button14.BackColor = System.Drawing.Color.Yellow;
-            this.button14.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button14.Location = new System.Drawing.Point(2, 380);
-            this.button14.Name = "button14";
-            this.button14.Size = new System.Drawing.Size(45, 34);
-            this.button14.TabIndex = 61;
-            this.button14.Text = "Cash";
-            this.button14.UseVisualStyleBackColor = false;
+            this.Cashbtn.BackColor = System.Drawing.Color.Yellow;
+            this.Cashbtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Cashbtn.Location = new System.Drawing.Point(2, 380);
+            this.Cashbtn.Name = "Cashbtn";
+            this.Cashbtn.Size = new System.Drawing.Size(45, 34);
+            this.Cashbtn.TabIndex = 61;
+            this.Cashbtn.Text = "Cash";
+            this.Cashbtn.UseVisualStyleBackColor = false;
+            this.Cashbtn.Click += new System.EventHandler(this.Cashbtn_Click);
             // 
             // OrderList
             // 
@@ -380,12 +385,12 @@
             this.Controls.Add(this.Spiritsbtn);
             this.Controls.Add(this.Bottlesbtn);
             this.Controls.Add(this.Draughtbtn);
-            this.Controls.Add(this.button27);
-            this.Controls.Add(this.button26);
-            this.Controls.Add(this.button11);
-            this.Controls.Add(this.button12);
-            this.Controls.Add(this.button13);
-            this.Controls.Add(this.button14);
+            this.Controls.Add(this.Voidbtn);
+            this.Controls.Add(this.Eftbtn);
+            this.Controls.Add(this.TwentyPoundbtn);
+            this.Controls.Add(this.TenPoundbtn);
+            this.Controls.Add(this.FivePoundbtn);
+            this.Controls.Add(this.Cashbtn);
             this.Controls.Add(this.OrderList);
             this.Name = "BottlesWindow";
             this.Text = "BottlesWindow";
@@ -411,12 +416,12 @@
         private System.Windows.Forms.Button Spiritsbtn;
         private System.Windows.Forms.Button Bottlesbtn;
         private System.Windows.Forms.Button Draughtbtn;
-        private System.Windows.Forms.Button button27;
-        private System.Windows.Forms.Button button26;
-        private System.Windows.Forms.Button button11;
-        private System.Windows.Forms.Button button12;
-        private System.Windows.Forms.Button button13;
-        private System.Windows.Forms.Button button14;
+        private System.Windows.Forms.Button Voidbtn;
+        private System.Windows.Forms.Button Eftbtn;
+        private System.Windows.Forms.Button TwentyPoundbtn;
+        private System.Windows.Forms.Button TenPoundbtn;
+        private System.Windows.Forms.Button FivePoundbtn;
+        private System.Windows.Forms.Button Cashbtn;
         private System.Windows.Forms.ListBox OrderList;
         private System.Windows.Forms.Button Homebtn;
         private System.Windows.Forms.Label Usernamelbl;

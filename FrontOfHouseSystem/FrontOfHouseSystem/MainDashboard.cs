@@ -797,7 +797,7 @@ namespace FrontOfHouseSystem
         private void Cashbtn_Click(object sender, EventArgs e)
         {
             this.Hide();
-            EnterAmount enterAmount = new EnterAmount();
+            EnterAmount enterAmount = new EnterAmount(RunningTotal);
             enterAmount.Show();
             //need to pass through total label so user is aware of order total and can then check if correct amount is present
         }
@@ -807,7 +807,8 @@ namespace FrontOfHouseSystem
             this.Hide();
             Transaction transaction = new Transaction();
             transaction.transactionID = 2;
-            EnterAmount enterAmount = new EnterAmount(); // take through total Amount eventually
+            EFTpaymentWindow eFTpayment = new EFTpaymentWindow(RunningTotal);
+            eFTpayment.Show();
 
             
         }
@@ -820,7 +821,7 @@ namespace FrontOfHouseSystem
             transaction.transactionID = 4;
             calc = RunningTotal;
             CalculatedChange = 5.00f - calc;
-            PaymentSucessfulwindow paymentSucessfulwindow = new PaymentSucessfulwindow(transaction.transactionID, AmountLabel.Text, CalculatedChange);
+            PaymentSucessfulwindow paymentSucessfulwindow = new PaymentSucessfulwindow(transaction.transactionID, RunningTotal, CalculatedChange);
             paymentSucessfulwindow.Show();
             
         }
@@ -833,7 +834,7 @@ namespace FrontOfHouseSystem
             transaction.transactionID = 4;
             calc = RunningTotal;
             CalculatedChange = 10.00f - calc;
-            PaymentSucessfulwindow paymentSucessfulwindow = new PaymentSucessfulwindow(transaction.transactionID, AmountLabel.Text, CalculatedChange);
+            PaymentSucessfulwindow paymentSucessfulwindow = new PaymentSucessfulwindow(transaction.transactionID, RunningTotal, CalculatedChange);
             paymentSucessfulwindow.Show();
           
         }
@@ -846,7 +847,7 @@ namespace FrontOfHouseSystem
             transaction.transactionID = 4;
             calc = RunningTotal;
             CalculatedChange = 20.00f - calc;
-            PaymentSucessfulwindow paymentSucessfulwindow = new PaymentSucessfulwindow(transaction.transactionID, AmountLabel.Text, CalculatedChange);
+            PaymentSucessfulwindow paymentSucessfulwindow = new PaymentSucessfulwindow(transaction.transactionID, RunningTotal, CalculatedChange);
             paymentSucessfulwindow.Show();
             
         }
