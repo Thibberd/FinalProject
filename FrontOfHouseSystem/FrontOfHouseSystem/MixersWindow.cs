@@ -21,15 +21,17 @@ namespace FrontOfHouseSystem
         string lastName;
         public float NewTotal;
         public float OriginalTotal;
-        public float ItemPrice; 
+        public float ItemPrice;
+        public float RunningTotal;
 
-        public MixersWindow(int UserID, string FirstName, string LastName, ListBox.ObjectCollection orderItems, string userName)
+        public MixersWindow(int UserID, string FirstName, string LastName, ListBox.ObjectCollection orderItems, string userName, string amount, float runningTotal)
         {
             InitializeComponent();
 
             OrderList.Items.AddRange(orderItems);
             Usernamelbl.Text = userName;
-
+            AmountLabel.Text = amount;
+            RunningTotal = runningTotal;
             userID = UserID;
             firstName = FirstName;
             lastName = LastName;
@@ -63,7 +65,10 @@ namespace FrontOfHouseSystem
 
                     OrderList.Items.Add(product.productName + "       " + product.unitPrice.ToString("£#0.00"));
 
-                    NewTotal = NewTotal + product.unitPrice;
+                    
+
+                    NewTotal = RunningTotal + product.unitPrice;
+                    RunningTotal = NewTotal;
 
 
                     AmountLabel.Text = NewTotal.ToString("£#0.00");
@@ -80,14 +85,14 @@ namespace FrontOfHouseSystem
                     connection.Close();
             }
 
-            SpiritsWindow spiritsWindow = new SpiritsWindow(userID, firstName, lastName, OrderList.Items, Usernamelbl.Text);
+            SpiritsWindow spiritsWindow = new SpiritsWindow(userID, firstName, lastName, OrderList.Items, Usernamelbl.Text,  AmountLabel.Text, RunningTotal);
 
             spiritsWindow.Show();
-            this.Close();
+            this.Hide();
 
         }
 
-        private void Dietcokebtn_Click(object sender, EventArgs e)
+        private void Dietcokebtn_Click_1(object sender, EventArgs e)
         {
             SqlConnection connection = new SqlConnection();
 
@@ -114,7 +119,8 @@ namespace FrontOfHouseSystem
 
                     OrderList.Items.Add(product.productName + "              " + product.unitPrice.ToString("£#0.00"));
 
-                    NewTotal = NewTotal + product.unitPrice;
+                    NewTotal = RunningTotal + product.unitPrice;
+                    RunningTotal = NewTotal;
 
 
                     AmountLabel.Text = NewTotal.ToString("£#0.00");
@@ -131,13 +137,13 @@ namespace FrontOfHouseSystem
                     connection.Close();
             }
 
-            SpiritsWindow spiritsWindow = new SpiritsWindow(userID, firstName, lastName, OrderList.Items, Usernamelbl.Text);
+            SpiritsWindow spiritsWindow = new SpiritsWindow(userID, firstName, lastName, OrderList.Items, Usernamelbl.Text, AmountLabel.Text, RunningTotal);
 
             spiritsWindow.Show();
             this.Close();
         }
 
-        private void Zerocokebtn_Click(object sender, EventArgs e)
+        private void Zerocokebtn_Click_1(object sender, EventArgs e)
         {
             SqlConnection connection = new SqlConnection();
 
@@ -164,7 +170,8 @@ namespace FrontOfHouseSystem
 
                     OrderList.Items.Add(product.productName + "       " + product.unitPrice.ToString("£#0.00"));
 
-                    NewTotal = NewTotal + product.unitPrice;
+                    NewTotal = RunningTotal + product.unitPrice;
+                    RunningTotal = NewTotal;
 
 
                     AmountLabel.Text = NewTotal.ToString("£#0.00");
@@ -181,13 +188,13 @@ namespace FrontOfHouseSystem
                     connection.Close();
             }
 
-            SpiritsWindow spiritsWindow = new SpiritsWindow(userID, firstName, lastName, OrderList.Items, Usernamelbl.Text);
+            SpiritsWindow spiritsWindow = new SpiritsWindow(userID, firstName, lastName, OrderList.Items, Usernamelbl.Text, AmountLabel.Text, RunningTotal);
 
             spiritsWindow.Show();
             this.Close();
         }
 
-        private void Orangejbtn_Click(object sender, EventArgs e)
+        private void Orangejbtn_Click_1(object sender, EventArgs e)
         {
             SqlConnection connection = new SqlConnection();
 
@@ -214,7 +221,8 @@ namespace FrontOfHouseSystem
 
                     OrderList.Items.Add(product.productName + "       " + product.unitPrice.ToString("£#0.00"));
 
-                    NewTotal = NewTotal + product.unitPrice;
+                    NewTotal = RunningTotal + product.unitPrice;
+                    RunningTotal = NewTotal;
 
 
                     AmountLabel.Text = NewTotal.ToString("£#0.00");
@@ -231,13 +239,13 @@ namespace FrontOfHouseSystem
                     connection.Close();
             }
 
-            SpiritsWindow spiritsWindow = new SpiritsWindow(userID, firstName, lastName, OrderList.Items, Usernamelbl.Text);
+            SpiritsWindow spiritsWindow = new SpiritsWindow(userID, firstName, lastName, OrderList.Items, Usernamelbl.Text, AmountLabel.Text, RunningTotal);
 
             spiritsWindow.Show();
             this.Close();
         }
 
-        private void Applejbtn_Click(object sender, EventArgs e)
+        private void Applejbtn_Click_1(object sender, EventArgs e)
         {
             SqlConnection connection = new SqlConnection();
 
@@ -264,7 +272,8 @@ namespace FrontOfHouseSystem
 
                     OrderList.Items.Add(product.productName + "       " + product.unitPrice.ToString("£#0.00"));
 
-                    NewTotal = NewTotal + product.unitPrice;
+                    NewTotal = RunningTotal + product.unitPrice;
+                    RunningTotal = NewTotal;
 
 
                     AmountLabel.Text = NewTotal.ToString("£#0.00");
@@ -281,13 +290,13 @@ namespace FrontOfHouseSystem
                     connection.Close();
             }
 
-            SpiritsWindow spiritsWindow = new SpiritsWindow(userID, firstName, lastName, OrderList.Items, Usernamelbl.Text);
+            SpiritsWindow spiritsWindow = new SpiritsWindow(userID, firstName, lastName, OrderList.Items, Usernamelbl.Text, AmountLabel.Text, RunningTotal);
 
             spiritsWindow.Show();
             this.Close();
         }
 
-        private void Cranberryjbtn_Click(object sender, EventArgs e)
+        private void Cranberryjbtn_Click_1(object sender, EventArgs e)
         {
             SqlConnection connection = new SqlConnection();
 
@@ -314,7 +323,8 @@ namespace FrontOfHouseSystem
 
                     OrderList.Items.Add(product.productName + "       " + product.unitPrice.ToString("£#0.00"));
 
-                    NewTotal = NewTotal + product.unitPrice;
+                    NewTotal = RunningTotal + product.unitPrice;
+                    RunningTotal = NewTotal;
 
 
                     AmountLabel.Text = NewTotal.ToString("£#0.00");
@@ -331,13 +341,13 @@ namespace FrontOfHouseSystem
                     connection.Close();
             }
 
-            SpiritsWindow spiritsWindow = new SpiritsWindow(userID, firstName, lastName, OrderList.Items, Usernamelbl.Text);
+            SpiritsWindow spiritsWindow = new SpiritsWindow(userID, firstName, lastName, OrderList.Items, Usernamelbl.Text, AmountLabel.Text, RunningTotal);
 
             spiritsWindow.Show();
             this.Close();
         }
 
-        private void Fevertreebtn_Click(object sender, EventArgs e)
+        private void Fevertreebtn_Click_1(object sender, EventArgs e)
         {
             SqlConnection connection = new SqlConnection();
 
@@ -364,7 +374,8 @@ namespace FrontOfHouseSystem
 
                     OrderList.Items.Add(product.productName + "       " + product.unitPrice.ToString("£#0.00"));
 
-                    NewTotal = NewTotal + product.unitPrice;
+                    NewTotal = RunningTotal + product.unitPrice;
+                    RunningTotal = NewTotal;
 
 
                     AmountLabel.Text = NewTotal.ToString("£#0.00");
@@ -381,13 +392,13 @@ namespace FrontOfHouseSystem
                     connection.Close();
             }
 
-            SpiritsWindow spiritsWindow = new SpiritsWindow(userID, firstName, lastName, OrderList.Items, Usernamelbl.Text);
+            SpiritsWindow spiritsWindow = new SpiritsWindow(userID, firstName, lastName, OrderList.Items, Usernamelbl.Text, AmountLabel.Text, RunningTotal);
 
             spiritsWindow.Show();
             this.Close();
         }
 
-        private void Lowcaltonicbtn_Click(object sender, EventArgs e)
+        private void Lowcaltonicbtn_Click_1(object sender, EventArgs e)
         {
 
             SqlConnection connection = new SqlConnection();
@@ -415,7 +426,8 @@ namespace FrontOfHouseSystem
 
                     OrderList.Items.Add(product.productName + "       " + product.unitPrice.ToString("£#0.00"));
 
-                    NewTotal = NewTotal + product.unitPrice;
+                    NewTotal = RunningTotal + product.unitPrice;
+                    RunningTotal = NewTotal;
 
 
                     AmountLabel.Text = NewTotal.ToString("£#0.00");
@@ -432,14 +444,14 @@ namespace FrontOfHouseSystem
                     connection.Close();
             }
 
-            SpiritsWindow spiritsWindow = new SpiritsWindow(userID, firstName, lastName, OrderList.Items, Usernamelbl.Text);
+            SpiritsWindow spiritsWindow = new SpiritsWindow(userID, firstName, lastName, OrderList.Items, Usernamelbl.Text, AmountLabel.Text, RunningTotal);
 
             spiritsWindow.Show();
             this.Close();
 
         }
 
-        private void Elderflowerbtn_Click(object sender, EventArgs e)
+        private void Elderflowerbtn_Click_1(object sender, EventArgs e)
         {
             SqlConnection connection = new SqlConnection();
 
@@ -466,7 +478,8 @@ namespace FrontOfHouseSystem
 
                     OrderList.Items.Add(product.productName + "       " + product.unitPrice.ToString("£#0.00"));
 
-                    NewTotal = NewTotal + product.unitPrice;
+                    NewTotal = RunningTotal + product.unitPrice;
+                    RunningTotal = NewTotal;
 
 
                     AmountLabel.Text = NewTotal.ToString("£#0.00");
@@ -483,13 +496,13 @@ namespace FrontOfHouseSystem
                     connection.Close();
             }
 
-            SpiritsWindow spiritsWindow = new SpiritsWindow(userID, firstName, lastName, OrderList.Items, Usernamelbl.Text);
+            SpiritsWindow spiritsWindow = new SpiritsWindow(userID, firstName, lastName, OrderList.Items, Usernamelbl.Text, AmountLabel.Text, RunningTotal);
 
             spiritsWindow.Show();
             this.Close();
         }
 
-        private void Lemonadebtn_Click(object sender, EventArgs e)
+        private void Lemonadebtn_Click_1(object sender, EventArgs e)
         {
             SqlConnection connection = new SqlConnection();
 
@@ -516,7 +529,8 @@ namespace FrontOfHouseSystem
 
                     OrderList.Items.Add(product.productName + "       " + product.unitPrice.ToString("£#0.00"));
 
-                    NewTotal = NewTotal + product.unitPrice;
+                    NewTotal = RunningTotal + product.unitPrice;
+                    RunningTotal = NewTotal;
 
 
                     AmountLabel.Text = NewTotal.ToString("£#0.00");
@@ -533,13 +547,13 @@ namespace FrontOfHouseSystem
                     connection.Close();
             }
 
-            SpiritsWindow spiritsWindow = new SpiritsWindow(userID, firstName, lastName, OrderList.Items, Usernamelbl.Text);
+            SpiritsWindow spiritsWindow = new SpiritsWindow(userID, firstName, lastName, OrderList.Items, Usernamelbl.Text, AmountLabel.Text, RunningTotal);
 
             spiritsWindow.Show();
             this.Close();
         }
 
-        private void Redbullbtn_Click(object sender, EventArgs e)
+        private void Redbullbtn_Click_1(object sender, EventArgs e)
         {
 
             SqlConnection connection = new SqlConnection();
@@ -567,7 +581,8 @@ namespace FrontOfHouseSystem
 
                     OrderList.Items.Add(product.productName + "       " + product.unitPrice.ToString("£#0.00"));
 
-                    NewTotal = NewTotal + product.unitPrice;
+                    NewTotal = RunningTotal + product.unitPrice;
+                    RunningTotal = NewTotal;
 
 
                     AmountLabel.Text = NewTotal.ToString("£#0.00");
@@ -584,7 +599,7 @@ namespace FrontOfHouseSystem
                     connection.Close();
             }
 
-            SpiritsWindow spiritsWindow = new SpiritsWindow(userID, firstName, lastName, OrderList.Items, Usernamelbl.Text);
+            SpiritsWindow spiritsWindow = new SpiritsWindow(userID, firstName, lastName, OrderList.Items, Usernamelbl.Text, AmountLabel.Text, RunningTotal);
 
             spiritsWindow.Show();
             this.Close();
@@ -593,10 +608,14 @@ namespace FrontOfHouseSystem
 
         private void Backmixerbtn_Click(object sender, EventArgs e)
         {
-            SpiritsWindow spiritsWindow = new SpiritsWindow(userID, firstName, lastName, OrderList.Items, Usernamelbl.Text);
+            SpiritsWindow spiritsWindow = new SpiritsWindow(userID, firstName, lastName, OrderList.Items, Usernamelbl.Text, AmountLabel.Text, RunningTotal);
 
             spiritsWindow.Show();
             this.Close();
         }
+
+        
+
+        
     }
 }

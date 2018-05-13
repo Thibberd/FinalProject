@@ -80,8 +80,9 @@ namespace FrontOfHouseSystem
             Usernamelbl.Text = currentUser.firstname + " " + currentUser.secondname;
 
             string amountlabel = "00.00";
+            float runningTotal = 0;
             this.Hide();
-            FOHDashboard fOHDashboard = new FOHDashboard(currentUser.userID, currentUser.firstname, currentUser.secondname, OrderList.Items, Usernamelbl.Text, amountlabel);
+            FOHDashboard fOHDashboard = new FOHDashboard(currentUser.userID, currentUser.firstname, currentUser.secondname, OrderList.Items, Usernamelbl.Text, amountlabel,runningTotal);
             fOHDashboard.Show();
         }
 

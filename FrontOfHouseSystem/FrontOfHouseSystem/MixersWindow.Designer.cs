@@ -68,6 +68,7 @@
             this.Redbullbtn.TabIndex = 169;
             this.Redbullbtn.Text = "Red Bull";
             this.Redbullbtn.UseVisualStyleBackColor = false;
+            this.Redbullbtn.Click += new System.EventHandler(this.Redbullbtn_Click_1);
             // 
             // Lemonadebtn
             // 
@@ -79,6 +80,7 @@
             this.Lemonadebtn.TabIndex = 168;
             this.Lemonadebtn.Text = "Lemonade";
             this.Lemonadebtn.UseVisualStyleBackColor = false;
+            this.Lemonadebtn.Click += new System.EventHandler(this.Lemonadebtn_Click_1);
             // 
             // Elderflowerbtn
             // 
@@ -90,6 +92,7 @@
             this.Elderflowerbtn.TabIndex = 167;
             this.Elderflowerbtn.Text = "Elderflower Tonic";
             this.Elderflowerbtn.UseVisualStyleBackColor = false;
+            this.Elderflowerbtn.Click += new System.EventHandler(this.Elderflowerbtn_Click_1);
             // 
             // Lowcaltonicbtn
             // 
@@ -101,6 +104,7 @@
             this.Lowcaltonicbtn.TabIndex = 166;
             this.Lowcaltonicbtn.Text = "Low Cal Tonic";
             this.Lowcaltonicbtn.UseVisualStyleBackColor = false;
+            this.Lowcaltonicbtn.Click += new System.EventHandler(this.Lowcaltonicbtn_Click_1);
             // 
             // Fevertreebtn
             // 
@@ -112,6 +116,7 @@
             this.Fevertreebtn.TabIndex = 165;
             this.Fevertreebtn.Text = "Fevertree Tonic";
             this.Fevertreebtn.UseVisualStyleBackColor = false;
+            this.Fevertreebtn.Click += new System.EventHandler(this.Fevertreebtn_Click_1);
             // 
             // Cranberryjbtn
             // 
@@ -123,6 +128,7 @@
             this.Cranberryjbtn.TabIndex = 164;
             this.Cranberryjbtn.Text = "Cranberry Juice";
             this.Cranberryjbtn.UseVisualStyleBackColor = false;
+            this.Cranberryjbtn.Click += new System.EventHandler(this.Cranberryjbtn_Click_1);
             // 
             // Applejbtn
             // 
@@ -134,6 +140,7 @@
             this.Applejbtn.TabIndex = 163;
             this.Applejbtn.Text = "Apple Juice";
             this.Applejbtn.UseVisualStyleBackColor = false;
+            this.Applejbtn.Click += new System.EventHandler(this.Applejbtn_Click_1);
             // 
             // Orangejbtn
             // 
@@ -145,6 +152,7 @@
             this.Orangejbtn.TabIndex = 162;
             this.Orangejbtn.Text = "Orange Juice";
             this.Orangejbtn.UseVisualStyleBackColor = false;
+            this.Orangejbtn.Click += new System.EventHandler(this.Orangejbtn_Click_1);
             // 
             // Zerocokebtn
             // 
@@ -156,6 +164,7 @@
             this.Zerocokebtn.TabIndex = 161;
             this.Zerocokebtn.Text = "Coke Zero";
             this.Zerocokebtn.UseVisualStyleBackColor = false;
+            this.Zerocokebtn.Click += new System.EventHandler(this.Zerocokebtn_Click_1);
             // 
             // Cocacolabtn
             // 
@@ -180,6 +189,7 @@
             this.Dietcokebtn.TabIndex = 159;
             this.Dietcokebtn.Text = "Diet Coke";
             this.Dietcokebtn.UseVisualStyleBackColor = false;
+            this.Dietcokebtn.Click += new System.EventHandler(this.Dietcokebtn_Click_1);
             // 
             // Backmixerbtn
             // 
@@ -243,6 +253,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoSize = true;
             this.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.ClientSize = new System.Drawing.Size(422, 428);
             this.Controls.Add(this.AmountLabel);

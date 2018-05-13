@@ -19,16 +19,18 @@ namespace FrontOfHouseSystem
         public float NewTotal = 0;
         public float OriginalTotal = 0;
         public float ItemPrice = 0;
+        public float RunningTotal;
         int userID;
         string firstName;
         string lastName;
         float CalculatedChange;
-        public FOHDashboard(int UserID, string FirstName, string LastName,ListBox.ObjectCollection orderItems, string userName, string AmountLabel)
+        public FOHDashboard(int UserID, string FirstName, string LastName,ListBox.ObjectCollection orderItems, string userName, string AmountLabel, float runningTotal)
         {
             InitializeComponent();
 
            OrderList.Items.AddRange(orderItems);
            Usernamelbl.Text = FirstName + " " + LastName;
+            RunningTotal = runningTotal;
 
             userID = UserID;
             firstName = FirstName;
@@ -45,14 +47,14 @@ namespace FrontOfHouseSystem
         private void Sparklingbtn_Click(object sender, EventArgs e)
         {
             this.Hide();
-            SparklingWindow sparklingWindow = new SparklingWindow(userID, firstName, lastName, OrderList.Items, Usernamelbl.Text, AmountLabel.Text);
+            SparklingWindow sparklingWindow = new SparklingWindow(userID, firstName, lastName, OrderList.Items, Usernamelbl.Text, AmountLabel.Text, RunningTotal);
             sparklingWindow.Show();
         }
 
         private void Softbtn_Click(object sender, EventArgs e)
         {
             this.Hide();
-            SoftdrinksWindow softdrinksWindow = new SoftdrinksWindow(userID, firstName, lastName, OrderList.Items, Usernamelbl.Text, AmountLabel.Text);
+            SoftdrinksWindow softdrinksWindow = new SoftdrinksWindow(userID, firstName, lastName, OrderList.Items, Usernamelbl.Text, AmountLabel.Text, RunningTotal);
             softdrinksWindow.Show();
         }
 
@@ -61,7 +63,7 @@ namespace FrontOfHouseSystem
         private void Draught_Click(object sender, EventArgs e)
         {
             this.Hide();
-            DraughtWindow draughtWindow = new DraughtWindow(userID, firstName, lastName, OrderList.Items, Usernamelbl.Text, AmountLabel.Text);
+            DraughtWindow draughtWindow = new DraughtWindow(userID, firstName, lastName, OrderList.Items, Usernamelbl.Text, AmountLabel.Text, RunningTotal);
             draughtWindow.Show();
             
         }
@@ -69,35 +71,35 @@ namespace FrontOfHouseSystem
         private void Bottlesbtn_Click(object sender, EventArgs e)
         {
             this.Hide();
-            BottlesWindow bottlesWindow = new BottlesWindow(userID, firstName, lastName, OrderList.Items, Usernamelbl.Text, AmountLabel.Text);
+            BottlesWindow bottlesWindow = new BottlesWindow(userID, firstName, lastName, OrderList.Items, Usernamelbl.Text, AmountLabel.Text, RunningTotal);
             bottlesWindow.Show();
         }
 
         private void Spiritsbtn_Click(object sender, EventArgs e)
         {
             this.Hide();
-            SpiritsWindow spiritsWindow = new SpiritsWindow(userID, firstName, lastName, OrderList.Items, Usernamelbl.Text, AmountLabel.Text);
+            SpiritsWindow spiritsWindow = new SpiritsWindow(userID, firstName, lastName, OrderList.Items, Usernamelbl.Text, AmountLabel.Text, RunningTotal);
             spiritsWindow.Show();
         }
 
         private void Winebtn_Click(object sender, EventArgs e)
         {
             this.Hide();
-            WineWindow wineWindow = new WineWindow(userID, firstName, lastName, OrderList.Items, Usernamelbl.Text, AmountLabel.Text);
+            WineWindow wineWindow = new WineWindow(userID, firstName, lastName, OrderList.Items, Usernamelbl.Text, AmountLabel.Text, RunningTotal);
             wineWindow.Show();
         }
 
         private void Liquersbtn_Click(object sender, EventArgs e)
         {
             this.Hide();
-            LiquersWindow liquersWindow  = new LiquersWindow(userID, firstName, lastName, OrderList.Items, Usernamelbl.Text, AmountLabel.Text);
+            LiquersWindow liquersWindow  = new LiquersWindow(userID, firstName, lastName, OrderList.Items, Usernamelbl.Text, AmountLabel.Text, RunningTotal);
             liquersWindow.Show();
         }
 
         private void Cocktailsbtn_Click(object sender, EventArgs e)
         {
             this.Hide();
-            CocktailsWindow cocktailsWindow = new CocktailsWindow(userID, firstName, lastName, OrderList.Items, Usernamelbl.Text, AmountLabel.Text);
+            CocktailsWindow cocktailsWindow = new CocktailsWindow(userID, firstName, lastName, OrderList.Items, Usernamelbl.Text, AmountLabel.Text, RunningTotal);
             cocktailsWindow.Show();
         }
 
@@ -134,8 +136,8 @@ namespace FrontOfHouseSystem
                     OrderList.Items.Add(product.productName + "              " +  product.unitPrice.ToString("£#0.00"));
 
                     NewTotal = NewTotal + product.unitPrice;
-                    
-                    
+
+                    RunningTotal = NewTotal;
                     AmountLabel.Text = NewTotal.ToString("£#0.00");
                 }
 
@@ -191,7 +193,8 @@ namespace FrontOfHouseSystem
 
                     OrderList.Items.Add(product.productName + "              " + product.unitPrice.ToString("£#0.00"));
 
-                    NewTotal = NewTotal + product.unitPrice;
+                    NewTotal = RunningTotal + product.unitPrice;
+                    RunningTotal = NewTotal;
 
 
                     AmountLabel.Text = NewTotal.ToString("£#0.00");
@@ -238,7 +241,8 @@ namespace FrontOfHouseSystem
                    
                     OrderList.Items.Add(product.productName + "              " + product.unitPrice.ToString("£#0.00"));
 
-                    NewTotal = NewTotal + product.unitPrice;
+                    NewTotal = RunningTotal + product.unitPrice;
+                    RunningTotal = NewTotal;
 
 
                     AmountLabel.Text = NewTotal.ToString("£#0.00");
@@ -284,7 +288,8 @@ namespace FrontOfHouseSystem
 
                     OrderList.Items.Add(product.productName + "              " + product.unitPrice.ToString("£#0.00"));
 
-                    NewTotal = NewTotal + product.unitPrice;
+                    NewTotal = RunningTotal + product.unitPrice;
+                    RunningTotal = NewTotal;
 
 
                     AmountLabel.Text = NewTotal.ToString("£#0.00");
@@ -331,7 +336,8 @@ namespace FrontOfHouseSystem
 
                     OrderList.Items.Add(product.productName + "              " + product.unitPrice.ToString("£#0.00"));
 
-                    NewTotal = NewTotal + product.unitPrice;
+                    NewTotal = RunningTotal + product.unitPrice;
+                    RunningTotal = NewTotal;
 
 
                     AmountLabel.Text = NewTotal.ToString("£#0.00");
@@ -377,7 +383,8 @@ namespace FrontOfHouseSystem
 
                     OrderList.Items.Add(product.productName + "              " + product.unitPrice.ToString("£#0.00"));
 
-                    NewTotal = NewTotal + product.unitPrice;
+                    NewTotal = RunningTotal + product.unitPrice;
+                    RunningTotal = NewTotal;
 
 
                     AmountLabel.Text = NewTotal.ToString("£#0.00");
@@ -423,7 +430,8 @@ namespace FrontOfHouseSystem
 
                     OrderList.Items.Add(product.productName + "              " + product.unitPrice.ToString("£#0.00"));
 
-                    NewTotal = NewTotal + product.unitPrice;
+                    NewTotal = RunningTotal + product.unitPrice;
+                    RunningTotal = NewTotal;
 
 
                     AmountLabel.Text = NewTotal.ToString("£#0.00");
@@ -440,7 +448,7 @@ namespace FrontOfHouseSystem
                     connection.Close();
             }
 
-            MixersWindow mixersWindow = new MixersWindow(userID, firstName, lastName, OrderList.Items, Usernamelbl.Text);
+            MixersWindow mixersWindow = new MixersWindow(userID, firstName, lastName, OrderList.Items, Usernamelbl.Text, AmountLabel.Text, RunningTotal);
             mixersWindow.Show();
         }
 
@@ -472,7 +480,8 @@ namespace FrontOfHouseSystem
 
                     OrderList.Items.Add(product.productName + "              " + product.unitPrice.ToString("£#0.00"));
 
-                    NewTotal = NewTotal + product.unitPrice;
+                    NewTotal = RunningTotal + product.unitPrice;
+                    RunningTotal = NewTotal;
 
 
                     AmountLabel.Text = NewTotal.ToString("£#0.00");
@@ -489,7 +498,7 @@ namespace FrontOfHouseSystem
                     connection.Close();
             }
 
-            MixersWindow mixersWindow = new MixersWindow(userID, firstName, lastName, OrderList.Items, Usernamelbl.Text);
+            MixersWindow mixersWindow = new MixersWindow(userID, firstName, lastName, OrderList.Items, Usernamelbl.Text, AmountLabel.Text, RunningTotal);
             mixersWindow.Show();
         }
 
@@ -522,7 +531,8 @@ namespace FrontOfHouseSystem
 
                     OrderList.Items.Add(product.productName + "              " + product.unitPrice.ToString("£#0.00"));
 
-                    NewTotal = NewTotal + product.unitPrice;
+                    NewTotal = RunningTotal + product.unitPrice;
+                    RunningTotal = NewTotal;
 
 
                     AmountLabel.Text = NewTotal.ToString("£#0.00");
@@ -538,7 +548,7 @@ namespace FrontOfHouseSystem
                 if (connection.State == ConnectionState.Open)
                     connection.Close();
             }
-            MixersWindow mixersWindow = new MixersWindow(userID, firstName, lastName, OrderList.Items, Usernamelbl.Text);
+            MixersWindow mixersWindow = new MixersWindow(userID, firstName, lastName, OrderList.Items, Usernamelbl.Text, AmountLabel.Text, RunningTotal);
             mixersWindow.Show();
 
         }
@@ -572,7 +582,8 @@ namespace FrontOfHouseSystem
 
                     OrderList.Items.Add(product.productName + "              " + product.unitPrice.ToString("£#0.00"));
 
-                    NewTotal = NewTotal + product.unitPrice;
+                    NewTotal = RunningTotal + product.unitPrice;
+                    RunningTotal = NewTotal;
 
 
                     AmountLabel.Text = NewTotal.ToString("£#0.00");
@@ -621,7 +632,8 @@ namespace FrontOfHouseSystem
 
                     OrderList.Items.Add(product.productName + "              " + product.unitPrice.ToString("£#0.00"));
 
-                    NewTotal = NewTotal + product.unitPrice;
+                    NewTotal = RunningTotal + product.unitPrice;
+                    RunningTotal = NewTotal;
 
 
                     AmountLabel.Text = NewTotal.ToString("£#0.00");
@@ -667,7 +679,8 @@ namespace FrontOfHouseSystem
 
                     OrderList.Items.Add(product.productName + "              " + product.unitPrice.ToString("£#0.00"));
 
-                    NewTotal = NewTotal + product.unitPrice;
+                    NewTotal = RunningTotal + product.unitPrice;
+                    RunningTotal = NewTotal;
 
 
                     AmountLabel.Text = NewTotal.ToString("£#0.00");
@@ -713,7 +726,8 @@ namespace FrontOfHouseSystem
 
                     OrderList.Items.Add(product.productName + "              " + product.unitPrice.ToString("£#0.00"));
 
-                    NewTotal = NewTotal + product.unitPrice;
+                    NewTotal = RunningTotal + product.unitPrice;
+                    RunningTotal = NewTotal;
 
 
                     AmountLabel.Text = NewTotal.ToString("£#0.00");
@@ -760,7 +774,8 @@ namespace FrontOfHouseSystem
 
                     OrderList.Items.Add(product.productName + "              " + product.unitPrice.ToString("£#0.00"));
 
-                    NewTotal = NewTotal + product.unitPrice;
+                    NewTotal = RunningTotal + product.unitPrice;
+                    RunningTotal = NewTotal;
 
 
                     AmountLabel.Text = NewTotal.ToString("£#0.00");
@@ -803,7 +818,7 @@ namespace FrontOfHouseSystem
             this.Hide();
             Transaction transaction = new Transaction();
             transaction.transactionID = 4;
-            calc = float.Parse(AmountLabel.Text);
+            calc = RunningTotal;
             CalculatedChange = 5.00f - calc;
             PaymentSucessfulwindow paymentSucessfulwindow = new PaymentSucessfulwindow(transaction.transactionID, AmountLabel.Text, CalculatedChange);
             paymentSucessfulwindow.Show();
@@ -816,7 +831,7 @@ namespace FrontOfHouseSystem
             this.Hide();
             Transaction transaction = new Transaction();
             transaction.transactionID = 4;
-            calc = float.Parse(AmountLabel.Text);
+            calc = RunningTotal;
             CalculatedChange = 10.00f - calc;
             PaymentSucessfulwindow paymentSucessfulwindow = new PaymentSucessfulwindow(transaction.transactionID, AmountLabel.Text, CalculatedChange);
             paymentSucessfulwindow.Show();
@@ -829,7 +844,7 @@ namespace FrontOfHouseSystem
             this.Hide();
             Transaction transaction = new Transaction();
             transaction.transactionID = 4;
-            calc = float.Parse(AmountLabel.Text);
+            calc = RunningTotal;
             CalculatedChange = 20.00f - calc;
             PaymentSucessfulwindow paymentSucessfulwindow = new PaymentSucessfulwindow(transaction.transactionID, AmountLabel.Text, CalculatedChange);
             paymentSucessfulwindow.Show();
