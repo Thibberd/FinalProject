@@ -44,10 +44,9 @@ namespace FrontOfHouseSystem
 
         
             
-private void button1_Click(object sender, EventArgs e)
-        {
 
-            
+        private void Completebtn_Click_1(object sender, EventArgs e)
+        {
             SqlConnection connection = new SqlConnection();
 
             connection.ConnectionString = "Server =.; Database = systembar; Trusted_Connection = True;";
@@ -58,21 +57,21 @@ private void button1_Click(object sender, EventArgs e)
 
             command.Connection = connection;
             command.CommandType = CommandType.Text;
-            command.CommandText = "INSERT INTO dbo.Orders ([UserID], [TransactionID], [OrderTotal]) VALUES (@userID, @transID,@OrderT)" ;
+            command.CommandText = "INSERT INTO dbo.Orders ([UserID], [TransactionID], [OrderTotal]) VALUES (@userID, @transID,@OrderT)";
 
             command.Parameters.AddWithValue("@userID", userID);
             command.Parameters.AddWithValue("@transID", transID);
             command.Parameters.AddWithValue("@OrderT", RunningTotal);
 
-     
+
             try
             {
                 connection.Open();
 
                 int recordsAffected = command.ExecuteNonQuery();
-                
+
             }
-            catch(SqlException)
+            catch (SqlException)
             {
                 MessageBox.Show("Error");
             }
@@ -82,8 +81,9 @@ private void button1_Click(object sender, EventArgs e)
                     connection.Close();
             }
 
-
+            UserLogInWindow userLogInWindow = new UserLogInWindow();
+            userLogInWindow.Show();
+            this.Hide();
         }
-
     }
 }

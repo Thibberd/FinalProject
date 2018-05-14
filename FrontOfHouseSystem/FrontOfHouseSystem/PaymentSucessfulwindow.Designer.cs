@@ -34,7 +34,7 @@
             this.label4 = new System.Windows.Forms.Label();
             this.TotalAmountLbl = new System.Windows.Forms.Label();
             this.OrderList = new System.Windows.Forms.ListBox();
-            this.Complete = new System.Windows.Forms.Button();
+            this.Completebtn = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -102,17 +102,17 @@
             this.OrderList.TabIndex = 5;
             this.OrderList.Visible = false;
             // 
-            // Complete
+            // Completebtn
             // 
-            this.Complete.BackColor = System.Drawing.Color.White;
-            this.Complete.ForeColor = System.Drawing.Color.Black;
-            this.Complete.Location = new System.Drawing.Point(299, 318);
-            this.Complete.Name = "Complete";
-            this.Complete.Size = new System.Drawing.Size(205, 51);
-            this.Complete.TabIndex = 6;
-            this.Complete.Text = "Complete";
-            this.Complete.UseVisualStyleBackColor = false;
-            this.Complete.Click += new System.EventHandler(this.button1_Click);
+            this.Completebtn.BackColor = System.Drawing.Color.White;
+            this.Completebtn.ForeColor = System.Drawing.Color.Black;
+            this.Completebtn.Location = new System.Drawing.Point(264, 292);
+            this.Completebtn.Name = "Completebtn";
+            this.Completebtn.Size = new System.Drawing.Size(205, 51);
+            this.Completebtn.TabIndex = 7;
+            this.Completebtn.Text = "Finish";
+            this.Completebtn.UseVisualStyleBackColor = false;
+            this.Completebtn.Click += new System.EventHandler(this.Completebtn_Click_1);
             // 
             // PaymentSucessfulwindow
             // 
@@ -120,7 +120,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.ClientSize = new System.Drawing.Size(779, 399);
-            this.Controls.Add(this.Complete);
+            this.Controls.Add(this.Completebtn);
             this.Controls.Add(this.OrderList);
             this.Controls.Add(this.TotalAmountLbl);
             this.Controls.Add(this.label4);
@@ -145,6 +145,6 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label TotalAmountLbl;
         private System.Windows.Forms.ListBox OrderList;
-        private System.Windows.Forms.Button Complete;
+        private System.Windows.Forms.Button Completebtn;
     }
 }

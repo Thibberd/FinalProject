@@ -89,9 +89,8 @@
             this.EnteredAmountlbl.ForeColor = System.Drawing.Color.Yellow;
             this.EnteredAmountlbl.Location = new System.Drawing.Point(100, 17);
             this.EnteredAmountlbl.Name = "EnteredAmountlbl";
-            this.EnteredAmountlbl.Size = new System.Drawing.Size(92, 33);
+            this.EnteredAmountlbl.Size = new System.Drawing.Size(0, 33);
             this.EnteredAmountlbl.TabIndex = 28;
-            this.EnteredAmountlbl.Text = "00.00";
             // 
             // button12
             // 
