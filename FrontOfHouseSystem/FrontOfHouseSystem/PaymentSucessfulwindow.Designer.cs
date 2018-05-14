@@ -34,7 +34,7 @@
             this.label4 = new System.Windows.Forms.Label();
             this.TotalAmountLbl = new System.Windows.Forms.Label();
             this.OrderList = new System.Windows.Forms.ListBox();
-            this.button1 = new System.Windows.Forms.Button();
+            this.Complete = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -102,15 +102,17 @@
             this.OrderList.TabIndex = 5;
             this.OrderList.Visible = false;
             // 
-            // button1
+            // Complete
             // 
-            this.button1.Location = new System.Drawing.Point(299, 318);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(205, 51);
-            this.button1.TabIndex = 6;
-            this.button1.Text = "button1";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.Complete.BackColor = System.Drawing.Color.White;
+            this.Complete.ForeColor = System.Drawing.Color.Black;
+            this.Complete.Location = new System.Drawing.Point(299, 318);
+            this.Complete.Name = "Complete";
+            this.Complete.Size = new System.Drawing.Size(205, 51);
+            this.Complete.TabIndex = 6;
+            this.Complete.Text = "Complete";
+            this.Complete.UseVisualStyleBackColor = false;
+            this.Complete.Click += new System.EventHandler(this.button1_Click);
             // 
             // PaymentSucessfulwindow
             // 
@@ -118,7 +120,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.ClientSize = new System.Drawing.Size(779, 399);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.Complete);
             this.Controls.Add(this.OrderList);
             this.Controls.Add(this.TotalAmountLbl);
             this.Controls.Add(this.label4);
@@ -143,6 +145,6 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label TotalAmountLbl;
         private System.Windows.Forms.ListBox OrderList;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button Complete;
     }
 }

@@ -31,7 +31,7 @@
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.OrderList = new System.Windows.Forms.ListBox();
-            this.button1 = new System.Windows.Forms.Button();
+            this.Completebtn = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -65,15 +65,17 @@
             this.OrderList.TabIndex = 2;
             this.OrderList.Visible = false;
             // 
-            // button1
+            // Completebtn
             // 
-            this.button1.Location = new System.Drawing.Point(271, 300);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 3;
-            this.button1.Text = "button1";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.Completebtn.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.Completebtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Completebtn.Location = new System.Drawing.Point(240, 275);
+            this.Completebtn.Name = "Completebtn";
+            this.Completebtn.Size = new System.Drawing.Size(214, 75);
+            this.Completebtn.TabIndex = 3;
+            this.Completebtn.Text = "Complete Transaction";
+            this.Completebtn.UseVisualStyleBackColor = false;
+            this.Completebtn.Click += new System.EventHandler(this.button1_Click);
             // 
             // EFTpaymentWindow
             // 
@@ -81,7 +83,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.ClientSize = new System.Drawing.Size(697, 376);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.Completebtn);
             this.Controls.Add(this.OrderList);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
@@ -97,6 +99,6 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.ListBox OrderList;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button Completebtn;
     }
 }

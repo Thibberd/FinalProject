@@ -21,9 +21,7 @@ namespace FrontOfHouseSystem
         public EFTpaymentWindow(float runningTotal, ListBox.ObjectCollection orderItems, int UserID, int TransID)
         {
             InitializeComponent();
-            //timer.Interval = 10000;
-            //timer.Tick += new EventHandler(timer_Tick);
-           // timer.Start();
+            
             RunningTotal = runningTotal;
             OrderList.Items.AddRange(orderItems);
             userID = UserID;
@@ -31,9 +29,7 @@ namespace FrontOfHouseSystem
             
         }
 
-        //void timer_Tick(object sender, EventArgs e)
-        //{
-           // this.Close();
+        
             
 
         private void button1_Click(object sender, EventArgs e)

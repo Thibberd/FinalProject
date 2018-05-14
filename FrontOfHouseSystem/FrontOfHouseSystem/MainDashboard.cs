@@ -132,9 +132,7 @@ namespace FrontOfHouseSystem
                     product.unitPrice = float.Parse((string)reader["UnitPrice"].ToString());
                     ItemPrice = product.unitPrice;
                    
-                    //string unitp = product.unitPrice.ToString();
-
-                    //string item = string.Format(product.productName + "     " + "{00.00}", product.unitPrice);
+                   
 
                     OrderList.Items.Add(product.productName + "              " +  product.unitPrice.ToString("£#0.00"));
 
