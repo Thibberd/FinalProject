@@ -33,18 +33,14 @@ namespace FrontOfHouseSystem
         private void Enterbtn_Click(object sender, EventArgs e)
         {
             Transaction transaction = new Transaction();
-            if (transaction.transactionID == 2)
-            {
-                EFTpaymentWindow eFTpaymentWindow = new EFTpaymentWindow(RunningTotal, OrderList.Items, userID, transaction.transactionID);
-                this.Hide();
-                eFTpaymentWindow.Show();
-            }
-            else if (transaction.transactionID == 4)
-            {
+            
+            transaction.transactionID = 4;
+            
                 CalculatedChange = (float.Parse(EnteredAmountlbl.Text) - RunningTotal);
                 PaymentSucessfulwindow paymentSucessfulwindow = new PaymentSucessfulwindow(transaction.transactionID,RunningTotal, CalculatedChange, OrderList.Items, userID);
                 paymentSucessfulwindow.Show(); //show payment sucesful window
-            }
+                this.Close();
+
         }
 
         private void Number1btn_Click(object sender, EventArgs e)

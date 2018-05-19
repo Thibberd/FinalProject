@@ -391,8 +391,8 @@ namespace FrontOfHouseSystem
                     connection.Close();
             }
 
-            MixersWindow mixersWindow = new MixersWindow(userID, firstName, lastName, OrderList.Items, Usernamelbl.Text, AmountLabel.Text, RunningTotal);
-            mixersWindow.Show();
+            //MixersWindow mixersWindow = new MixersWindow(userID, firstName, lastName, OrderList.Items, Usernamelbl.Text, AmountLabel.Text, RunningTotal);
+            //mixersWindow.Show();
         }
 
         private void Gordansbtn_Click(object sender, EventArgs e)
@@ -404,7 +404,7 @@ namespace FrontOfHouseSystem
             SqlCommand command = new SqlCommand();
 
             command.Connection = connection;
-            command.CommandText = "SELECT [ProductName],[UnitPrice] FROM systembar.dbo.Product WHERE [ProductName] = 'Gordan's'";
+            command.CommandText = "SELECT [ProductName],[UnitPrice] FROM systembar.dbo.Product WHERE [ProductName] = 'Gordons'";
             command.CommandType = CommandType.Text;
 
             try
@@ -441,8 +441,8 @@ namespace FrontOfHouseSystem
                     connection.Close();
             }
 
-            MixersWindow mixersWindow = new MixersWindow(userID, firstName, lastName, OrderList.Items, Usernamelbl.Text, AmountLabel.Text, RunningTotal);
-            mixersWindow.Show();
+           // MixersWindow mixersWindow = new MixersWindow(userID, firstName, lastName, OrderList.Items, Usernamelbl.Text, AmountLabel.Text, RunningTotal);
+           // mixersWindow.Show();
         }
 
         private void Jackdanielsbtn_Click(object sender, EventArgs e)
@@ -491,8 +491,8 @@ namespace FrontOfHouseSystem
                 if (connection.State == ConnectionState.Open)
                     connection.Close();
             }
-            MixersWindow mixersWindow = new MixersWindow(userID, firstName, lastName, OrderList.Items, Usernamelbl.Text, AmountLabel.Text, RunningTotal);
-            mixersWindow.Show();
+           // MixersWindow mixersWindow = new MixersWindow(userID, firstName, lastName, OrderList.Items, Usernamelbl.Text, AmountLabel.Text, RunningTotal);
+            //mixersWindow.Show();
 
         }
 

@@ -34,7 +34,7 @@ namespace FrontOfHouseSystem
 
         private void Enterbtn_Click(object sender, EventArgs e)
         {
-
+            bool CorrectUserPin = false;
             User currentUser = new User();
             SqlConnection connection = new SqlConnection();
 
@@ -60,15 +60,29 @@ namespace FrontOfHouseSystem
                         currentUser.userType = (int)reader["UserTypeID"];
                         currentUser.firstname = (string)reader["FirstName"];
                         currentUser.secondname = (string)reader["SecondName"];
-  
+                        CorrectUserPin = true;
+                       
+
                 }
 
                 reader.Close();
+                if (CorrectUserPin == false)
+                {
+
+                    CheckUserTypeAndPin(CorrectUserPin, currentUser.userID, currentUser.firstname, currentUser.secondname);
+                }
+                else if (CorrectUserPin == true)
+                {
+                    CheckUserTypeAndPin(CorrectUserPin, currentUser.userID, currentUser.firstname, currentUser.secondname);
+                }
+
             }
             catch
             {
-                MessageBox.Show("Please Enter Correct PIN");
-                Passwordtxtb.Text = "";
+                CorrectUserPin = false;
+                CheckUserTypeAndPin(CorrectUserPin, currentUser.userID, currentUser.firstname, currentUser.secondname);
+                //MessageBox.Show("Please Enter Correct PIN");
+                //Passwordtxtb.Text = "";
             }
             finally
             {
@@ -77,16 +91,34 @@ namespace FrontOfHouseSystem
             }
 
 
-            Usernamelbl.Text = currentUser.firstname + " " + currentUser.secondname;
-
-            string amountlabel = "00.00";
-            float runningTotal = 0;
-            this.Hide();
-            FOHDashboard fOHDashboard = new FOHDashboard(currentUser.userID, currentUser.firstname, currentUser.secondname, OrderList.Items, Usernamelbl.Text, amountlabel,runningTotal);
-            fOHDashboard.Show();
+            
+            
         }
 
-        
+        public void CheckUserTypeAndPin(bool CorrectPin, int userId, string firstname, string lastname)
+        {
+
+
+            if (CorrectPin == true)
+            {
+
+                Usernamelbl.Text = firstname + " " +  lastname;
+
+                string amountlabel = "00.00";
+                float runningTotal = 0;
+                this.Hide();
+                FOHDashboard fOHDashboard = new FOHDashboard(userId, firstname, lastname, OrderList.Items, Usernamelbl.Text, amountlabel, runningTotal);
+                fOHDashboard.Show();
+                
+               
+            }
+            else 
+            {
+                MessageBox.Show("please Enter a corrrect Pin");
+                Passwordtxtb.Text = "";
+            }
+        }
+
 
         private void Nmbronebtn_Click(object sender, EventArgs e)
         {

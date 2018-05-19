@@ -73,7 +73,7 @@
             this.OrderList.ItemHeight = 25;
             this.OrderList.Location = new System.Drawing.Point(1, 32);
             this.OrderList.Name = "OrderList";
-            this.OrderList.Size = new System.Drawing.Size(342, 404);
+            this.OrderList.Size = new System.Drawing.Size(396, 404);
             this.OrderList.TabIndex = 1;
             // 
             // Cashbtn
@@ -130,7 +130,7 @@
             // 
             this.Carlingbtn.BackColor = System.Drawing.Color.BlueViolet;
             this.Carlingbtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Carlingbtn.Location = new System.Drawing.Point(519, 13);
+            this.Carlingbtn.Location = new System.Drawing.Point(517, 71);
             this.Carlingbtn.Name = "Carlingbtn";
             this.Carlingbtn.Size = new System.Drawing.Size(124, 71);
             this.Carlingbtn.TabIndex = 12;
@@ -142,7 +142,7 @@
             // 
             this.Amstelbtn.BackColor = System.Drawing.Color.BlueViolet;
             this.Amstelbtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Amstelbtn.Location = new System.Drawing.Point(676, 13);
+            this.Amstelbtn.Location = new System.Drawing.Point(674, 71);
             this.Amstelbtn.Name = "Amstelbtn";
             this.Amstelbtn.Size = new System.Drawing.Size(124, 71);
             this.Amstelbtn.TabIndex = 13;
@@ -154,7 +154,7 @@
             // 
             this.Guinessbtn.BackColor = System.Drawing.Color.BlueViolet;
             this.Guinessbtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Guinessbtn.Location = new System.Drawing.Point(844, 13);
+            this.Guinessbtn.Location = new System.Drawing.Point(842, 71);
             this.Guinessbtn.Name = "Guinessbtn";
             this.Guinessbtn.Size = new System.Drawing.Size(131, 71);
             this.Guinessbtn.TabIndex = 14;
@@ -166,7 +166,7 @@
             // 
             this.Strongbowbtn.BackColor = System.Drawing.Color.BlueViolet;
             this.Strongbowbtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Strongbowbtn.Location = new System.Drawing.Point(519, 113);
+            this.Strongbowbtn.Location = new System.Drawing.Point(517, 171);
             this.Strongbowbtn.Name = "Strongbowbtn";
             this.Strongbowbtn.Size = new System.Drawing.Size(124, 63);
             this.Strongbowbtn.TabIndex = 15;
@@ -178,7 +178,7 @@
             // 
             this.Thatchersbtn.BackColor = System.Drawing.Color.BlueViolet;
             this.Thatchersbtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Thatchersbtn.Location = new System.Drawing.Point(676, 113);
+            this.Thatchersbtn.Location = new System.Drawing.Point(674, 171);
             this.Thatchersbtn.Name = "Thatchersbtn";
             this.Thatchersbtn.Size = new System.Drawing.Size(124, 63);
             this.Thatchersbtn.TabIndex = 16;
@@ -190,7 +190,7 @@
             // 
             this.RattlerObtn.BackColor = System.Drawing.Color.BlueViolet;
             this.RattlerObtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.RattlerObtn.Location = new System.Drawing.Point(844, 113);
+            this.RattlerObtn.Location = new System.Drawing.Point(842, 171);
             this.RattlerObtn.Name = "RattlerObtn";
             this.RattlerObtn.Size = new System.Drawing.Size(131, 63);
             this.RattlerObtn.TabIndex = 17;
@@ -202,7 +202,7 @@
             // 
             this.Smirnoffbtn.BackColor = System.Drawing.Color.DarkOrange;
             this.Smirnoffbtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Smirnoffbtn.Location = new System.Drawing.Point(519, 224);
+            this.Smirnoffbtn.Location = new System.Drawing.Point(517, 282);
             this.Smirnoffbtn.Name = "Smirnoffbtn";
             this.Smirnoffbtn.Size = new System.Drawing.Size(124, 65);
             this.Smirnoffbtn.TabIndex = 19;
@@ -214,11 +214,11 @@
             // 
             this.Gordansbtn.BackColor = System.Drawing.Color.DarkOrange;
             this.Gordansbtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Gordansbtn.Location = new System.Drawing.Point(676, 224);
+            this.Gordansbtn.Location = new System.Drawing.Point(674, 282);
             this.Gordansbtn.Name = "Gordansbtn";
             this.Gordansbtn.Size = new System.Drawing.Size(126, 65);
             this.Gordansbtn.TabIndex = 20;
-            this.Gordansbtn.Text = "Gordan\'s";
+            this.Gordansbtn.Text = "Gordon\'s";
             this.Gordansbtn.UseVisualStyleBackColor = false;
             this.Gordansbtn.Click += new System.EventHandler(this.Gordansbtn_Click);
             // 
@@ -226,7 +226,7 @@
             // 
             this.Jackdanielsbtn.BackColor = System.Drawing.Color.DarkOrange;
             this.Jackdanielsbtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Jackdanielsbtn.Location = new System.Drawing.Point(844, 224);
+            this.Jackdanielsbtn.Location = new System.Drawing.Point(842, 282);
             this.Jackdanielsbtn.Name = "Jackdanielsbtn";
             this.Jackdanielsbtn.Size = new System.Drawing.Size(131, 65);
             this.Jackdanielsbtn.TabIndex = 21;
@@ -238,7 +238,7 @@
             // 
             this.Chardonnaybtn.BackColor = System.Drawing.Color.DarkOrange;
             this.Chardonnaybtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Chardonnaybtn.Location = new System.Drawing.Point(519, 315);
+            this.Chardonnaybtn.Location = new System.Drawing.Point(517, 373);
             this.Chardonnaybtn.Name = "Chardonnaybtn";
             this.Chardonnaybtn.Size = new System.Drawing.Size(124, 70);
             this.Chardonnaybtn.TabIndex = 22;
@@ -250,7 +250,7 @@
             // 
             this.Blossomhillbtn.BackColor = System.Drawing.Color.DarkOrange;
             this.Blossomhillbtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Blossomhillbtn.Location = new System.Drawing.Point(676, 315);
+            this.Blossomhillbtn.Location = new System.Drawing.Point(674, 373);
             this.Blossomhillbtn.Name = "Blossomhillbtn";
             this.Blossomhillbtn.Size = new System.Drawing.Size(126, 70);
             this.Blossomhillbtn.TabIndex = 23;
@@ -262,7 +262,7 @@
             // 
             this.Shirazbtn.BackColor = System.Drawing.Color.DarkOrange;
             this.Shirazbtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Shirazbtn.Location = new System.Drawing.Point(844, 315);
+            this.Shirazbtn.Location = new System.Drawing.Point(842, 373);
             this.Shirazbtn.Name = "Shirazbtn";
             this.Shirazbtn.Size = new System.Drawing.Size(131, 70);
             this.Shirazbtn.TabIndex = 24;
@@ -274,7 +274,7 @@
             // 
             this.Cocacolabtn.BackColor = System.Drawing.Color.SpringGreen;
             this.Cocacolabtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Cocacolabtn.Location = new System.Drawing.Point(588, 433);
+            this.Cocacolabtn.Location = new System.Drawing.Point(586, 491);
             this.Cocacolabtn.Name = "Cocacolabtn";
             this.Cocacolabtn.Size = new System.Drawing.Size(127, 53);
             this.Cocacolabtn.TabIndex = 25;
@@ -286,7 +286,7 @@
             // 
             this.Lemonadebtn.BackColor = System.Drawing.Color.SpringGreen;
             this.Lemonadebtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Lemonadebtn.Location = new System.Drawing.Point(749, 433);
+            this.Lemonadebtn.Location = new System.Drawing.Point(747, 491);
             this.Lemonadebtn.Name = "Lemonadebtn";
             this.Lemonadebtn.Size = new System.Drawing.Size(123, 53);
             this.Lemonadebtn.TabIndex = 26;
