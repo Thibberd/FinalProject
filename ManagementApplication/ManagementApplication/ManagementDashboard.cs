@@ -67,5 +67,26 @@ namespace ManagementApplication
             this.typeOfSaleByAmountTableAdapter.Fill(this.typeOfsalebyAmount.TypeOfSaleByAmount);
 
         }
+
+        private void UserAdminbtn_Click_1(object sender, EventArgs e)
+        {
+            UserAdmin userAdmin = new UserAdmin();
+            userAdmin.Show();
+            this.Hide();
+        }
+
+        private void Bankingbtn_Click_1(object sender, EventArgs e)
+        {
+            BankingWindow bankingWindow = new BankingWindow();
+            bankingWindow.Show();
+            this.Hide();
+        }
+
+        private void Reportsbtn_Click_1(object sender, EventArgs e)
+        {
+            ReportsWindow reportsWindow = new ReportsWindow();
+            reportsWindow.Show();
+            this.Hide();
+        }
     }
 }

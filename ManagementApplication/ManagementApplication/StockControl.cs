@@ -20,12 +20,14 @@ namespace ManagementApplication
 
         private void StockControl_Load(object sender, EventArgs e)
         {
-            // TODO: This line of code loads data into the 'stockDataSet.Stock' table. You can move, or remove it, as needed.
-            this.stockTableAdapter.Fill(this.stockDataSet.Stock);
-            // TODO: This line of code loads data into the 'systembarDataSet1.Product' table. You can move, or remove it, as needed.
+            
+            this.stockTableAdapter.Fill(this.datSourceStock.Stock);
+            
+
+            //  This line of code loads data into the 'systembarDataSet1.Product' table. You can move, or remove it, as needed.
             this.productTableAdapter.Fill(this.systembarDataSet1.Product);
-            // TODO: This line of code loads data into the 'systembarDataSet.StockControlView' table. You can move, or remove it, as needed.
-            this.stockControlViewTableAdapter.Fill(this.systembarDataSet.StockControlView);
+            //This line of code loads data into the 'systembarDataSet.StockControlView' table. You can move, or remove it, as needed.
+            //this.stockControlViewTableAdapter.Fill(this.systembarDataSet.StockControlView);
 
         }
 
@@ -33,9 +35,13 @@ namespace ManagementApplication
         {
             try
             {
+                //Updates Stock table from creating, reading and deleting
+
                 this.Validate();
-                this.StockGridView.EndEdit();
-                this.stockTableAdapter.Update(this.stockDataSet.Stock);
+                this.stockBindingSource3.EndEdit();
+                this.stockTableAdapter.Update(this.datSourceStock.Stock);
+                
+
 
 
                 MessageBox.Show("Update successful");
@@ -93,6 +99,41 @@ namespace ManagementApplication
                 grp.CopyFromScreen(0, 0, 0, 0, scr.Size);
                 scr.Save(sfg.FileName, ImageFormat.Jpeg);
             }
+        }
+
+        private void UserAdminbtn_Click_1(object sender, EventArgs e)
+        {
+            UserAdmin userAdmin = new UserAdmin();
+            userAdmin.Show();
+            this.Hide();
+        }
+
+        private void Bankingbtn_Click_1(object sender, EventArgs e)
+        {
+            BankingWindow bankingWindow = new BankingWindow();
+            bankingWindow.Show();
+            this.Close();
+        }
+
+        private void Reportsbtn_Click_1(object sender, EventArgs e)
+        {
+            ReportsWindow reportsWindow = new ReportsWindow();
+            reportsWindow.Show();
+            this.Hide();
+        }
+
+        private void LogOutbtn_Click_1(object sender, EventArgs e)
+        {
+            ManagementLogInWindow managementLogIn = new ManagementLogInWindow();
+            managementLogIn.Show();
+            this.Hide();
+        }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+            this.Close();
+            Dashboard dashboard = new Dashboard();
+            dashboard.Show();
         }
     }
 }

@@ -19,7 +19,7 @@ namespace ManagementApplication
 
         private void ProductsAboveAveragePrice_Load(object sender, EventArgs e)
         {
-            // TODO: This line of code loads data into the 'productsOverAveragePriceView.Products_Above_Average_Price' table. You can move, or remove it, as needed.
+            // loads data into the products above average price data grid view
             this.products_Above_Average_PriceTableAdapter.Fill(this.productsOverAveragePriceView.Products_Above_Average_Price);
 
         }
@@ -59,6 +59,48 @@ namespace ManagementApplication
             ManagementLogInWindow managementLogIn = new ManagementLogInWindow();
             managementLogIn.Show();
             this.Hide();
+        }
+
+        private void UserAdminbtn_Click_1(object sender, EventArgs e)
+        {
+            UserAdmin userAdmin = new UserAdmin();
+            userAdmin.Show();
+            this.Hide();
+        }
+
+        private void StockBtn_Click_1(object sender, EventArgs e)
+        {
+            StockControl stockControl = new StockControl();
+            stockControl.Show();
+            this.Hide();
+        }
+
+        private void Bankingbtn_Click_1(object sender, EventArgs e)
+        {
+            BankingWindow bankingWindow = new BankingWindow();
+            bankingWindow.Show();
+            this.Close();
+        }
+
+        private void Reportsbtn_Click_1(object sender, EventArgs e)
+        {
+            ReportsWindow reportsWindow = new ReportsWindow();
+            reportsWindow.Show();
+            this.Hide();
+        }
+
+        private void LogOutbtn_Click_1(object sender, EventArgs e)
+        {
+            ManagementLogInWindow managementLogIn = new ManagementLogInWindow();
+            managementLogIn.Show();
+            this.Hide();
+        }
+
+        private void label3_Click(object sender, EventArgs e)
+        {
+            this.Close();
+            Dashboard dashboard = new Dashboard();
+            dashboard.Show();
         }
     }
 }

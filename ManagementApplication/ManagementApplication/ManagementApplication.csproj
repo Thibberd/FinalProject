@@ -46,17 +46,16 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="AmountbySaleTypeWindow.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="AmountbySaleTypeWindow.Designer.cs">
-      <DependentUpon>AmountbySaleTypeWindow.cs</DependentUpon>
-    </Compile>
     <Compile Include="BankingWindow.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="BankingWindow.Designer.cs">
       <DependentUpon>BankingWindow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="datSourceStock.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>datSourceStock.xsd</DependentUpon>
     </Compile>
     <Compile Include="LastMonthlySalesView.Designer.cs">
       <AutoGen>True</AutoGen>
@@ -117,11 +116,6 @@
     <Compile Include="StockControl.Designer.cs">
       <DependentUpon>StockControl.cs</DependentUpon>
     </Compile>
-    <Compile Include="StockDataSet.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>StockDataSet.xsd</DependentUpon>
-    </Compile>
     <Compile Include="systembarDataSet1.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -177,9 +171,6 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>WeeklySalesView.xsd</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="AmountbySaleTypeWindow.resx">
-      <DependentUpon>AmountbySaleTypeWindow.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="BankingWindow.resx">
       <DependentUpon>BankingWindow.cs</DependentUpon>
     </EmbeddedResource>
@@ -223,6 +214,17 @@
     <EmbeddedResource Include="WeeklySalesReportWindow.resx">
       <DependentUpon>WeeklySalesReportWindow.cs</DependentUpon>
     </EmbeddedResource>
+    <None Include="datSourceStock.xsc">
+      <DependentUpon>datSourceStock.xsd</DependentUpon>
+    </None>
+    <None Include="datSourceStock.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>datSourceStock.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="datSourceStock.xss">
+      <DependentUpon>datSourceStock.xsd</DependentUpon>
+    </None>
     <None Include="LastMonthlySalesView.xsc">
       <DependentUpon>LastMonthlySalesView.xsd</DependentUpon>
     </None>
@@ -265,17 +267,6 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
-    <None Include="StockDataSet.xsc">
-      <DependentUpon>StockDataSet.xsd</DependentUpon>
-    </None>
-    <None Include="StockDataSet.xsd">
-      <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>StockDataSet.Designer.cs</LastGenOutput>
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="StockDataSet.xss">
-      <DependentUpon>StockDataSet.xsd</DependentUpon>
-    </None>
     <None Include="systembarDataSet1.xsc">
       <DependentUpon>systembarDataSet1.xsd</DependentUpon>
     </None>
