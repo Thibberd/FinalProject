@@ -1,13 +1,7 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
 using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows.Forms;
 using System.Data.SqlClient;
+using System.Windows.Forms;
 
 namespace FrontOfHouseSystem
 {
@@ -47,6 +41,15 @@ namespace FrontOfHouseSystem
 
         private void Completebtn_Click_1(object sender, EventArgs e)
         {
+            ProcessOrder();
+
+            UserLogInWindow userLogInWindow = new UserLogInWindow();
+            userLogInWindow.Show();
+            this.Hide();
+        }
+
+        private void ProcessOrder()
+        {
             SqlConnection connection = new SqlConnection();
 
             connection.ConnectionString = "Server =.; Database = systembar; Trusted_Connection = True;";
@@ -80,10 +83,6 @@ namespace FrontOfHouseSystem
                 if (connection.State == ConnectionState.Open)
                     connection.Close();
             }
-
-            UserLogInWindow userLogInWindow = new UserLogInWindow();
-            userLogInWindow.Show();
-            this.Hide();
         }
     }
 }

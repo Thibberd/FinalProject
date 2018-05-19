@@ -68,18 +68,18 @@
             this.panel1.Controls.Add(this.Nmbronebtn);
             this.panel1.Controls.Add(this.Passwordtxtb);
             this.panel1.Controls.Add(this.label2);
-            this.panel1.Location = new System.Drawing.Point(239, 29);
+            this.panel1.Location = new System.Drawing.Point(492, 41);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(334, 363);
+            this.panel1.Size = new System.Drawing.Size(386, 497);
             this.panel1.TabIndex = 0;
             // 
             // Cancelbtn
             // 
             this.Cancelbtn.BackColor = System.Drawing.Color.DeepPink;
             this.Cancelbtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Cancelbtn.Location = new System.Drawing.Point(49, 308);
+            this.Cancelbtn.Location = new System.Drawing.Point(11, 393);
             this.Cancelbtn.Name = "Cancelbtn";
-            this.Cancelbtn.Size = new System.Drawing.Size(87, 35);
+            this.Cancelbtn.Size = new System.Drawing.Size(110, 54);
             this.Cancelbtn.TabIndex = 13;
             this.Cancelbtn.Text = "Cancel";
             this.Cancelbtn.UseVisualStyleBackColor = false;
@@ -89,9 +89,9 @@
             // 
             this.Enterbtn.BackColor = System.Drawing.Color.GreenYellow;
             this.Enterbtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Enterbtn.Location = new System.Drawing.Point(212, 308);
+            this.Enterbtn.Location = new System.Drawing.Point(247, 393);
             this.Enterbtn.Name = "Enterbtn";
-            this.Enterbtn.Size = new System.Drawing.Size(87, 35);
+            this.Enterbtn.Size = new System.Drawing.Size(111, 51);
             this.Enterbtn.TabIndex = 12;
             this.Enterbtn.Text = "Enter >>";
             this.Enterbtn.UseVisualStyleBackColor = false;
@@ -100,11 +100,11 @@
             // Nmbrzerobtn
             // 
             this.Nmbrzerobtn.BackColor = System.Drawing.Color.Black;
-            this.Nmbrzerobtn.Font = new System.Drawing.Font("Impact", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Nmbrzerobtn.Font = new System.Drawing.Font("Arial", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Nmbrzerobtn.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.Nmbrzerobtn.Location = new System.Drawing.Point(144, 258);
+            this.Nmbrzerobtn.Location = new System.Drawing.Point(158, 330);
             this.Nmbrzerobtn.Name = "Nmbrzerobtn";
-            this.Nmbrzerobtn.Size = new System.Drawing.Size(46, 31);
+            this.Nmbrzerobtn.Size = new System.Drawing.Size(67, 59);
             this.Nmbrzerobtn.TabIndex = 11;
             this.Nmbrzerobtn.Text = "0";
             this.Nmbrzerobtn.UseVisualStyleBackColor = false;
@@ -113,11 +113,11 @@
             // Nmbrninebtn
             // 
             this.Nmbrninebtn.BackColor = System.Drawing.Color.Black;
-            this.Nmbrninebtn.Font = new System.Drawing.Font("Impact", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Nmbrninebtn.Font = new System.Drawing.Font("Arial", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Nmbrninebtn.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.Nmbrninebtn.Location = new System.Drawing.Point(211, 221);
+            this.Nmbrninebtn.Location = new System.Drawing.Point(238, 265);
             this.Nmbrninebtn.Name = "Nmbrninebtn";
-            this.Nmbrninebtn.Size = new System.Drawing.Size(46, 31);
+            this.Nmbrninebtn.Size = new System.Drawing.Size(67, 59);
             this.Nmbrninebtn.TabIndex = 10;
             this.Nmbrninebtn.Text = "9";
             this.Nmbrninebtn.UseVisualStyleBackColor = false;
@@ -126,11 +126,11 @@
             // Nmbreightbtn
             // 
             this.Nmbreightbtn.BackColor = System.Drawing.Color.Black;
-            this.Nmbreightbtn.Font = new System.Drawing.Font("Impact", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Nmbreightbtn.Font = new System.Drawing.Font("Arial", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Nmbreightbtn.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.Nmbreightbtn.Location = new System.Drawing.Point(144, 221);
+            this.Nmbreightbtn.Location = new System.Drawing.Point(158, 265);
             this.Nmbreightbtn.Name = "Nmbreightbtn";
-            this.Nmbreightbtn.Size = new System.Drawing.Size(46, 31);
+            this.Nmbreightbtn.Size = new System.Drawing.Size(67, 59);
             this.Nmbreightbtn.TabIndex = 9;
             this.Nmbreightbtn.Text = "8";
             this.Nmbreightbtn.UseVisualStyleBackColor = false;
@@ -139,11 +139,11 @@
             // Nmbrsevenbtn
             // 
             this.Nmbrsevenbtn.BackColor = System.Drawing.Color.Black;
-            this.Nmbrsevenbtn.Font = new System.Drawing.Font("Impact", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Nmbrsevenbtn.Font = new System.Drawing.Font("Arial", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Nmbrsevenbtn.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.Nmbrsevenbtn.Location = new System.Drawing.Point(75, 221);
+            this.Nmbrsevenbtn.Location = new System.Drawing.Point(83, 265);
             this.Nmbrsevenbtn.Name = "Nmbrsevenbtn";
-            this.Nmbrsevenbtn.Size = new System.Drawing.Size(46, 31);
+            this.Nmbrsevenbtn.Size = new System.Drawing.Size(67, 59);
             this.Nmbrsevenbtn.TabIndex = 8;
             this.Nmbrsevenbtn.Text = "7";
             this.Nmbrsevenbtn.UseVisualStyleBackColor = false;
@@ -152,11 +152,11 @@
             // Nmbrsixbtn
             // 
             this.Nmbrsixbtn.BackColor = System.Drawing.Color.Black;
-            this.Nmbrsixbtn.Font = new System.Drawing.Font("Impact", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Nmbrsixbtn.Font = new System.Drawing.Font("Arial", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Nmbrsixbtn.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.Nmbrsixbtn.Location = new System.Drawing.Point(211, 184);
+            this.Nmbrsixbtn.Location = new System.Drawing.Point(238, 200);
             this.Nmbrsixbtn.Name = "Nmbrsixbtn";
-            this.Nmbrsixbtn.Size = new System.Drawing.Size(46, 31);
+            this.Nmbrsixbtn.Size = new System.Drawing.Size(67, 59);
             this.Nmbrsixbtn.TabIndex = 7;
             this.Nmbrsixbtn.Text = "6";
             this.Nmbrsixbtn.UseVisualStyleBackColor = false;
@@ -165,11 +165,11 @@
             // Nmbrfivebtn
             // 
             this.Nmbrfivebtn.BackColor = System.Drawing.Color.Black;
-            this.Nmbrfivebtn.Font = new System.Drawing.Font("Impact", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Nmbrfivebtn.Font = new System.Drawing.Font("Arial", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Nmbrfivebtn.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.Nmbrfivebtn.Location = new System.Drawing.Point(144, 184);
+            this.Nmbrfivebtn.Location = new System.Drawing.Point(158, 200);
             this.Nmbrfivebtn.Name = "Nmbrfivebtn";
-            this.Nmbrfivebtn.Size = new System.Drawing.Size(46, 31);
+            this.Nmbrfivebtn.Size = new System.Drawing.Size(67, 59);
             this.Nmbrfivebtn.TabIndex = 6;
             this.Nmbrfivebtn.Text = "5";
             this.Nmbrfivebtn.UseVisualStyleBackColor = false;
@@ -178,11 +178,11 @@
             // Nmbrfourbtn
             // 
             this.Nmbrfourbtn.BackColor = System.Drawing.Color.Black;
-            this.Nmbrfourbtn.Font = new System.Drawing.Font("Impact", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Nmbrfourbtn.Font = new System.Drawing.Font("Arial", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Nmbrfourbtn.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.Nmbrfourbtn.Location = new System.Drawing.Point(75, 184);
+            this.Nmbrfourbtn.Location = new System.Drawing.Point(83, 200);
             this.Nmbrfourbtn.Name = "Nmbrfourbtn";
-            this.Nmbrfourbtn.Size = new System.Drawing.Size(46, 31);
+            this.Nmbrfourbtn.Size = new System.Drawing.Size(67, 59);
             this.Nmbrfourbtn.TabIndex = 5;
             this.Nmbrfourbtn.Text = "4";
             this.Nmbrfourbtn.UseVisualStyleBackColor = false;
@@ -191,11 +191,11 @@
             // Nmbrthreebtn
             // 
             this.Nmbrthreebtn.BackColor = System.Drawing.Color.Black;
-            this.Nmbrthreebtn.Font = new System.Drawing.Font("Impact", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Nmbrthreebtn.Font = new System.Drawing.Font("Arial", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Nmbrthreebtn.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.Nmbrthreebtn.Location = new System.Drawing.Point(211, 147);
+            this.Nmbrthreebtn.Location = new System.Drawing.Point(238, 135);
             this.Nmbrthreebtn.Name = "Nmbrthreebtn";
-            this.Nmbrthreebtn.Size = new System.Drawing.Size(46, 31);
+            this.Nmbrthreebtn.Size = new System.Drawing.Size(67, 59);
             this.Nmbrthreebtn.TabIndex = 4;
             this.Nmbrthreebtn.Text = "3";
             this.Nmbrthreebtn.UseVisualStyleBackColor = false;
@@ -204,11 +204,11 @@
             // NmbrTwobtn
             // 
             this.NmbrTwobtn.BackColor = System.Drawing.Color.Black;
-            this.NmbrTwobtn.Font = new System.Drawing.Font("Impact", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.NmbrTwobtn.Font = new System.Drawing.Font("Arial", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.NmbrTwobtn.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.NmbrTwobtn.Location = new System.Drawing.Point(144, 147);
+            this.NmbrTwobtn.Location = new System.Drawing.Point(156, 135);
             this.NmbrTwobtn.Name = "NmbrTwobtn";
-            this.NmbrTwobtn.Size = new System.Drawing.Size(46, 31);
+            this.NmbrTwobtn.Size = new System.Drawing.Size(67, 59);
             this.NmbrTwobtn.TabIndex = 3;
             this.NmbrTwobtn.Text = "2";
             this.NmbrTwobtn.UseVisualStyleBackColor = false;
@@ -217,11 +217,11 @@
             // Nmbronebtn
             // 
             this.Nmbronebtn.BackColor = System.Drawing.Color.Black;
-            this.Nmbronebtn.Font = new System.Drawing.Font("Impact", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Nmbronebtn.Font = new System.Drawing.Font("Arial", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Nmbronebtn.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.Nmbronebtn.Location = new System.Drawing.Point(75, 147);
+            this.Nmbronebtn.Location = new System.Drawing.Point(83, 135);
             this.Nmbronebtn.Name = "Nmbronebtn";
-            this.Nmbronebtn.Size = new System.Drawing.Size(46, 31);
+            this.Nmbronebtn.Size = new System.Drawing.Size(67, 59);
             this.Nmbronebtn.TabIndex = 2;
             this.Nmbronebtn.Text = "1";
             this.Nmbronebtn.UseVisualStyleBackColor = false;
@@ -229,10 +229,10 @@
             // 
             // Passwordtxtb
             // 
-            this.Passwordtxtb.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Passwordtxtb.Location = new System.Drawing.Point(63, 94);
+            this.Passwordtxtb.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Passwordtxtb.Location = new System.Drawing.Point(83, 84);
             this.Passwordtxtb.Name = "Passwordtxtb";
-            this.Passwordtxtb.Size = new System.Drawing.Size(206, 26);
+            this.Passwordtxtb.Size = new System.Drawing.Size(231, 35);
             this.Passwordtxtb.TabIndex = 1;
             this.Passwordtxtb.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
@@ -240,7 +240,7 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(87, 40);
+            this.label2.Location = new System.Drawing.Point(119, 41);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(158, 31);
             this.label2.TabIndex = 0;
@@ -273,6 +273,7 @@
             this.Usernamelbl.Size = new System.Drawing.Size(35, 13);
             this.Usernamelbl.TabIndex = 3;
             this.Usernamelbl.Text = "label3";
+            this.Usernamelbl.Visible = false;
             // 
             // DandTlbl
             // 
@@ -299,7 +300,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.ClientSize = new System.Drawing.Size(790, 414);
+            this.ClientSize = new System.Drawing.Size(1342, 663);
             this.Controls.Add(this.AmountLabel);
             this.Controls.Add(this.DandTlbl);
             this.Controls.Add(this.Usernamelbl);
@@ -308,6 +309,7 @@
             this.Controls.Add(this.panel1);
             this.Name = "UserLogInWindow";
             this.Text = "UserLogInWindow";
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.ResumeLayout(false);

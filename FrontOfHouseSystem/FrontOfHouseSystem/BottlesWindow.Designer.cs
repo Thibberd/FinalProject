@@ -60,9 +60,9 @@
             // 
             this.SmirnoffIcebtn.BackColor = System.Drawing.Color.DodgerBlue;
             this.SmirnoffIcebtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.SmirnoffIcebtn.Location = new System.Drawing.Point(513, 187);
+            this.SmirnoffIcebtn.Location = new System.Drawing.Point(814, 292);
             this.SmirnoffIcebtn.Name = "SmirnoffIcebtn";
-            this.SmirnoffIcebtn.Size = new System.Drawing.Size(108, 41);
+            this.SmirnoffIcebtn.Size = new System.Drawing.Size(159, 90);
             this.SmirnoffIcebtn.TabIndex = 81;
             this.SmirnoffIcebtn.Text = "Smirnoff Ice";
             this.SmirnoffIcebtn.UseVisualStyleBackColor = false;
@@ -72,9 +72,9 @@
             // 
             this.Kopmixfbtn.BackColor = System.Drawing.Color.DodgerBlue;
             this.Kopmixfbtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Kopmixfbtn.Location = new System.Drawing.Point(378, 188);
+            this.Kopmixfbtn.Location = new System.Drawing.Point(623, 292);
             this.Kopmixfbtn.Name = "Kopmixfbtn";
-            this.Kopmixfbtn.Size = new System.Drawing.Size(110, 41);
+            this.Kopmixfbtn.Size = new System.Drawing.Size(159, 88);
             this.Kopmixfbtn.TabIndex = 80;
             this.Kopmixfbtn.Text = "Kop Mix F";
             this.Kopmixfbtn.UseVisualStyleBackColor = false;
@@ -84,9 +84,9 @@
             // 
             this.Kopstrlimebtn.BackColor = System.Drawing.Color.DodgerBlue;
             this.Kopstrlimebtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Kopstrlimebtn.Location = new System.Drawing.Point(243, 188);
+            this.Kopstrlimebtn.Location = new System.Drawing.Point(420, 292);
             this.Kopstrlimebtn.Name = "Kopstrlimebtn";
-            this.Kopstrlimebtn.Size = new System.Drawing.Size(111, 41);
+            this.Kopstrlimebtn.Size = new System.Drawing.Size(159, 87);
             this.Kopstrlimebtn.TabIndex = 79;
             this.Kopstrlimebtn.Text = "Kop Str+L";
             this.Kopstrlimebtn.UseVisualStyleBackColor = false;
@@ -96,9 +96,9 @@
             // 
             this.Desperadosbtn.BackColor = System.Drawing.Color.DodgerBlue;
             this.Desperadosbtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Desperadosbtn.Location = new System.Drawing.Point(513, 110);
+            this.Desperadosbtn.Location = new System.Drawing.Point(814, 157);
             this.Desperadosbtn.Name = "Desperadosbtn";
-            this.Desperadosbtn.Size = new System.Drawing.Size(108, 41);
+            this.Desperadosbtn.Size = new System.Drawing.Size(159, 89);
             this.Desperadosbtn.TabIndex = 78;
             this.Desperadosbtn.Text = "Desperados";
             this.Desperadosbtn.UseVisualStyleBackColor = false;
@@ -109,9 +109,9 @@
             this.Budweiserbtn.BackColor = System.Drawing.Color.DodgerBlue;
             this.Budweiserbtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Budweiserbtn.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.Budweiserbtn.Location = new System.Drawing.Point(243, 110);
+            this.Budweiserbtn.Location = new System.Drawing.Point(420, 157);
             this.Budweiserbtn.Name = "Budweiserbtn";
-            this.Budweiserbtn.Size = new System.Drawing.Size(111, 41);
+            this.Budweiserbtn.Size = new System.Drawing.Size(159, 89);
             this.Budweiserbtn.TabIndex = 77;
             this.Budweiserbtn.Text = "Budweiser";
             this.Budweiserbtn.UseVisualStyleBackColor = false;
@@ -121,9 +121,9 @@
             // 
             this.Coronabtn.BackColor = System.Drawing.Color.DodgerBlue;
             this.Coronabtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Coronabtn.Location = new System.Drawing.Point(378, 110);
+            this.Coronabtn.Location = new System.Drawing.Point(621, 157);
             this.Coronabtn.Name = "Coronabtn";
-            this.Coronabtn.Size = new System.Drawing.Size(110, 41);
+            this.Coronabtn.Size = new System.Drawing.Size(161, 89);
             this.Coronabtn.TabIndex = 76;
             this.Coronabtn.Text = "Corona";
             this.Coronabtn.UseVisualStyleBackColor = false;
@@ -134,7 +134,7 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label1.Location = new System.Drawing.Point(372, 14);
+            this.label1.Location = new System.Drawing.Point(660, 9);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(111, 33);
             this.label1.TabIndex = 75;
@@ -144,9 +144,9 @@
             // 
             this.Softsbtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.Softsbtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Softsbtn.Location = new System.Drawing.Point(682, 395);
+            this.Softsbtn.Location = new System.Drawing.Point(1119, 563);
             this.Softsbtn.Name = "Softsbtn";
-            this.Softsbtn.Size = new System.Drawing.Size(120, 44);
+            this.Softsbtn.Size = new System.Drawing.Size(228, 60);
             this.Softsbtn.TabIndex = 74;
             this.Softsbtn.Text = "Soft Drinks";
             this.Softsbtn.UseVisualStyleBackColor = false;
@@ -156,9 +156,9 @@
             // 
             this.Sparklingbtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.Sparklingbtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Sparklingbtn.Location = new System.Drawing.Point(682, 345);
+            this.Sparklingbtn.Location = new System.Drawing.Point(1119, 488);
             this.Sparklingbtn.Name = "Sparklingbtn";
-            this.Sparklingbtn.Size = new System.Drawing.Size(120, 44);
+            this.Sparklingbtn.Size = new System.Drawing.Size(228, 69);
             this.Sparklingbtn.TabIndex = 73;
             this.Sparklingbtn.Text = "Sparkling";
             this.Sparklingbtn.UseVisualStyleBackColor = false;
@@ -168,9 +168,9 @@
             // 
             this.Cocktailsbtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.Cocktailsbtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Cocktailsbtn.Location = new System.Drawing.Point(682, 295);
+            this.Cocktailsbtn.Location = new System.Drawing.Point(1119, 420);
             this.Cocktailsbtn.Name = "Cocktailsbtn";
-            this.Cocktailsbtn.Size = new System.Drawing.Size(120, 44);
+            this.Cocktailsbtn.Size = new System.Drawing.Size(228, 62);
             this.Cocktailsbtn.TabIndex = 72;
             this.Cocktailsbtn.Text = "Cocktails";
             this.Cocktailsbtn.UseVisualStyleBackColor = false;
@@ -180,9 +180,9 @@
             // 
             this.Liquersbtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.Liquersbtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Liquersbtn.Location = new System.Drawing.Point(682, 245);
+            this.Liquersbtn.Location = new System.Drawing.Point(1119, 350);
             this.Liquersbtn.Name = "Liquersbtn";
-            this.Liquersbtn.Size = new System.Drawing.Size(120, 44);
+            this.Liquersbtn.Size = new System.Drawing.Size(228, 64);
             this.Liquersbtn.TabIndex = 71;
             this.Liquersbtn.Text = "Liquers / Bombs";
             this.Liquersbtn.UseVisualStyleBackColor = false;
@@ -192,9 +192,9 @@
             // 
             this.Winebtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.Winebtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Winebtn.Location = new System.Drawing.Point(682, 195);
+            this.Winebtn.Location = new System.Drawing.Point(1119, 286);
             this.Winebtn.Name = "Winebtn";
-            this.Winebtn.Size = new System.Drawing.Size(120, 44);
+            this.Winebtn.Size = new System.Drawing.Size(228, 58);
             this.Winebtn.TabIndex = 70;
             this.Winebtn.Text = "Wine";
             this.Winebtn.UseVisualStyleBackColor = false;
@@ -204,9 +204,9 @@
             // 
             this.Spiritsbtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.Spiritsbtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Spiritsbtn.Location = new System.Drawing.Point(682, 144);
+            this.Spiritsbtn.Location = new System.Drawing.Point(1119, 219);
             this.Spiritsbtn.Name = "Spiritsbtn";
-            this.Spiritsbtn.Size = new System.Drawing.Size(120, 44);
+            this.Spiritsbtn.Size = new System.Drawing.Size(224, 61);
             this.Spiritsbtn.TabIndex = 69;
             this.Spiritsbtn.Text = "Spirits";
             this.Spiritsbtn.UseVisualStyleBackColor = false;
@@ -216,9 +216,9 @@
             // 
             this.Bottlesbtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.Bottlesbtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Bottlesbtn.Location = new System.Drawing.Point(682, 95);
+            this.Bottlesbtn.Location = new System.Drawing.Point(1119, 146);
             this.Bottlesbtn.Name = "Bottlesbtn";
-            this.Bottlesbtn.Size = new System.Drawing.Size(120, 44);
+            this.Bottlesbtn.Size = new System.Drawing.Size(224, 67);
             this.Bottlesbtn.TabIndex = 68;
             this.Bottlesbtn.Text = "Bottles";
             this.Bottlesbtn.UseVisualStyleBackColor = false;
@@ -229,9 +229,9 @@
             this.Draughtbtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.Draughtbtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Draughtbtn.ImageAlign = System.Drawing.ContentAlignment.BottomRight;
-            this.Draughtbtn.Location = new System.Drawing.Point(682, 50);
+            this.Draughtbtn.Location = new System.Drawing.Point(1119, 76);
             this.Draughtbtn.Name = "Draughtbtn";
-            this.Draughtbtn.Size = new System.Drawing.Size(120, 44);
+            this.Draughtbtn.Size = new System.Drawing.Size(224, 64);
             this.Draughtbtn.TabIndex = 67;
             this.Draughtbtn.Text = "Draught";
             this.Draughtbtn.UseVisualStyleBackColor = false;
@@ -239,22 +239,27 @@
             // 
             // Voidbtn
             // 
-            this.Voidbtn.Location = new System.Drawing.Point(119, 422);
+            this.Voidbtn.BackColor = System.Drawing.Color.Red;
+            this.Voidbtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Voidbtn.ForeColor = System.Drawing.Color.Black;
+            this.Voidbtn.Location = new System.Drawing.Point(167, 585);
             this.Voidbtn.Name = "Voidbtn";
-            this.Voidbtn.Size = new System.Drawing.Size(113, 33);
+            this.Voidbtn.Size = new System.Drawing.Size(147, 48);
             this.Voidbtn.TabIndex = 66;
             this.Voidbtn.Text = "Void";
-            this.Voidbtn.UseVisualStyleBackColor = true;
+            this.Voidbtn.UseVisualStyleBackColor = false;
             this.Voidbtn.Click += new System.EventHandler(this.Voidbtn_Click);
             // 
             // Eftbtn
             // 
-            this.Eftbtn.Location = new System.Drawing.Point(2, 422);
+            this.Eftbtn.BackColor = System.Drawing.Color.Lime;
+            this.Eftbtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Eftbtn.Location = new System.Drawing.Point(2, 585);
             this.Eftbtn.Name = "Eftbtn";
-            this.Eftbtn.Size = new System.Drawing.Size(111, 33);
+            this.Eftbtn.Size = new System.Drawing.Size(136, 48);
             this.Eftbtn.TabIndex = 65;
             this.Eftbtn.Text = "EFT";
-            this.Eftbtn.UseVisualStyleBackColor = true;
+            this.Eftbtn.UseVisualStyleBackColor = false;
             this.Eftbtn.Click += new System.EventHandler(this.Eftbtn_Click);
             // 
             // TwentyPoundbtn
@@ -263,9 +268,9 @@
             this.TwentyPoundbtn.FlatAppearance.BorderColor = System.Drawing.Color.Yellow;
             this.TwentyPoundbtn.FlatAppearance.BorderSize = 0;
             this.TwentyPoundbtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TwentyPoundbtn.Location = new System.Drawing.Point(131, 380);
+            this.TwentyPoundbtn.Location = new System.Drawing.Point(217, 518);
             this.TwentyPoundbtn.Name = "TwentyPoundbtn";
-            this.TwentyPoundbtn.Size = new System.Drawing.Size(45, 34);
+            this.TwentyPoundbtn.Size = new System.Drawing.Size(81, 48);
             this.TwentyPoundbtn.TabIndex = 64;
             this.TwentyPoundbtn.Text = "£20";
             this.TwentyPoundbtn.UseVisualStyleBackColor = false;
@@ -275,9 +280,9 @@
             // 
             this.TenPoundbtn.BackColor = System.Drawing.Color.Yellow;
             this.TenPoundbtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TenPoundbtn.Location = new System.Drawing.Point(89, 380);
+            this.TenPoundbtn.Location = new System.Drawing.Point(139, 519);
             this.TenPoundbtn.Name = "TenPoundbtn";
-            this.TenPoundbtn.Size = new System.Drawing.Size(45, 34);
+            this.TenPoundbtn.Size = new System.Drawing.Size(76, 47);
             this.TenPoundbtn.TabIndex = 63;
             this.TenPoundbtn.Text = "£10";
             this.TenPoundbtn.UseVisualStyleBackColor = false;
@@ -287,9 +292,9 @@
             // 
             this.FivePoundbtn.BackColor = System.Drawing.Color.Yellow;
             this.FivePoundbtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.FivePoundbtn.Location = new System.Drawing.Point(46, 380);
+            this.FivePoundbtn.Location = new System.Drawing.Point(65, 519);
             this.FivePoundbtn.Name = "FivePoundbtn";
-            this.FivePoundbtn.Size = new System.Drawing.Size(45, 34);
+            this.FivePoundbtn.Size = new System.Drawing.Size(72, 47);
             this.FivePoundbtn.TabIndex = 62;
             this.FivePoundbtn.Text = "£5";
             this.FivePoundbtn.UseVisualStyleBackColor = false;
@@ -299,9 +304,9 @@
             // 
             this.Cashbtn.BackColor = System.Drawing.Color.Yellow;
             this.Cashbtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Cashbtn.Location = new System.Drawing.Point(2, 380);
+            this.Cashbtn.Location = new System.Drawing.Point(2, 518);
             this.Cashbtn.Name = "Cashbtn";
-            this.Cashbtn.Size = new System.Drawing.Size(45, 34);
+            this.Cashbtn.Size = new System.Drawing.Size(61, 48);
             this.Cashbtn.TabIndex = 61;
             this.Cashbtn.Text = "Cash";
             this.Cashbtn.UseVisualStyleBackColor = false;
@@ -309,10 +314,12 @@
             // 
             // OrderList
             // 
+            this.OrderList.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.OrderList.FormattingEnabled = true;
+            this.OrderList.ItemHeight = 25;
             this.OrderList.Location = new System.Drawing.Point(4, 50);
             this.OrderList.Name = "OrderList";
-            this.OrderList.Size = new System.Drawing.Size(208, 277);
+            this.OrderList.Size = new System.Drawing.Size(342, 404);
             this.OrderList.TabIndex = 60;
             // 
             // Homebtn
@@ -320,9 +327,9 @@
             this.Homebtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.Homebtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Homebtn.ImageAlign = System.Drawing.ContentAlignment.BottomRight;
-            this.Homebtn.Location = new System.Drawing.Point(682, 3);
+            this.Homebtn.Location = new System.Drawing.Point(1119, 3);
             this.Homebtn.Name = "Homebtn";
-            this.Homebtn.Size = new System.Drawing.Size(120, 44);
+            this.Homebtn.Size = new System.Drawing.Size(224, 67);
             this.Homebtn.TabIndex = 82;
             this.Homebtn.Text = "Home";
             this.Homebtn.UseVisualStyleBackColor = false;
@@ -342,22 +349,22 @@
             // AmountLabel
             // 
             this.AmountLabel.AutoSize = true;
-            this.AmountLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.AmountLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.AmountLabel.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.AmountLabel.Location = new System.Drawing.Point(65, 345);
+            this.AmountLabel.Location = new System.Drawing.Point(100, 486);
             this.AmountLabel.Name = "AmountLabel";
-            this.AmountLabel.Size = new System.Drawing.Size(60, 24);
+            this.AmountLabel.Size = new System.Drawing.Size(76, 29);
             this.AmountLabel.TabIndex = 85;
             this.AmountLabel.Text = "00.00";
             // 
             // TotalLbl
             // 
             this.TotalLbl.AutoSize = true;
-            this.TotalLbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TotalLbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.TotalLbl.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.TotalLbl.Location = new System.Drawing.Point(0, 345);
+            this.TotalLbl.Location = new System.Drawing.Point(0, 483);
             this.TotalLbl.Name = "TotalLbl";
-            this.TotalLbl.Size = new System.Drawing.Size(68, 24);
+            this.TotalLbl.Size = new System.Drawing.Size(87, 29);
             this.TotalLbl.TabIndex = 84;
             this.TotalLbl.Text = "Total: ";
             // 
@@ -366,7 +373,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.ClientSize = new System.Drawing.Size(817, 467);
+            this.ClientSize = new System.Drawing.Size(1342, 663);
             this.Controls.Add(this.AmountLabel);
             this.Controls.Add(this.TotalLbl);
             this.Controls.Add(this.Usernamelbl);
@@ -395,6 +402,7 @@
             this.Controls.Add(this.OrderList);
             this.Name = "BottlesWindow";
             this.Text = "BottlesWindow";
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.ResumeLayout(false);
             this.PerformLayout();
 

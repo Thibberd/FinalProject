@@ -42,69 +42,9 @@ namespace FrontOfHouseSystem
 
         }
 
-        private void Form1_Load(object sender, EventArgs e)
-        {
-            
-        }
-
-        private void Sparklingbtn_Click(object sender, EventArgs e)
-        {
-            this.Hide();
-            SparklingWindow sparklingWindow = new SparklingWindow(userID, firstName, lastName, OrderList.Items, Usernamelbl.Text, AmountLabel.Text, RunningTotal);
-            sparklingWindow.Show();
-        }
-
-        private void Softbtn_Click(object sender, EventArgs e)
-        {
-            this.Hide();
-            SoftdrinksWindow softdrinksWindow = new SoftdrinksWindow(userID, firstName, lastName, OrderList.Items, Usernamelbl.Text, AmountLabel.Text, RunningTotal);
-            softdrinksWindow.Show();
-        }
-
         
 
-        private void Draught_Click(object sender, EventArgs e)
-        {
-            this.Hide();
-            DraughtWindow draughtWindow = new DraughtWindow(userID, firstName, lastName, OrderList.Items, Usernamelbl.Text, AmountLabel.Text, RunningTotal);
-            draughtWindow.Show();
-            
-        }
-
-        private void Bottlesbtn_Click(object sender, EventArgs e)
-        {
-            this.Hide();
-            BottlesWindow bottlesWindow = new BottlesWindow(userID, firstName, lastName, OrderList.Items, Usernamelbl.Text, AmountLabel.Text, RunningTotal);
-            bottlesWindow.Show();
-        }
-
-        private void Spiritsbtn_Click(object sender, EventArgs e)
-        {
-            this.Hide();
-            SpiritsWindow spiritsWindow = new SpiritsWindow(userID, firstName, lastName, OrderList.Items, Usernamelbl.Text, AmountLabel.Text, RunningTotal);
-            spiritsWindow.Show();
-        }
-
-        private void Winebtn_Click(object sender, EventArgs e)
-        {
-            this.Hide();
-            WineWindow wineWindow = new WineWindow(userID, firstName, lastName, OrderList.Items, Usernamelbl.Text, AmountLabel.Text, RunningTotal);
-            wineWindow.Show();
-        }
-
-        private void Liquersbtn_Click(object sender, EventArgs e)
-        {
-            this.Hide();
-            LiquersWindow liquersWindow  = new LiquersWindow(userID, firstName, lastName, OrderList.Items, Usernamelbl.Text, AmountLabel.Text, RunningTotal);
-            liquersWindow.Show();
-        }
-
-        private void Cocktailsbtn_Click(object sender, EventArgs e)
-        {
-            this.Hide();
-            CocktailsWindow cocktailsWindow = new CocktailsWindow(userID, firstName, lastName, OrderList.Items, Usernamelbl.Text, AmountLabel.Text, RunningTotal);
-            cocktailsWindow.Show();
-        }
+       
 
         private void Carlingbtn_Click(object sender, EventArgs e)
         {
@@ -867,6 +807,67 @@ namespace FrontOfHouseSystem
         private void OpenDrawerBtn_Click(object sender, EventArgs e)
         {
             MessageBox.Show("Cash Register Open");
+        }
+
+        private void Homebtn_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Draughtbtn_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            DraughtWindow draughtWindow = new DraughtWindow(userID, firstName, lastName, OrderList.Items, Usernamelbl.Text, AmountLabel.Text, RunningTotal);
+            draughtWindow.Show();
+        }
+
+        private void Bottlesbtn_Click_1(object sender, EventArgs e)
+        {
+            this.Hide();
+            BottlesWindow bottlesWindow = new BottlesWindow(userID, firstName, lastName, OrderList.Items, Usernamelbl.Text, AmountLabel.Text, RunningTotal);
+            bottlesWindow.Show();
+        }
+
+        private void Spiritsbtn_Click_1(object sender, EventArgs e)
+        {
+            this.Hide();
+            SpiritsWindow spiritsWindow = new SpiritsWindow(userID, firstName, lastName, OrderList.Items, Usernamelbl.Text, AmountLabel.Text, RunningTotal);
+            spiritsWindow.Show();
+        }
+
+        private void Winebtn_Click_1(object sender, EventArgs e)
+        {
+            this.Hide();
+            WineWindow wineWindow = new WineWindow(userID, firstName, lastName, OrderList.Items, Usernamelbl.Text, AmountLabel.Text, RunningTotal);
+            wineWindow.Show();
+        }
+
+        private void Liquersbtn_Click_1(object sender, EventArgs e)
+        {
+            this.Hide();
+            LiquersWindow liquersWindow = new LiquersWindow(userID, firstName, lastName, OrderList.Items, Usernamelbl.Text, AmountLabel.Text, RunningTotal);
+            liquersWindow.Show();
+        }
+
+        private void Cocktailsbtn_Click_1(object sender, EventArgs e)
+        {
+            this.Hide();
+            CocktailsWindow cocktailsWindow = new CocktailsWindow(userID, firstName, lastName, OrderList.Items, Usernamelbl.Text, AmountLabel.Text, RunningTotal);
+            cocktailsWindow.Show();
+        }
+
+        private void Sparklingbtn_Click_1(object sender, EventArgs e)
+        {
+            this.Hide();
+            SparklingWindow sparklingWindow = new SparklingWindow(userID, firstName, lastName, OrderList.Items, Usernamelbl.Text, AmountLabel.Text, RunningTotal);
+            sparklingWindow.Show();
+        }
+
+        private void Softsbtn_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            SoftdrinksWindow softdrinksWindow = new SoftdrinksWindow(userID, firstName, lastName, OrderList.Items, Usernamelbl.Text, AmountLabel.Text, RunningTotal);
+            softdrinksWindow.Show();
         }
     }
 }

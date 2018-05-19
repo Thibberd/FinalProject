@@ -106,7 +106,7 @@
             // 
             this.Completebtn.BackColor = System.Drawing.Color.White;
             this.Completebtn.ForeColor = System.Drawing.Color.Black;
-            this.Completebtn.Location = new System.Drawing.Point(264, 292);
+            this.Completebtn.Location = new System.Drawing.Point(279, 293);
             this.Completebtn.Name = "Completebtn";
             this.Completebtn.Size = new System.Drawing.Size(205, 51);
             this.Completebtn.TabIndex = 7;
