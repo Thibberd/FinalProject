@@ -44,9 +44,9 @@
             this.label1.Location = new System.Drawing.Point(207, 88);
             this.label1.Margin = new System.Windows.Forms.Padding(7, 0, 7, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(362, 43);
+            this.label1.Size = new System.Drawing.Size(382, 43);
             this.label1.TabIndex = 0;
-            this.label1.Text = "Payment Succesful";
+            this.label1.Text = "Payment Successful";
             // 
             // ChangeAmountlbl
             // 

@@ -32,7 +32,7 @@
             this.label2 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
             this.EnteredAmountlbl = new System.Windows.Forms.Label();
-            this.button12 = new System.Windows.Forms.Button();
+            this.Cancelbtn = new System.Windows.Forms.Button();
             this.Enterbtn = new System.Windows.Forms.Button();
             this.Number0btn = new System.Windows.Forms.Button();
             this.Number9btn = new System.Windows.Forms.Button();
@@ -92,16 +92,17 @@
             this.EnteredAmountlbl.Size = new System.Drawing.Size(0, 33);
             this.EnteredAmountlbl.TabIndex = 28;
             // 
-            // button12
+            // Cancelbtn
             // 
-            this.button12.BackColor = System.Drawing.Color.DeepPink;
-            this.button12.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button12.Location = new System.Drawing.Point(22, 444);
-            this.button12.Name = "button12";
-            this.button12.Size = new System.Drawing.Size(113, 78);
-            this.button12.TabIndex = 25;
-            this.button12.Text = "Cancel";
-            this.button12.UseVisualStyleBackColor = false;
+            this.Cancelbtn.BackColor = System.Drawing.Color.DeepPink;
+            this.Cancelbtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Cancelbtn.Location = new System.Drawing.Point(22, 444);
+            this.Cancelbtn.Name = "Cancelbtn";
+            this.Cancelbtn.Size = new System.Drawing.Size(113, 78);
+            this.Cancelbtn.TabIndex = 25;
+            this.Cancelbtn.Text = "Clear";
+            this.Cancelbtn.UseVisualStyleBackColor = false;
+            this.Cancelbtn.Click += new System.EventHandler(this.Cancelbtn_Click);
             // 
             // Enterbtn
             // 
@@ -292,7 +293,7 @@
             this.Controls.Add(this.Number1btn);
             this.Controls.Add(this.Pointbtn);
             this.Controls.Add(this.Number3btn);
-            this.Controls.Add(this.button12);
+            this.Controls.Add(this.Cancelbtn);
             this.Controls.Add(this.Enterbtn);
             this.Controls.Add(this.Number0btn);
             this.Controls.Add(this.Number9btn);
@@ -318,7 +319,7 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Button button12;
+        private System.Windows.Forms.Button Cancelbtn;
         private System.Windows.Forms.Button Enterbtn;
         private System.Windows.Forms.Button Number0btn;
         private System.Windows.Forms.Button Number9btn;

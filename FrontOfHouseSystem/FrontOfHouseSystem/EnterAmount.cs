@@ -102,5 +102,10 @@ namespace FrontOfHouseSystem
         {
             EnteredAmountlbl.Text = EnteredAmountlbl.Text + "00";
         }
+
+        private void Cancelbtn_Click(object sender, EventArgs e)
+        {
+            EnteredAmountlbl.Text = "";
+        }
     }
 }
